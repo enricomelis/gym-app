@@ -7,7 +7,7 @@ enum Categoria {
 table utente {
   id uuid [pk, not null]
   clerk_id varchar [unique, not null]
-  email varchar [not null]
+  email varchar [unique, not null]
   nome varchar [not null]
   cognome varchar [not null]
   data_di_nascita date [not null]  
@@ -17,7 +17,7 @@ table utente {
 
 table societa {
   id uuid [pk, not null]
-  nome varchar [not null]
+  nome varchar [unique, not null]
   regione varchar [not null]
 }
 
@@ -35,7 +35,7 @@ table atleta {
   user_id uuid [ref: > utente.id, not null, unique]
   livello Categoria [not null]
   societa_id uuid [ref: > societa.id]
-  numero_tessera varchar
+  numero_tessera varchar [unique]
   created_at timestamp [not null, default: `now()`]
   updated_at timestamp [not null, default: `now()`]
 }
