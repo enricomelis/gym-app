@@ -1,0 +1,52 @@
+enum Categoria {
+  "Allievi"
+  "Junior"
+  "Senior"
+}
+
+table utente {
+  id uuid [pk, not null]
+  clerk_id varchar [unique, not null]
+  email varchar [not null]
+  nome varchar [not null]
+  cognome varchar [not null]
+  data_di_nascita date [not null]  
+  created_at timestamp [not null, default: `now()`]
+  updated_at timestamp [not null, default: `now()`]
+}
+
+table societa {
+  id uuid [pk, not null]
+  nome varchar [not null]
+  regione varchar [not null]
+}
+
+table tecnico {
+  id uuid [pk, not null]
+  user_id uuid [ref: > utente.id, not null, unique]
+  is_supertecnico bool [default: false, not null]
+  societa_id uuid [ref: > societa.id]
+  created_at timestamp [not null, default: `now()`]
+  updated_at timestamp [not null, default: `now()`]
+}
+
+table atleta {
+  id uuid [pk, not null]
+  user_id uuid [ref: > utente.id, not null, unique]
+  livello Categoria [not null]
+  societa_id uuid [ref: > societa.id]
+  numero_tessera varchar
+  created_at timestamp [not null, default: `now()`]
+  updated_at timestamp [not null, default: `now()`]
+}
+
+table mtm_tecnico_atleta {
+  id uuid [pk, not null]
+  atleta_id uuid [ref: > atleta.id, not null]
+  tecnico_id uuid [ref: > tecnico.id, not null]
+  created_at timestamp [not null, default: `now()`]
+  updated_at timestamp [not null, default: `now()`]
+  indexes {
+    (atleta_id, tecnico_id) [unique]
+  }
+}
