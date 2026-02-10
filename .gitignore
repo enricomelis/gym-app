@@ -40,3 +40,5 @@ yarn-error.log*
 
 # Linear setup guide
 linear.md
+
+/generated/prisma

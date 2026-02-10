@@ -1,0 +1,109 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client"
+  output   = "./generated"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+enum Categoria {
+  ALLIEVI
+  JUNIOR
+  SENIOR
+}
+
+// Struttura dei modelli
+// nome del modello: PascalCase
+// nome dei campi: camelCase
+// campi, relationi, indici
+
+model Utente {
+  id            String   @id @default(uuid())
+  clerkId       String   @unique
+  email         String   @unique
+  nome          String
+  cognome       String
+  dataDiNascita DateTime
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  tecnici Tecnico[]
+  atleta  Atleta?
+
+  @@index([id])
+  @@index([email])
+}
+
+model Societa {
+  id        String   @id @default(uuid())
+  nome      String   @unique
+  regione   String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  tecnici Tecnico[]
+  atleti  Atleta[]
+
+  @@index([id])
+}
+
+model Tecnico {
+  id             String   @id @default(uuid())
+  nome           String
+  cognome        String
+  isSupertecnico Boolean  @default(false)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  utente    Utente  @relation(fields: [utenteId], references: [id])
+  utenteId  String  @unique
+  societa   Societa @relation(fields: [societaId], references: [id])
+  societaId String
+
+  tecniciAtleti TecnicoAtleta[]
+
+  @@index([utenteId])
+  @@index([societaId])
+}
+
+model Atleta {
+  id            String    @id @default(uuid())
+  nome          String
+  cognome       String
+  livello       Categoria
+  numeroTessera String    @unique
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  utente    Utente  @relation(fields: [utenteId], references: [id])
+  utenteId  String  @unique
+  societa   Societa @relation(fields: [societaId], references: [id])
+  societaId String
+
+  tecniciAtleti TecnicoAtleta[]
+
+  @@index([utenteId])
+  @@index([societaId])
+}
+
+model TecnicoAtleta {
+  id        String   @id @default(uuid())
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  tecnico   Tecnico @relation(fields: [tecnicoId], references: [id])
+  tecnicoId String
+
+  atleta   Atleta? @relation(fields: [atletaId], references: [id])
+  atletaId String
+
+  @@unique([tecnicoId, atletaId])
+  @@index([tecnicoId, atletaId])
+}

@@ -19,10 +19,14 @@ table societa {
   id uuid [pk, not null]
   nome varchar [unique, not null]
   regione varchar [not null]
+  created_at timestamp [not null, default: `now()`]
+  updated_at timestamp [not null, default: `now()`] 
 }
 
 table tecnico {
   id uuid [pk, not null]
+  nome varchar [not null]
+  cognome varchar [not null]
   user_id uuid [ref: > utente.id, not null, unique]
   is_supertecnico bool [default: false, not null]
   societa_id uuid [ref: > societa.id]
@@ -32,6 +36,8 @@ table tecnico {
 
 table atleta {
   id uuid [pk, not null]
+  nome varchar [not null]
+  cognome varchar [not null]
   user_id uuid [ref: > utente.id, not null, unique]
   livello Categoria [not null]
   societa_id uuid [ref: > societa.id]

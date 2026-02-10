@@ -195,19 +195,22 @@ Digitalizzazione dei programmi tecnici per i giovanissimi e per chi fa riferimen
 
 ```bash
 # Sviluppo
-bun dev                    # Avvia tutte le app
-bun dev --filter=web       # Avvia solo web app
-bun dev --filter=docs      # Avvia solo docs app
+bun dev                             # Avvia tutte le app
+bun dev --filter=web                # Avvia solo web app
+bun dev --filter=docs               # Avvia solo docs app
+
+brew services start postgresql@18   # Avvia il db locale
+brew services stop postgresql@18    # Ferma il db locale
 
 # Build
-bun run build              # Build di tutti i pacchetti e app
+bun run build                       # Build di tutti i pacchetti e app
 
 # Linting e Formattazione
-bun run lint               # Esegue OxLint
-bun run lint:fix           # Esegue OxLint con auto-fix
-bun run format             # Formatta tutti i file
-bun run format:check       # Controlla formattazione senza scrivere
-bun run check-types        # Type check di tutti i pacchetti
+bun run lint                        # Esegue OxLint
+bun run lint:fix                    # Esegue OxLint con auto-fix
+bun run format                      # Formatta tutti i file
+bun run format:check                # Controlla formattazione senza scrivere
+bun run check-types                 # Type check di tutti i pacchetti
 ```
 
 ## Contribuire
