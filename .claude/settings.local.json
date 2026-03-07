@@ -1,8 +1,5 @@
 {
   "permissions": {
-    "allow": [
-      "mcp__linear-server__list_issues",
-      "mcp__linear-server__save_issue"
-    ]
+    "allow": ["mcp__linear-server__list_issues", "mcp__linear-server__save_issue"]
   }
 }
