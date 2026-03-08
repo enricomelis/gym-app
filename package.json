@@ -2,6 +2,12 @@
   "name": "gym-app",
   "version": "0.1.0",
   "private": true,
+  "description": "A Next.js app. Uses [Bun](https://bun.sh) as the package manager.",
+  "keywords": [],
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -40,11 +46,5 @@
   "trustedDependencies": [
     "sharp",
     "unrs-resolver"
-  ],
-  "description": "A Next.js app. Uses [Bun](https://bun.sh) as the package manager.",
-  "main": "index.js",
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "module"
+  ]
 }

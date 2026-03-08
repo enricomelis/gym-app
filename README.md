@@ -22,3 +22,13 @@ Open [http://localhost:3000](http://localhost:3000) to see the app.
 | `bun run format:check` | Check formatting without writing |
 
 Linting is configured in `oxlint.json`.
+
+### Database (Prisma + PostgreSQL)
+
+| Command                                               | Description                                       |
+| ----------------------------------------------------- | ------------------------------------------------- |
+| `bun --bun run prisma migrate dev --name your-change` | Create and apply a migration after schema changes |
+| `bun --bun run prisma generate`                       | Regenerate the client without migrating           |
+| `bun run prisma/seed.ts`                              | Seed the database with sample data                |
+| `bun --bun run prisma migrate reset`                  | Drop all tables, re-migrate, and re-seed          |
+| `bun --bun run prisma studio`                         | Open the Prisma Studio GUI                        |
