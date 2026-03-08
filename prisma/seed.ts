@@ -7,18 +7,21 @@ const prisma = new PrismaClient({
 });
 
 async function main() {
+  await prisma.account.deleteMany();
+  await prisma.session.deleteMany();
+  await prisma.verification.deleteMany();
   await prisma.user.deleteMany();
 
   await prisma.user.createMany({
     data: [
       {
+        name: "David Ghilarducci",
         email: "ghilarduccidavid@gmail.com",
-        password: "hashed_placeholder_1",
         role: "TECNICO",
       },
       {
+        name: "Enrico Melis",
         email: "enrico.melis.casa@gmail.com",
-        password: "hashed_placeholder_2",
         role: "ATLETA",
       },
     ],

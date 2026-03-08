@@ -21,10 +21,10 @@ export default async function Home() {
             >
               <div className="flex flex-col gap-1">
                 <span className="text-sm font-medium text-black dark:text-zinc-100">
-                  {user.email}
+                  {user.name}
                 </span>
                 <span className="text-xs text-zinc-500">
-                  {user.createdAt.toLocaleDateString("it-IT")}
+                  {user.email}
                 </span>
               </div>
               <span
