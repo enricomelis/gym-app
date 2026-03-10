@@ -16,14 +16,14 @@ export async function registerUser(data: z.infer<typeof registerSchema>): Promis
   const parsed = registerSchema.safeParse(data);
 
   if (!parsed.success) {
-    return { success: false, error: parsed.error.errors[0].message };
+    return { success: false, error: parsed.error.issues[0].message };
   }
 
   const { name, email, password } = parsed.data;
 
   try {
     await auth.api.signUpEmail({
-      body: { name, email, password, role: "TECNICO" },
+      body: { name, email, password },
     });
   } catch (error) {
     if (error instanceof APIError) {
