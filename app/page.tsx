@@ -23,9 +23,7 @@ export default async function Home() {
                 <span className="text-sm font-medium text-black dark:text-zinc-100">
                   {user.name}
                 </span>
-                <span className="text-xs text-zinc-500">
-                  {user.email}
-                </span>
+                <span className="text-xs text-zinc-500">{user.email}</span>
               </div>
               <span
                 className={`rounded-full px-3 py-1 text-xs font-medium ${
