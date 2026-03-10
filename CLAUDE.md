@@ -10,6 +10,7 @@ If you ever encounter something in the project that surprises you, please alert 
 - Before addressing any task, make sure to check any related Linear issue.
 - Always focus on one, clear and verifiable task at a time. If you find hard to verify your work, alert the developer.
 - Assume that "issues" refers to Linear issues (accessible through MCP) unless anything else is specified.
+- Never create git branches with non-semantic names. Follow the structure `branch name: action/description-with-hyphens`.
 
 ### Development workflow
 
