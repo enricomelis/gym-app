@@ -30,7 +30,7 @@ export async function registerUser(data: z.infer<typeof registerSchema>): Promis
       if (error.body?.code === "USER_ALREADY_EXISTS") {
         return { success: false, error: "Email già registrata" };
       }
-      return { success: false, error: error.body?.message ?? "Registrazione fallita" };
+      return { success: false, error: "Registrazione fallita" };
     }
     return { success: false, error: "Registrazione fallita" };
   }
