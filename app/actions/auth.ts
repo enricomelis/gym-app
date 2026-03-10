@@ -10,13 +10,15 @@ const registerSchema = z.object({
   password: z.string().min(8, "La password deve avere almeno 8 caratteri"),
 });
 
-type RegisterResult = { success: true } | { success: false; error: string };
+type RegisterResult =
+  | { success: true }
+  | { success: false; error?: string; fieldErrors?: Record<string, string[]> };
 
 export async function registerUser(data: z.infer<typeof registerSchema>): Promise<RegisterResult> {
   const parsed = registerSchema.safeParse(data);
 
   if (!parsed.success) {
-    return { success: false, error: parsed.error.issues[0].message };
+    return { success: false, fieldErrors: parsed.error.flatten().fieldErrors };
   }
 
   const { name, email, password } = parsed.data;
@@ -27,10 +29,13 @@ export async function registerUser(data: z.infer<typeof registerSchema>): Promis
     });
   } catch (error) {
     if (error instanceof APIError) {
-      if (error.body?.code === "USER_ALREADY_EXISTS") {
-        return { success: false, error: "Email già registrata" };
+      if (error.body?.code === "USER_ALREADY_EXISTS_USE_ANOTHER_EMAIL") {
+        return {
+          success: false,
+          error: "Esiste già un account con questa email. Prova ad accedere.",
+        };
       }
-      return { success: false, error: "Registrazione fallita" };
+      return { success: false, error: "Registrazione fallita. Riprova più tardi." };
     }
     return { success: false, error: "Registrazione fallita" };
   }
