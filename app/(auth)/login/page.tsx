@@ -35,6 +35,7 @@ export default function LoginPage() {
     const result = await loginUser(data);
 
     if (result.success) {
+      router.refresh();
       router.push("/dashboard");
       return;
     }
