@@ -8,15 +8,10 @@ import Link from "next/link";
 import { CircleCheck, AlertCircle } from "lucide-react";
 
 import { registerUser } from "@/app/actions/auth";
+import { registerSchema } from "@/app/actions/schemas";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-
-const registerSchema = z.object({
-  name: z.string().min(1, "Il nome è obbligatorio"),
-  email: z.string().email("Email non valida"),
-  password: z.string().min(8, "La password deve avere almeno 8 caratteri"),
-});
 
 type RegisterForm = z.infer<typeof registerSchema>;
 

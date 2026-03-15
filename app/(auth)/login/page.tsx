@@ -9,14 +9,10 @@ import { useRouter } from "next/navigation";
 import { AlertCircle } from "lucide-react";
 
 import { loginUser } from "@/app/actions/auth";
+import { loginSchema } from "@/app/actions/schemas";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-
-const loginSchema = z.object({
-  email: z.string().email("Email non valida"),
-  password: z.string().min(1, "La password è obbligatoria"),
-});
 
 type LoginForm = z.infer<typeof loginSchema>;
 
