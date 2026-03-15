@@ -48,7 +48,6 @@ If you ever encounter something in the project that surprises you, please alert 
 - **Steps**: Always focus on one, clear and verifiable task at a time. If you find hard to verify your work, alert the developer.
 - **Git Branches**: Never create git branches with non-semantic names. Follow the structure `branch name: action/description-with-hyphens`.
 
-
 ## Principles
 
 - **Simplicity first**: Make every change as little as possible.
