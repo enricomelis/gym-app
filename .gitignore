@@ -44,5 +44,7 @@ next-env.d.ts
 /generated/prisma
 
 .claude/
+.agents/
+AGENTS.md
 CLAUDE.md
 /tasks/
