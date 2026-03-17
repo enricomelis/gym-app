@@ -2,17 +2,14 @@ import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-const { mockPush, mockSignOut } = vi.hoisted(() => ({
+const { mockPush, mockReplace, mockSignOut } = vi.hoisted(() => ({
   mockPush: vi.fn(),
+  mockReplace: vi.fn(),
   mockSignOut: vi.fn().mockResolvedValue(undefined),
 }));
 
 vi.mock("next/navigation", () => ({
-  useRouter: () => ({ push: mockPush }),
-}));
-
-vi.mock("@/lib/auth-client", () => ({
-  authClient: { signOut: mockSignOut },
+  useRouter: () => ({ push: mockPush, replace: mockReplace }),
 }));
 
 import { LogoutButton } from "./logout-button";
@@ -20,6 +17,7 @@ import { LogoutButton } from "./logout-button";
 describe("LogoutButton", () => {
   beforeEach(() => {
     mockPush.mockClear();
+    mockReplace.mockClear();
     mockSignOut.mockClear();
     mockSignOut.mockResolvedValue(undefined);
   });
