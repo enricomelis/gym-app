@@ -9,6 +9,7 @@ export async function middleware(request: NextRequest) {
     const sessionUrl = new URL("/api/auth/get-session", request.url);
     const response = await fetch(sessionUrl, {
       headers: { cookie: request.headers.get("cookie") || "" },
+      cache: "no-store",
     });
     if (response.ok) {
       const data = await response.json();
