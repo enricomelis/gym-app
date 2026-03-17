@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import { describe, expect, it, vi } from "vitest";
+import { beforeEach, describe, expect, it, vi } from "vitest";
 
 const { mockPush, mockSignOut } = vi.hoisted(() => ({
   mockPush: vi.fn(),
@@ -18,6 +18,12 @@ vi.mock("@/lib/auth-client", () => ({
 import { LogoutButton } from "./logout-button";
 
 describe("LogoutButton", () => {
+  beforeEach(() => {
+    mockPush.mockClear();
+    mockSignOut.mockClear();
+    mockSignOut.mockResolvedValue(undefined);
+  });
+
   it('renders a button with text "Esci"', () => {
     render(<LogoutButton />);
     expect(screen.getByRole("button", { name: "Esci" })).toBeInTheDocument();
@@ -31,5 +37,33 @@ describe("LogoutButton", () => {
 
     expect(mockSignOut).toHaveBeenCalled();
     expect(mockPush).toHaveBeenCalledWith("/login");
+  });
+
+  it("does not redirect when signOut fails", async () => {
+    mockSignOut.mockRejectedValue(new Error("Network error"));
+    const user = userEvent.setup();
+    render(<LogoutButton />);
+
+    await user.click(screen.getByRole("button", { name: "Esci" }));
+
+    expect(mockSignOut).toHaveBeenCalled();
+    expect(mockPush).not.toHaveBeenCalled();
+  });
+
+  it("disables button during logout", async () => {
+    let resolveSignOut: () => void;
+    mockSignOut.mockReturnValue(
+      new Promise<void>((resolve) => {
+        resolveSignOut = resolve;
+      }),
+    );
+    const user = userEvent.setup();
+    render(<LogoutButton />);
+
+    await user.click(screen.getByRole("button", { name: "Esci" }));
+
+    expect(screen.getByRole("button", { name: "Uscita..." })).toBeDisabled();
+
+    resolveSignOut!();
   });
 });
