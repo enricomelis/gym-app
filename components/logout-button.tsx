@@ -16,6 +16,8 @@ export function LogoutButton() {
       await authClient.signOut();
       router.replace("/login");
     } catch {
+      // signOut failed — keep user on current page
+    } finally {
       setLoading(false);
     }
   }

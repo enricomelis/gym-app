@@ -1,4 +1,4 @@
-import { render, screen } from "@testing-library/react";
+import { act, render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
@@ -10,6 +10,10 @@ const { mockPush, mockReplace, mockSignOut } = vi.hoisted(() => ({
 
 vi.mock("next/navigation", () => ({
   useRouter: () => ({ push: mockPush, replace: mockReplace }),
+}));
+
+vi.mock("@/lib/auth-client", () => ({
+  authClient: { signOut: mockSignOut },
 }));
 
 import { LogoutButton } from "./logout-button";
@@ -34,7 +38,7 @@ describe("LogoutButton", () => {
     await user.click(screen.getByRole("button", { name: "Esci" }));
 
     expect(mockSignOut).toHaveBeenCalled();
-    expect(mockPush).toHaveBeenCalledWith("/login");
+    expect(mockReplace).toHaveBeenCalledWith("/login");
   });
 
   it("does not redirect when signOut fails", async () => {
@@ -43,13 +47,17 @@ describe("LogoutButton", () => {
     render(<LogoutButton />);
 
     await user.click(screen.getByRole("button", { name: "Esci" }));
+    // flush microtasks so the catch/finally in handleLogout runs
+    await vi.waitFor(() => {
+      expect(screen.getByRole("button", { name: "Esci" })).toBeEnabled();
+    });
 
     expect(mockSignOut).toHaveBeenCalled();
-    expect(mockPush).not.toHaveBeenCalled();
+    expect(mockReplace).not.toHaveBeenCalled();
   });
 
   it("disables button during logout", async () => {
-    let resolveSignOut: () => void;
+    let resolveSignOut!: () => void;
     mockSignOut.mockReturnValue(
       new Promise<void>((resolve) => {
         resolveSignOut = resolve;
@@ -62,6 +70,10 @@ describe("LogoutButton", () => {
 
     expect(screen.getByRole("button", { name: "Uscita..." })).toBeDisabled();
 
-    resolveSignOut!();
+    // resolve to avoid act() warning from state update after unmount
+    await act(() => {
+      resolveSignOut();
+      return Promise.resolve();
+    });
   });
 });
