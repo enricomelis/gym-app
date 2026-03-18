@@ -1,109 +1,60 @@
 import { NextRequest } from "next/server";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-import { middleware } from "./middleware";
+import { proxy } from "./proxy";
 
-function makeRequest(path: string) {
+function makeRequest(path: string, cookieHeader?: string) {
   return new NextRequest(new URL(path, "http://localhost:3000"), {
-    headers: { cookie: "session=abc" },
+    headers: cookieHeader ? { cookie: cookieHeader } : undefined,
   });
 }
 
-describe("middleware", () => {
+describe("proxy", () => {
   beforeEach(() => {
     vi.restoreAllMocks();
   });
 
   it("redirects unauthenticated user from /dashboard to /login", async () => {
-    vi.stubGlobal(
-      "fetch",
-      vi.fn().mockResolvedValue({
-        ok: true,
-        json: () => Promise.resolve({ user: null }),
-      }),
-    );
-
-    const response = await middleware(makeRequest("/dashboard"));
+    const response = await proxy(makeRequest("/dashboard"));
 
     expect(response.status).toBe(307);
     expect(new URL(response.headers.get("location")!).pathname).toBe("/login");
   });
 
   it("redirects unauthenticated user from /dashboard/settings to /login", async () => {
-    vi.stubGlobal(
-      "fetch",
-      vi.fn().mockResolvedValue({
-        ok: true,
-        json: () => Promise.resolve({ user: null }),
-      }),
-    );
-
-    const response = await middleware(makeRequest("/dashboard/settings"));
+    const response = await proxy(makeRequest("/dashboard/settings"));
 
     expect(response.status).toBe(307);
     expect(new URL(response.headers.get("location")!).pathname).toBe("/login");
   });
 
   it("redirects authenticated user from /login to /dashboard", async () => {
-    vi.stubGlobal(
-      "fetch",
-      vi.fn().mockResolvedValue({
-        ok: true,
-        json: () => Promise.resolve({ user: { name: "Test" } }),
-      }),
-    );
-
-    const response = await middleware(makeRequest("/login"));
+    const response = await proxy(makeRequest("/login", "better-auth.session_token=abc"));
 
     expect(response.status).toBe(307);
     expect(new URL(response.headers.get("location")!).pathname).toBe("/dashboard");
   });
 
   it("redirects authenticated user from /register to /dashboard", async () => {
-    vi.stubGlobal(
-      "fetch",
-      vi.fn().mockResolvedValue({
-        ok: true,
-        json: () => Promise.resolve({ user: { name: "Test" } }),
-      }),
-    );
-
-    const response = await middleware(makeRequest("/register"));
+    const response = await proxy(makeRequest("/register", "better-auth.session_token=abc"));
 
     expect(response.status).toBe(307);
     expect(new URL(response.headers.get("location")!).pathname).toBe("/dashboard");
   });
 
-  it("allows authenticated user to access /dashboard", async () => {
-    vi.stubGlobal(
-      "fetch",
-      vi.fn().mockResolvedValue({
-        ok: true,
-        json: () => Promise.resolve({ user: { name: "Test" } }),
-      }),
-    );
-
-    const response = await middleware(makeRequest("/dashboard"));
+  it("allows authenticated user to access /dashboard with the standard session cookie", async () => {
+    const response = await proxy(makeRequest("/dashboard", "better-auth.session_token=abc"));
 
     expect(response.status).toBe(200);
     expect(response.headers.get("location")).toBeNull();
   });
 
-  it("treats fetch failure as unauthenticated", async () => {
-    vi.stubGlobal("fetch", vi.fn().mockRejectedValue(new Error("Network error")));
+  it("allows authenticated user to access /dashboard with the secure-prefixed session cookie", async () => {
+    const response = await proxy(
+      makeRequest("/dashboard", "__Secure-better-auth.session_token=abc"),
+    );
 
-    const response = await middleware(makeRequest("/dashboard"));
-
-    expect(response.status).toBe(307);
-    expect(new URL(response.headers.get("location")!).pathname).toBe("/login");
-  });
-
-  it("treats non-OK response as unauthenticated", async () => {
-    vi.stubGlobal("fetch", vi.fn().mockResolvedValue({ ok: false, status: 500 }));
-
-    const response = await middleware(makeRequest("/dashboard"));
-
-    expect(response.status).toBe(307);
-    expect(new URL(response.headers.get("location")!).pathname).toBe("/login");
+    expect(response.status).toBe(200);
+    expect(response.headers.get("location")).toBeNull();
   });
 });
