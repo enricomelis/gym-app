@@ -81,3 +81,11 @@ public/         → Static assets
    bun run test
    ```
 4. Branch names should follow the convention: `action/description-with-hyphens` (e.g. `feature/user-profile`, `fix/login-redirect`).
+
+## AI-Assisted Development
+
+This project uses AI tooling throughout the development workflow.
+
+- **Agents:** Claude Code (primary), Cursor, Codex
+- **MCP Servers:** Linear (task management), Next DevTools, Neon (database), Railway (deployment)
+- **Skills:** frontend-design
