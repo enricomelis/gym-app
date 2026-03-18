@@ -43,8 +43,11 @@ next-env.d.ts
 
 /generated/prisma
 
-.claude/
 .agents/
+.claude/
+.codex/
+.cursor/
 AGENTS.md
 CLAUDE.md
+.mcp.json
 /tasks/
