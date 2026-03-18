@@ -50,4 +50,5 @@ next-env.d.ts
 AGENTS.md
 CLAUDE.md
 .mcp.json
+skills-lock.json
 /tasks/
