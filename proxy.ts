@@ -4,20 +4,10 @@ import type { NextRequest } from "next/server";
 export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  let hasSession = false;
-  try {
-    const sessionUrl = new URL("/api/auth/get-session", request.url);
-    const response = await fetch(sessionUrl, {
-      headers: { cookie: request.headers.get("cookie") || "" },
-      cache: "no-store",
-    });
-    if (response.ok) {
-      const data = await response.json();
-      hasSession = data?.user != null;
-    }
-  } catch {
-    hasSession = false;
-  }
+  const sessionCookie = request.cookies.get("better-auth.session_token");
+  // Cookie presence is a fast UX hint only – actual session validity is
+  // enforced server-side in app/dashboard/layout.tsx.
+  const hasSession = !!sessionCookie;
 
   if (pathname.startsWith("/dashboard") && !hasSession) {
     return NextResponse.redirect(new URL("/login", request.url));
