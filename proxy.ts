@@ -5,6 +5,8 @@ export async function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   const sessionCookie = request.cookies.get("better-auth.session_token");
+  // Cookie presence is a fast UX hint only – actual session validity is
+  // enforced server-side in app/dashboard/layout.tsx.
   const hasSession = !!sessionCookie;
 
   if (pathname.startsWith("/dashboard") && !hasSession) {
