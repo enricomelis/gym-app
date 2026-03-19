@@ -107,12 +107,15 @@ export default function LoginPage() {
         onClick={async () => {
           setGoogleLoading(true);
           setServerError(null);
-          const { error } = await authClient.signIn.social({
-            provider: "google",
-            callbackURL: "/dashboard",
-          });
-          if (error) {
-            setServerError("Errore durante l'accesso con Google. Riprova.");
+          try {
+            const { error } = await authClient.signIn.social({
+              provider: "google",
+              callbackURL: "/dashboard",
+            });
+            if (error) {
+              setServerError("Errore durante l'accesso con Google. Riprova.");
+            }
+          } finally {
             setGoogleLoading(false);
           }
         }}

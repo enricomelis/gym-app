@@ -129,12 +129,15 @@ export default function RegisterPage() {
         onClick={async () => {
           setGoogleLoading(true);
           setServerError(null);
-          const { error } = await authClient.signIn.social({
-            provider: "google",
-            callbackURL: "/dashboard",
-          });
-          if (error) {
-            setServerError("Errore durante la registrazione con Google. Riprova.");
+          try {
+            const { error } = await authClient.signIn.social({
+              provider: "google",
+              callbackURL: "/dashboard",
+            });
+            if (error) {
+              setServerError("Errore durante la registrazione con Google. Riprova.");
+            }
+          } finally {
             setGoogleLoading(false);
           }
         }}
