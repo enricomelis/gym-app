@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "CL-I-1",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 1,
+    "valore": "A",
+    "descrizione": "Dalla vert., scendere lentamente passando le gambe tese fra le braccia fino alla squadra o portarle lat. alle braccia fino alla squadra div., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-2",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 2,
+    "valore": "B",
+    "descrizione": "Squadra con gambe verticali, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-3",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 3,
+    "valore": "C",
+    "descrizione": "Squadra con gambe orizz. al di sopra della testa, 2\".",
+    "nome": "Manna"
+  },
+  {
+    "id": "CL-I-7",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 7,
+    "valore": "A",
+    "descrizione": "Da in piedi, a gambe aperte salire lentamente con corpo flesso e braccia ritte, alla vert. 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-8",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 8,
+    "valore": "B",
+    "descrizione": "Salire lentamente con braccia ritte e corpo flesso o con braccia piegate e corpo teso, gambe unite, alla vert., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-9",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 9,
+    "valore": "C",
+    "descrizione": "Dalla squadra con gambe vert. 2\" passare le gambe tra le braccia e salire con corpo flesso braccia ritte e gambe unite o divaricate, alla vert. 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-10",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 10,
+    "valore": "D",
+    "descrizione": "Dalla squadra con gambe orizz. sopra il capo, 2\", ruotando avanti lent., con corpo fl. e b. ritte e con gambe unite o divaricate, alla vert., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-13",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 13,
+    "valore": "A",
+    "descrizione": "Da proni, salire di slancio, con corpo teso e braccia piegate, alla vert. 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-14",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 14,
+    "valore": "B",
+    "descrizione": "Da una massima div. o dalla sq. con gambe unite o div. oppure da corpo proteso d., salire lentamente con corpo fle. e brac. ritte (gambe unite o div.) alla verticale, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-16",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 16,
+    "valore": "D",
+    "descrizione": "Dal Manna (2 sec.), traslocare dietro alla verticale (2 sec.).",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-19",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 19,
+    "valore": "A",
+    "descrizione": "Vert. a braccia ritte, 2\". Elemento considerato non di forza.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-20",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 20,
+    "valore": "B",
+    "descrizione": "Salire lentamente o scendere lentamente divaricando le braccia, o portarsi di slancio fino alla croce in verticale, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-21",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 21,
+    "valore": "C",
+    "descrizione": "Dalla massima div. front. o sagitale salire lentamente, o con braccia ritte e corpo flesso, alla croce in vert., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-25",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 25,
+    "valore": "A",
+    "descrizione": "Orizz. front. a braccia ritte e gambe div., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-26",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 26,
+    "valore": "B",
+    "descrizione": "Orizz. front. a braccia ritte e gambe unite, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-27",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 27,
+    "valore": "C",
+    "descrizione": "Rondine, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-31",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 31,
+    "valore": "A",
+    "descrizione": "½ o 1 giro in verticale o salire in verticale con ½ o 1 giro. Elemento considerato non di forza.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-32",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 32,
+    "valore": "B",
+    "descrizione": "Dalla orizz. con gambe div., 2\", salire lentamente alla vet., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-34",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 34,
+    "valore": "D",
+    "descrizione": "Dalla orizzontale 2\", salire a corpo e br. tese alla verticale 2\". Dalla rondine, 2\", salire lentamente con corpo teso e braccia ritte alla croce in vert., 2\".",
+    "nome": "Alvariño"
+  },
+  {
+    "id": "CL-I-37",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 37,
+    "valore": "A",
+    "descrizione": "Dalla squadra, salire alla massima squadra, ruotare ind. e arrivare in piedi.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-44",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 44,
+    "valore": "B",
+    "descrizione": "Capovolta av. a gambe div. e salire alla vert., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-45",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 45,
+    "valore": "C",
+    "descrizione": "Dalla capovolta carpiata a g. unite, salire alla vet., 2\". Anche con gambe div. nella fase finale.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-49",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 49,
+    "valore": "A",
+    "descrizione": "Rovesciata avanti.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-55",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 55,
+    "valore": "A",
+    "descrizione": "Massima div. front. o sagitale.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-61",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 61,
+    "valore": "A",
+    "descrizione": "Tutte le posizioni di equilibrio su una gamba, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-62",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 62,
+    "valore": "B",
+    "descrizione": "Tutte le posizioni di equilibrio su una gamba, con gambe div. 180° senza presa delle mani, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-67",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 67,
+    "valore": "A",
+    "descrizione": "Flic flac con arr. a corpo proteso d. in decupito prono.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-68",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 68,
+    "valore": "B",
+    "descrizione": "Flic flac carp. in volo, con arr. a corpo proteso d. o flic flac con 1 avv.",
+    "nome": "Endo"
+  },
+  {
+    "id": "CL-I-73",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 73,
+    "valore": "A",
+    "descrizione": "Farfalla.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-74",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 74,
+    "valore": "B",
+    "descrizione": "Farfalla con 1 avv.",
+    "nome": "Tong Fei"
+  },
+  {
+    "id": "CL-I-75",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 75,
+    "valore": "C",
+    "descrizione": "Farfalla con 2 avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-79",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 79,
+    "valore": "A",
+    "descrizione": "1 mulinello con gambe unite o div.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-80",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 80,
+    "valore": "B",
+    "descrizione": "Mulinelli con g. unite o div., alla vert.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-81",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 81,
+    "valore": "C",
+    "descrizione": "Mulinelli a gambe unite o div. con arrivo in vert. e scendere per continuare con mulinelli a gambe div. o unite.",
+    "nome": "Gogoladze"
+  },
+  {
+    "id": "CL-I-82",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 82,
+    "valore": "D",
+    "descrizione": "Mulinelli a gambe unite o div. con salto alla verticale e 360° di piroetta dietro (2 salti) e scendere per continuare con mulinelli a gambe div.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-86",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 86,
+    "valore": "B",
+    "descrizione": "Dalla vert. scendere in mulinelli con gambe unite o divaricate.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-91",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 91,
+    "valore": "A",
+    "descrizione": "Mulinelli a gambe div. con ½ pivot (180°).",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-92",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 92,
+    "valore": "B",
+    "descrizione": "Mulinelli a gambe div. con 1 pivot (in 2 mulinelli).",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-93",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 93,
+    "valore": "C",
+    "descrizione": "Mulinelli a gambe div. con pivot >270° (in 2 mulinelli) alla verticale.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-98",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 98,
+    "valore": "B",
+    "descrizione": "Mulinelli a gambe div. con ½ pivot (180°) alla verticale.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-100",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 100,
+    "valore": "D",
+    "descrizione": "Mulinelli a gambe div. con pivot > 270° (in 2 mulinelli) alla verticale e discesa in mulinello a gambe unite o div.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-103",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 103,
+    "valore": "A",
+    "descrizione": "Frontale russo con 360° (1 giro) o 540°.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-104",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 104,
+    "valore": "B",
+    "descrizione": "Frontale russo con 720° (2 giri) o 900°.",
+    "nome": "Fedorchenko"
+  },
+  {
+    "id": "CL-I-105",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 105,
+    "valore": "C",
+    "descrizione": "Frontale russo con 1080° (3 giri) o più.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-109",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 109,
+    "valore": "A",
+    "descrizione": "Capovolta d. con ½ giro alla verticale.",
+    "nome": ""
+  },
+  {
+    "id": "CL-I-110",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi non acrobatici"
+    },
+    "numero": 110,
+    "valore": "B",
+    "descrizione": "Capovolta d. con 1 giro saltato alla verticale.",
+    "nome": ""
+  },
+  {
+    "id": "CL-II-1",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi acrobatici avanti"
+    },
+    "numero": 1,
+    "valore": "A",
+    "descrizione": "Ribaltata o flic flac av.",
+    "nome": ""
+  },
+  {
+    "id": "CL-II-4",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi acrobatici avanti"
+    },
+    "numero": 4,
+    "valore": "D",
+    "descrizione": "Ribaltata salto e, senza posare i piedi salto av. racc. (stile Marinitch) alla stazione eretta.",
+    "nome": "Morandi"
+  },
+  {
+    "id": "CL-II-7",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi acrobatici avanti"
+    },
+    "numero": 7,
+    "valore": "A",
+    "descrizione": "Tuffo.",
+    "nome": ""
+  },
+  {
+    "id": "CL-II-13",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi acrobatici avanti"
+    },
+    "numero": 13,
+    "valore": "A",
+    "descrizione": "Salto av. racc. o carp. Anche con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-II-14",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi acrobatici avanti"
+    },
+    "numero": 14,
+    "valore": "B",
+    "descrizione": "Salto av. teso. Anche con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-II-16",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi acrobatici avanti"
+    },
+    "numero": 16,
+    "valore": "D",
+    "descrizione": "Doppio salto av. racc. Anche con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-II-17",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi acrobatici avanti"
+    },
+    "numero": 17,
+    "valore": "E",
+    "descrizione": "Doppio salto av. carp. Anche con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-II-36",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi acrobatici avanti"
+    },
+    "numero": 36,
+    "valore": "F",
+    "descrizione": "Doppio salto av. racc. con 1 avvitamento.",
+    "nome": ""
+  },
+  {
+    "id": "CL-II-38",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi acrobatici avanti"
+    },
+    "numero": 38,
+    "valore": "B",
+    "descrizione": "1 ¼ salto av. racc. o carp. con arrivo a corpo proteso d.",
+    "nome": ""
+  },
+  {
+    "id": "CL-II-42",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi acrobatici avanti"
+    },
+    "numero": 42,
+    "valore": "F",
+    "descrizione": "Doppio salto av. racc. con 1 ½ avv.",
+    "nome": "Zapata"
+  },
+  {
+    "id": "CL-II-46",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi acrobatici avanti"
+    },
+    "numero": 46,
+    "valore": "D",
+    "descrizione": "½ avv. e doppio salto d. racc.",
+    "nome": "Deferr"
+  },
+  {
+    "id": "CL-II-48",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi acrobatici avanti"
+    },
+    "numero": 48,
+    "valore": "G",
+    "descrizione": "Doppio salto av. teso con 1 ½ avv.",
+    "nome": "Zapata 2"
+  },
+  {
+    "id": "CL-III-1",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 1,
+    "valore": "A",
+    "descrizione": "Salto d. racc. o carp.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-2",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 2,
+    "valore": "B",
+    "descrizione": "Salto d. teso o salto tempo dietro.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-3",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 3,
+    "valore": "C",
+    "descrizione": "Doppio salto d. racc.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-4",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 4,
+    "valore": "D",
+    "descrizione": "Doppio salto d. racc. con 1 avv. O alto dietro, ½ avv. seguito da un doppio salto av. racc. Anche con con ½ avv.",
+    "nome": "Tsukahara"
+  },
+  {
+    "id": "CL-III-5",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 5,
+    "valore": "E",
+    "descrizione": "Doppio salto d. racc. con 2 avv. (Tsukahara con 1 avv.). O Doppio salto d. racc. con 1 ½ avv. O salto d. teso 1 ½ avv. e salto av. racc.",
+    "nome": "Tsukahara"
+  },
+  {
+    "id": "CL-III-6",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 6,
+    "valore": "G",
+    "descrizione": "Doppio salto d. racc. con 3 avv.",
+    "nome": "Ri Jong Song"
+  },
+  {
+    "id": "CL-III-7",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 7,
+    "valore": "A",
+    "descrizione": "Salto d. racc. o carp. con ½ avv. Anche ½ avv. e salto av.racc. o carp.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-8",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 8,
+    "valore": "B",
+    "descrizione": "Salto d. teso con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-11",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 11,
+    "valore": "E",
+    "descrizione": "Salto dietro, ½ avv. seguito da un doppio salto av. carpio. Anche con con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-12",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 12,
+    "valore": "F",
+    "descrizione": "Doppio salto d. racc. con 2 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-13",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 13,
+    "valore": "A",
+    "descrizione": "Flic flac dietro.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-16",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 16,
+    "valore": "D",
+    "descrizione": "Doppio salto d. carpiato.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-18",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 18,
+    "valore": "I",
+    "descrizione": "Triplo salto d. racc.",
+    "nome": "Ljukin"
+  },
+  {
+    "id": "CL-III-24",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 24,
+    "valore": "J",
+    "descrizione": "Triplo salto d. carpio.",
+    "nome": "Nagorni"
+  },
+  {
+    "id": "CL-III-26",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 26,
+    "valore": "B",
+    "descrizione": "Salto d. racc. con 1 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-27",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 27,
+    "valore": "C",
+    "descrizione": "Salto d. teso con 1 ½ avv. o 2 avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-28",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 28,
+    "valore": "D",
+    "descrizione": "Salto d. teso con 2 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-29",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 29,
+    "valore": "E",
+    "descrizione": "Doppio salto lat. carp. con gambe div. e con 1 avv.",
+    "nome": "Lou Yun"
+  },
+  {
+    "id": "CL-III-30",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 30,
+    "valore": "H",
+    "descrizione": "Doppio salto d. racc. con 3 ½ avv.",
+    "nome": "Minami"
+  },
+  {
+    "id": "CL-III-31",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 31,
+    "valore": "A",
+    "descrizione": "Tuffo d. con ½ avv. e capovolta av.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-35",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 35,
+    "valore": "E",
+    "descrizione": "Salto d. teso 1 avv. e salto dietro carpio.",
+    "nome": "Kolyvanov"
+  },
+  {
+    "id": "CL-III-36",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 36,
+    "valore": "F",
+    "descrizione": "Salto d. teso con 2 avv. e salto d. carpiato.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-41",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 41,
+    "valore": "E",
+    "descrizione": "Doppio salto d. teso, o doppio salto d. teso con ½ avv, o salto dietro, ½ avv. e doppio salto av. teso.",
+    "nome": "Tamayo"
+  },
+  {
+    "id": "CL-III-42",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 42,
+    "valore": "G",
+    "descrizione": "Doppio salto d. teso con 1 ½ avv, o salto dietro, ½ avv. e doppio salto av. teso con 1 avv. Anche Hypolito.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-48",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 48,
+    "valore": "F",
+    "descrizione": "Doppio salto d. teso con 1 avv. o salto d. con ½ avv. e doppio salto av. con ½ avv. Anche Penev.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-54",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 54,
+    "valore": "G",
+    "descrizione": "Doppio salto d. teso con 2 avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-60",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 60,
+    "valore": "H",
+    "descrizione": "Doppio salto d. teso con 2 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-III-66",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 66,
+    "valore": "I",
+    "descrizione": "Doppio salto d. teso con 3 avv.",
+    "nome": "Shirai 3"
+  },
+  {
+    "id": "CL-III-72",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi acrobatici dietro"
+    },
+    "numero": 72,
+    "valore": "J",
+    "descrizione": "Doppio salto d. teso con 3 ½ avv.",
+    "nome": "Jarman"
+  },
+  {
+    "id": "CL-IV-2",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Semplici Salti giro avanti o indietro con 1 o più avvitamenti"
+    },
+    "numero": 2,
+    "valore": "B",
+    "descrizione": "Salto av. racc. con 1 avv. Anche con 1 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-IV-3",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Semplici Salti giro avanti o indietro con 1 o più avvitamenti"
+    },
+    "numero": 3,
+    "valore": "C",
+    "descrizione": "Salto av. teso con 1 avv. Anche con 1 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-IV-4",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Semplici Salti giro avanti o indietro con 1 o più avvitamenti"
+    },
+    "numero": 4,
+    "valore": "D",
+    "descrizione": "Salto av. teso con 2 avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-IV-5",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Semplici Salti giro avanti o indietro con 1 o più avvitamenti"
+    },
+    "numero": 5,
+    "valore": "E",
+    "descrizione": "Salto av. teso con 2 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-IV-6",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Semplici Salti giro avanti o indietro con 1 o più avvitamenti"
+    },
+    "numero": 6,
+    "valore": "F",
+    "descrizione": "Salto av. teso con 3 avv.",
+    "nome": "Shiraj 2"
+  },
+  {
+    "id": "CL-IV-8",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Semplici Salti giro avanti o indietro con 1 o più avvitamenti"
+    },
+    "numero": 8,
+    "valore": "B",
+    "descrizione": "Salto dietro teso con 1 avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-IV-9",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Semplici Salti giro avanti o indietro con 1 o più avvitamenti"
+    },
+    "numero": 9,
+    "valore": "C",
+    "descrizione": "Salto dietro teso con 1 ½ o 2 avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-IV-10",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Semplici Salti giro avanti o indietro con 1 o più avvitamenti"
+    },
+    "numero": 10,
+    "valore": "D",
+    "descrizione": "Salto dietro teso con 2 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-IV-11",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Semplici Salti giro avanti o indietro con 1 o più avvitamenti"
+    },
+    "numero": 11,
+    "valore": "E",
+    "descrizione": "Salto dietro teso con 3 ½ avv.",
+    "nome": "González"
+  },
+  {
+    "id": "CL-IV-12",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Semplici Salti giro avanti o indietro con 1 o più avvitamenti"
+    },
+    "numero": 12,
+    "valore": "G",
+    "descrizione": "Salto av. teso con 3 ½ avv.",
+    "nome": "Goshima"
+  },
+  {
+    "id": "CL-IV-14",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Semplici Salti giro avanti o indietro con 1 o più avvitamenti"
+    },
+    "numero": 14,
+    "valore": "B",
+    "descrizione": "Salto dietro racc. con 1 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "CL-IV-22",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Semplici Salti giro avanti o indietro con 1 o più avvitamenti"
+    },
+    "numero": 22,
+    "valore": "D",
+    "descrizione": "Salto dietro teso con 3 avv.",
+    "nome": "Shirai / Nguyen"
+  },
+  {
+    "id": "CL-IV-24",
+    "attrezzo": "CL",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Semplici Salti giro avanti o indietro con 1 o più avvitamenti"
+    },
+    "numero": 24,
+    "valore": "F",
+    "descrizione": "Salto dietro teso con 4 avv.",
+    "nome": ""
+  }
+]
