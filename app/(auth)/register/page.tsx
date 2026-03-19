@@ -9,6 +9,7 @@ import { CircleCheck, AlertCircle } from "lucide-react";
 
 import { registerUser } from "@/app/actions/auth";
 import { registerSchema } from "@/app/actions/schemas";
+import { authClient } from "@/lib/auth-client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -18,6 +19,7 @@ type RegisterForm = z.infer<typeof registerSchema>;
 export default function RegisterPage() {
   const [serverError, setServerError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
+  const [googleLoading, setGoogleLoading] = useState(false);
 
   const {
     register,
@@ -109,6 +111,36 @@ export default function RegisterPage() {
           {isSubmitting ? "Registrazione..." : "Registrati"}
         </Button>
       </form>
+
+      <div className="relative">
+        <div className="absolute inset-0 flex items-center">
+          <span className="w-full border-t" />
+        </div>
+        <div className="relative flex justify-center text-xs uppercase">
+          <span className="bg-background text-muted-foreground px-2">oppure</span>
+        </div>
+      </div>
+
+      <Button
+        type="button"
+        variant="outline"
+        className="h-10 w-full"
+        disabled={googleLoading}
+        onClick={async () => {
+          setGoogleLoading(true);
+          setServerError(null);
+          const { error } = await authClient.signIn.social({
+            provider: "google",
+            callbackURL: "/dashboard",
+          });
+          if (error) {
+            setServerError("Errore durante la registrazione con Google. Riprova.");
+            setGoogleLoading(false);
+          }
+        }}
+      >
+        {googleLoading ? "Reindirizzamento..." : "Registrati con Google"}
+      </Button>
 
       <p className="text-muted-foreground text-center text-sm">
         Hai già un account?{" "}

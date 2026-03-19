@@ -10,6 +10,7 @@ import { AlertCircle } from "lucide-react";
 
 import { loginUser } from "@/app/actions/auth";
 import { loginSchema } from "@/app/actions/schemas";
+import { authClient } from "@/lib/auth-client";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -19,6 +20,7 @@ type LoginForm = z.infer<typeof loginSchema>;
 export default function LoginPage() {
   const router = useRouter();
   const [serverError, setServerError] = useState<string | null>(null);
+  const [googleLoading, setGoogleLoading] = useState(false);
 
   const {
     register,
@@ -87,6 +89,36 @@ export default function LoginPage() {
           {isSubmitting ? "Accesso..." : "Accedi"}
         </Button>
       </form>
+
+      <div className="relative">
+        <div className="absolute inset-0 flex items-center">
+          <span className="w-full border-t" />
+        </div>
+        <div className="relative flex justify-center text-xs uppercase">
+          <span className="bg-background text-muted-foreground px-2">oppure</span>
+        </div>
+      </div>
+
+      <Button
+        type="button"
+        variant="outline"
+        className="h-10 w-full"
+        disabled={googleLoading}
+        onClick={async () => {
+          setGoogleLoading(true);
+          setServerError(null);
+          const { error } = await authClient.signIn.social({
+            provider: "google",
+            callbackURL: "/dashboard",
+          });
+          if (error) {
+            setServerError("Errore durante l'accesso con Google. Riprova.");
+            setGoogleLoading(false);
+          }
+        }}
+      >
+        {googleLoading ? "Reindirizzamento..." : "Accedi con Google"}
+      </Button>
 
       <p className="text-muted-foreground text-center text-sm">
         Non hai un account?{" "}
