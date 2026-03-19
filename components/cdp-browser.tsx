@@ -70,7 +70,7 @@ export function CdpBrowser({ elementi }: CdpBrowserProps) {
   const [gruppoAttivo, setGruppoAttivo] = useState<number | null>(null);
   const [difficoltaAttiva, setDifficoltaAttiva] = useState<ValoreDifficolta | null>(null);
   const [filtriVisibili, setFiltriVisibili] = useState<Set<TipoFiltro>>(new Set());
-  const [vista, setVista] = useState<Vista>("lista");
+  const [vista, setVista] = useState<Vista>("tabella");
   const [popoverAperto, setPopoverAperto] = useState(false);
   const [elementoSelezionato, setElementoSelezionato] = useState<ElementoCdp | null>(null);
 
