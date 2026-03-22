@@ -12,7 +12,7 @@ interface CdpViewSwitcherProps {
 }
 
 const VISTE: { id: Vista; label: string; icon: typeof TableProperties }[] = [
-  { id: "tabella-pdf", label: "Tabella PDF", icon: TableProperties },
+  { id: "tabella-pdf", label: "Tabella", icon: TableProperties },
   { id: "lista-difficolta", label: "Per Difficoltà", icon: List },
   { id: "matrice", label: "Matrice", icon: Grid3x3 },
 ];

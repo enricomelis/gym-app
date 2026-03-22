@@ -16,8 +16,10 @@ interface CdpSearchProps {
 export function CdpSearch({ elementi, onSelectElement }: CdpSearchProps) {
   const [query, setQuery] = useState("");
   const [aperto, setAperto] = useState(false);
+  const [focusedIndex, setFocusedIndex] = useState(-1);
   const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
+  const resultsRef = useRef<HTMLDivElement>(null);
 
   // Cmd+K listener
   useEffect(() => {
@@ -25,6 +27,7 @@ export function CdpSearch({ elementi, onSelectElement }: CdpSearchProps) {
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
         e.preventDefault();
         inputRef.current?.focus();
+        setAperto(true);
       }
       if (e.key === "Escape") {
         setAperto(false);
@@ -56,8 +59,42 @@ export function CdpSearch({ elementi, onSelectElement }: CdpSearchProps) {
       .slice(0, 10);
   }, [elementi, query]);
 
+  // Reset focused index when results change
+  useEffect(() => {
+    setFocusedIndex(-1);
+  }, [risultati]);
+
+  // Scroll focused item into view
+  useEffect(() => {
+    if (focusedIndex < 0 || !resultsRef.current) return;
+    const items = resultsRef.current.querySelectorAll("[data-result]");
+    items[focusedIndex]?.scrollIntoView({ block: "nearest" });
+  }, [focusedIndex]);
+
+  function seleziona(el: ElementoCdp) {
+    onSelectElement(el);
+    setAperto(false);
+    setQuery("");
+    setFocusedIndex(-1);
+  }
+
+  function handleInputKeyDown(e: React.KeyboardEvent) {
+    if (!aperto || risultati.length === 0) return;
+
+    if (e.key === "ArrowDown") {
+      e.preventDefault();
+      setFocusedIndex((prev) => Math.min(prev + 1, risultati.length - 1));
+    } else if (e.key === "ArrowUp") {
+      e.preventDefault();
+      setFocusedIndex((prev) => Math.max(prev - 1, 0));
+    } else if (e.key === "Enter" && focusedIndex >= 0 && focusedIndex < risultati.length) {
+      e.preventDefault();
+      seleziona(risultati[focusedIndex]);
+    }
+  }
+
   return (
-    <div ref={containerRef} className="relative mx-auto w-full max-w-xl">
+    <div ref={containerRef} className="relative mx-auto w-full max-w-2xl">
       <Input
         ref={inputRef}
         placeholder="Cerca elementi... (⌘K)"
@@ -69,21 +106,32 @@ export function CdpSearch({ elementi, onSelectElement }: CdpSearchProps) {
         onFocus={() => {
           if (query.trim()) setAperto(true);
         }}
-        className="h-10 text-base"
+        onKeyDown={handleInputKeyDown}
+        role="combobox"
+        aria-expanded={aperto && risultati.length > 0}
+        aria-activedescendant={focusedIndex >= 0 ? `search-result-${focusedIndex}` : undefined}
+        className="h-12 text-lg"
       />
 
       {/* Results overlay */}
       {aperto && risultati.length > 0 && (
-        <div className="bg-popover text-popover-foreground absolute top-full right-0 left-0 z-40 mt-1 max-h-80 overflow-y-auto rounded-lg border shadow-lg">
-          {risultati.map((el) => (
+        <div
+          ref={resultsRef}
+          role="listbox"
+          className="bg-popover text-popover-foreground absolute top-full right-0 left-0 z-40 mt-1 max-h-80 overflow-y-auto rounded-lg border shadow-lg"
+        >
+          {risultati.map((el, index) => (
             <button
               key={el.id}
-              className="hover:bg-muted flex w-full items-center gap-3 px-4 py-2.5 text-left text-sm transition-colors"
-              onClick={() => {
-                onSelectElement(el);
-                setAperto(false);
-                setQuery("");
-              }}
+              id={`search-result-${index}`}
+              data-result
+              role="option"
+              aria-selected={index === focusedIndex}
+              className={cn(
+                "flex w-full items-center gap-3 px-4 py-2.5 text-left text-sm transition-colors",
+                index === focusedIndex ? "bg-muted" : "hover:bg-muted",
+              )}
+              onClick={() => seleziona(el)}
             >
               {/* Group color dot */}
               <span

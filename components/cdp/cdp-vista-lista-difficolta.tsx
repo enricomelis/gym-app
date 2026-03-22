@@ -42,7 +42,7 @@ export function CdpVistaListaDifficolta({
   }, [elementi]);
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="mx-auto flex w-full max-w-7xl flex-col gap-8">
       {sezioni.map((sezione) => (
         <div key={sezione.valore} className="flex flex-col gap-2">
           {/* Section header */}
@@ -56,8 +56,8 @@ export function CdpVistaListaDifficolta({
               {sezione.valore}
             </span>
             <div>
-              <span className="text-sm font-semibold">Difficoltà {sezione.valore}</span>
-              <span className="text-muted-foreground ml-2 text-xs">
+              <span className="font-semibold">Difficoltà {sezione.valore}</span>
+              <span className="text-muted-foreground ml-2 text-sm">
                 ({sezione.elementi.length} element{sezione.elementi.length === 1 ? "o" : "i"})
               </span>
             </div>
@@ -68,7 +68,7 @@ export function CdpVistaListaDifficolta({
             {sezione.elementi.map((el) => (
               <button
                 key={el.id}
-                className="hover:bg-muted flex items-center gap-3 rounded-md px-3 py-2 text-left text-sm transition-colors"
+                className="hover:bg-muted flex items-center gap-3 rounded-md px-3 py-2.5 text-left transition-colors"
                 onClick={() => onSelectElement(el)}
               >
                 {/* Group color dot */}
@@ -78,13 +78,13 @@ export function CdpVistaListaDifficolta({
                   title={`Gruppo ${NUMERI_ROMANI[el.gruppo.numero]}`}
                 />
 
-                <span className="text-muted-foreground w-8 shrink-0 font-mono text-xs">
+                <span className="text-muted-foreground w-10 shrink-0 font-mono text-sm">
                   {el.numero}.
                 </span>
 
                 <span className="min-w-0 flex-1 truncate">{troncaTesto(titoloElemento(el))}</span>
 
-                <span className="text-muted-foreground shrink-0 text-xs">
+                <span className="text-muted-foreground shrink-0 text-sm">
                   GR {NUMERI_ROMANI[el.gruppo.numero]}
                 </span>
               </button>

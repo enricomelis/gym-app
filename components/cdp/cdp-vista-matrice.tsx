@@ -145,17 +145,17 @@ export function CdpVistaMatrice({ elementi, onSelectElement }: CdpVistaMatricePr
 
                 <div className="flex max-h-60 flex-col overflow-y-auto">
                   {subDialog.elementi
-                    .sort((a, b) => a.numero - b.numero)
+                    .toSorted((a, b) => a.numero - b.numero)
                     .map((el) => (
                       <button
                         key={el.id}
-                        className="hover:bg-muted flex items-center gap-3 rounded-md px-3 py-2 text-left text-sm transition-colors"
+                        className="hover:bg-muted flex items-center gap-3 rounded-md px-3 py-2.5 text-left transition-colors"
                         onClick={() => {
                           setSubDialog(null);
                           onSelectElement(el);
                         }}
                       >
-                        <span className="text-muted-foreground w-8 font-mono text-xs">
+                        <span className="text-muted-foreground w-10 font-mono text-sm">
                           {el.numero}.
                         </span>
                         <span className="min-w-0 flex-1 truncate">{titoloElemento(el)}</span>

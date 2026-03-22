@@ -1,4 +1,4 @@
-export type Attrezzo = "CL" | "CA";
+export type Attrezzo = "CL" | "CM" | "AN" | "VT" | "PP" | "SB";
 
 export type ValoreDifficolta = "A" | "B" | "C" | "D" | "E" | "F" | "G" | "H" | "I" | "J";
 

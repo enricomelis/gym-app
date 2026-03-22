@@ -1,4 +1,4 @@
-import type { ValoreDifficolta } from "@/lib/types/cdp";
+import type { Attrezzo, ValoreDifficolta } from "@/lib/types/cdp";
 
 export const GRUPPI = [1, 2, 3, 4] as const;
 
@@ -56,6 +56,33 @@ export const COLORI_GRUPPO: Record<number, string> = {
 };
 
 export const COLONNE_PDF = ["A", "B", "C", "D", "E", "F+"] as const;
+
+export const ATTREZZI: { codice: Attrezzo; nome: string; disponibile: boolean }[] = [
+  { codice: "CL", nome: "Corpo Libero", disponibile: true },
+  { codice: "CM", nome: "Cavallo con maniglie", disponibile: false },
+  { codice: "AN", nome: "Anelli", disponibile: false },
+  { codice: "VT", nome: "Volteggio", disponibile: false },
+  { codice: "PP", nome: "Parallele", disponibile: false },
+  { codice: "SB", nome: "Sbarra", disponibile: false },
+];
+
+export const ELEMENTI_CON_ILLUSTRAZIONE = new Set([
+  "CL-I-1",
+  "CL-I-2",
+  "CL-I-3",
+  "CL-I-7",
+  "CL-I-8",
+  "CL-I-9",
+  "CL-I-10",
+  "CL-I-13",
+  "CL-I-14",
+]);
+
+export function svgPathElemento(id: string): string | null {
+  if (!ELEMENTI_CON_ILLUSTRAZIONE.has(id)) return null;
+  const [attrezzo] = id.split("-");
+  return `/cdp/${attrezzo.toLowerCase()}/svg/${id}.svg`;
+}
 
 export function troncaTesto(testo: string, max: number = 60): string {
   if (testo.length <= max) return testo;
