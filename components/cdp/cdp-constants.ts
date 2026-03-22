@@ -59,7 +59,7 @@ export const COLONNE_PDF = ["A", "B", "C", "D", "E", "F+"] as const;
 
 export const ATTREZZI: { codice: Attrezzo; nome: string; disponibile: boolean }[] = [
   { codice: "CL", nome: "Corpo Libero", disponibile: true },
-  { codice: "CM", nome: "Cavallo con maniglie", disponibile: false },
+  { codice: "CM", nome: "Cavallo con maniglie", disponibile: true },
   { codice: "AN", nome: "Anelli", disponibile: false },
   { codice: "VT", nome: "Volteggio", disponibile: false },
   { codice: "PP", nome: "Parallele", disponibile: false },

@@ -1,0 +1,1286 @@
+[
+  {
+    "id": "CM-I-1",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci pendolari e forbici"
+    },
+    "numero": 1,
+    "valore": "A",
+    "descrizione": "Forbice frontale.",
+    "nome": ""
+  },
+  {
+    "id": "CM-I-2",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci pendolari e forbici"
+    },
+    "numero": 2,
+    "valore": "B",
+    "descrizione": "Forbice front. con spostamento lat. saltato (anche con ½ giro).",
+    "nome": ""
+  },
+  {
+    "id": "CM-I-3",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci pendolari e forbici"
+    },
+    "numero": 3,
+    "valore": "C",
+    "descrizione": "Forbice front. con spostamento lat. saltato da una estremità all'altra (3/3).",
+    "nome": ""
+  },
+  {
+    "id": "CM-I-7",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci pendolari e forbici"
+    },
+    "numero": 7,
+    "valore": "A",
+    "descrizione": "Forbice front. con ½ giro.",
+    "nome": ""
+  },
+  {
+    "id": "CM-I-8",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci pendolari e forbici"
+    },
+    "numero": 8,
+    "valore": "B",
+    "descrizione": "Doppia forbice front. (¼ g. av. e ¼ g. d.).",
+    "nome": ""
+  },
+  {
+    "id": "CM-I-9",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci pendolari e forbici"
+    },
+    "numero": 9,
+    "valore": "C",
+    "descrizione": "Doppia forbice front. (¼ g. av. e ¼ g. d.) con spostamento lat.",
+    "nome": ""
+  },
+  {
+    "id": "CM-I-10",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci pendolari e forbici"
+    },
+    "numero": 10,
+    "valore": "D",
+    "descrizione": "Doppia forbice front. da una estremità all'altra (3/3).",
+    "nome": "Mikulak"
+  },
+  {
+    "id": "CM-I-15",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci pendolari e forbici"
+    },
+    "numero": 15,
+    "valore": "C",
+    "descrizione": "Doppia forbice frontale alla verticale con trasporto laterale.",
+    "nome": "Stepanyan"
+  },
+  {
+    "id": "CM-I-20",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci pendolari e forbici"
+    },
+    "numero": 20,
+    "valore": "B",
+    "descrizione": "Dall'oscill. pend. front. o dors. salire alla vert. e ritorno all'app. con gambe div. trasv.",
+    "nome": ""
+  },
+  {
+    "id": "CM-I-22",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci pendolari e forbici"
+    },
+    "numero": 22,
+    "valore": "D",
+    "descrizione": "Forbice front. con ¼ di g. alla vert. su una maniglia (anche con ¼ di giro sull'altra man.) e con ¼ di g. ritorno all'app. trasversale a gambe div. (180°). (Con cambio gambe)",
+    "nome": "Li Ning"
+  },
+  {
+    "id": "CM-I-25",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci pendolari e forbici"
+    },
+    "numero": 25,
+    "valore": "A",
+    "descrizione": "Forbice dorsale.",
+    "nome": ""
+  },
+  {
+    "id": "CM-I-26",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci pendolari e forbici"
+    },
+    "numero": 26,
+    "valore": "B",
+    "descrizione": "Forbice dors. con spostamento lat. saltato (anche con ½ giro).",
+    "nome": ""
+  },
+  {
+    "id": "CM-I-27",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci pendolari e forbici"
+    },
+    "numero": 27,
+    "valore": "C",
+    "descrizione": "Forbice dors. con spostamento lat. saltato da una estremità all'altra (3/3)(1:2=>4:5).",
+    "nome": ""
+  },
+  {
+    "id": "CM-I-31",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci pendolari e forbici"
+    },
+    "numero": 31,
+    "valore": "A",
+    "descrizione": "Forbice dors. con ½ giro.",
+    "nome": ""
+  },
+  {
+    "id": "CM-I-32",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci pendolari e forbici"
+    },
+    "numero": 32,
+    "valore": "B",
+    "descrizione": "Doppia forbice dors. (¼ g. d. e ¼ g. av.).",
+    "nome": ""
+  },
+  {
+    "id": "CM-I-39",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci pendolari e forbici"
+    },
+    "numero": 39,
+    "valore": "C",
+    "descrizione": "Forbice dors. con ¼ di g. alla vert. su una maniglia (anche con ¼ di giro sull'altra man.) e con ¼ di g. ritorno all'app. trasversale a gambe div. (180°). (Con cambio gambe)",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-1",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 1,
+    "valore": "A",
+    "descrizione": "Tutti i mulinelli o mulinelli a gambe div. (Thomas) in app. long.",
+    "nome": "Thomas"
+  },
+  {
+    "id": "CM-II-2",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 2,
+    "valore": "B",
+    "descrizione": "Mulinello in appoggio longit. con app. fra le due maniglie o con le due maniglie fra le braccia.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-7",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 7,
+    "valore": "A",
+    "descrizione": "Mulinello in app. front. trasv. su una estremità.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-8",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 8,
+    "valore": "B",
+    "descrizione": "Mulinello in app. trasv. su una maniglia (da o con ¼ di giro av.).",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-13",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 13,
+    "valore": "A",
+    "descrizione": "Mulinello in app. front. trasv. su una estremità.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-14",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 14,
+    "valore": "B",
+    "descrizione": "Mulinello in app. trasv. fra le maniglie.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-25",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 25,
+    "valore": "A",
+    "descrizione": "Tutti i tipi di ¼ di pivot.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-26",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 26,
+    "valore": "B",
+    "descrizione": "Tutti i tipi di ½ (180°) pivot (anche con 1 man. fra le mani).",
+    "nome": "Keikha 2"
+  },
+  {
+    "id": "CM-II-28",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 28,
+    "valore": "D",
+    "descrizione": "Tutti i pivot (360°) in app. longit. con la 1 maniglia fra le mani max in 2 mulinelli a g. div.",
+    "nome": "Eichorn"
+  },
+  {
+    "id": "CM-II-29",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 29,
+    "valore": "E",
+    "descrizione": "Tutti i pivot (360°) in app. longit. con una maniglia alla volta fra le mani toccando le 2 estremità, max in 2 mulinelli (g. div. o unite).",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-30",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 30,
+    "valore": "F",
+    "descrizione": "In app. longitudinale o trasversale, 1 pivot con 2 maniglie fra le mani (g. div. o unite).",
+    "nome": "Keikha 1"
+  },
+  {
+    "id": "CM-II-34",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 34,
+    "valore": "D",
+    "descrizione": "1 pivot max in 2 mulinelli su una estremità.",
+    "nome": "Magyar"
+  },
+  {
+    "id": "CM-II-35",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 35,
+    "valore": "E",
+    "descrizione": "1/1 pivot sulle man. in un massimo di 2 mulinelli a gambe unite o divaricate.",
+    "nome": "Berky"
+  },
+  {
+    "id": "CM-II-36",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 36,
+    "valore": "F",
+    "descrizione": "In app. frontale trasv. fra le maniglie 1 pivot (360°) con un max di 2 mulinelli.",
+    "nome": "Mousichidis"
+  },
+  {
+    "id": "CM-II-38",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 38,
+    "valore": "B",
+    "descrizione": "Stockli diretto A (SDA) sulle maniglie o con 1 maniglia fra le mani.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-40",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 40,
+    "valore": "D",
+    "descrizione": "Stockli diretto A (SDA) con le maniglie fra le mani in appoggio longitudinale o trasversale.",
+    "nome": "Keikha 3"
+  },
+  {
+    "id": "CM-II-44",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 44,
+    "valore": "B",
+    "descrizione": "Stockli diretto B (SDB).",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-51",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 51,
+    "valore": "C",
+    "descrizione": "Mulinelli con gambe unite o div. salire alla vert. (con o senza ½ g.) e scendere in mulinello con gambe unite o div.",
+    "nome": "Tippelt"
+  },
+  {
+    "id": "CM-II-52",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 52,
+    "valore": "D",
+    "descrizione": "Thomas con trasp. lat. dors. saltato, alla verticale e scendere all'app. in mulinelli con gambe unite o div.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-54",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 54,
+    "valore": "F",
+    "descrizione": "DSA o Stockli inverso alla verticale, trasporto 3/3, 360° di rotazione e ritorno in mulinello o mulinello Thomas.",
+    "nome": "Busnari"
+  },
+  {
+    "id": "CM-II-55",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 55,
+    "valore": "A",
+    "descrizione": "Perno frontale di 180° (kehr).",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-56",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 56,
+    "valore": "B",
+    "descrizione": "Perno frontale di 270° in app. su una sola maniglia, (Tecnica Sohn) dall'app. trasversale a longitudinale.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-57",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 57,
+    "valore": "C",
+    "descrizione": "Perno frontale di 270°, (Tecnica Sohn) dall'app. longitudinale su 2 maniglie all'app. trasversale su 1 maniglia.",
+    "nome": "Bertoncelj"
+  },
+  {
+    "id": "CM-II-58",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 58,
+    "valore": "D",
+    "descrizione": "Perno frontale di 360° in app. su una sola maniglia.",
+    "nome": "Sohn"
+  },
+  {
+    "id": "CM-II-62",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 62,
+    "valore": "B",
+    "descrizione": "Tramelot diretto.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-68",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 68,
+    "valore": "B",
+    "descrizione": "Perno inverso (Stockli Inverso), da una maniglia 180° o 270° di rotazione in un mulinello.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-69",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 69,
+    "valore": "C",
+    "descrizione": "Stöckli inverso con 270° (Tecnica Besugo) dall'app. longitudinale su 2 maniglie all'appoggio trasversale su 1 sola maniglia.",
+    "nome": "Davtyan"
+  },
+  {
+    "id": "CM-II-71",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 71,
+    "valore": "E",
+    "descrizione": "Stockli inverso di 360° in app. su una sola maniglia.",
+    "nome": "Bezugo"
+  },
+  {
+    "id": "CM-II-73",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 73,
+    "valore": "A",
+    "descrizione": "Costale tedesco.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-74",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 74,
+    "valore": "B",
+    "descrizione": "Tcheque dors. sulle maniglie o con la maniglia fra le mani.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-76",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 76,
+    "valore": "D",
+    "descrizione": "Tcheque dors. con app. all'esterno delle maniglie.",
+    "nome": "Pinheiro"
+  },
+  {
+    "id": "CM-II-79",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 79,
+    "valore": "A",
+    "descrizione": "Dall'appoggio longit. su 1 o 2 maniglie, perno di petto all'app. front. long. su una estremità gr.-man.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-80",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 80,
+    "valore": "B",
+    "descrizione": "Perno inverso (Stockli Inverso), 180° o 270° di giro in un mulinello.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-85",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 85,
+    "valore": "A",
+    "descrizione": "Front. russo di 180° o 270°.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-91",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 91,
+    "valore": "A",
+    "descrizione": "Front. russo front. di 360° o 540°.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-92",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 92,
+    "valore": "B",
+    "descrizione": "Front. russo di 720° o 900°.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-93",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 93,
+    "valore": "C",
+    "descrizione": "Front. russo di 1080° o più.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-97",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 97,
+    "valore": "A",
+    "descrizione": "Front. russo di 180° o 270° sul corpo del cavallo anche con trasporto.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-103",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 103,
+    "valore": "A",
+    "descrizione": "Front. russo front. di 360° o 540° sul corpo del cavallo.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-104",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 104,
+    "valore": "B",
+    "descrizione": "Front. russo di 720° o 900° sul corpo del cavallo.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-105",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 105,
+    "valore": "C",
+    "descrizione": "Front. russo di 1080° o più sul corpo del cavallo.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-110",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 110,
+    "valore": "B",
+    "descrizione": "Dall'app. trasv. front. russo di 180° o 270° su una maniglia o fra le maniglie.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-111",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 111,
+    "valore": "C",
+    "descrizione": "Front. russo di 360° o 540° su una maniglia o fra le maniglie.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-112",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 112,
+    "valore": "D",
+    "descrizione": "Front. russo di 720° o 900° su una maniglia o fra le maniglie.",
+    "nome": ""
+  },
+  {
+    "id": "CM-II-113",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Mulinelli a gambe unite o divaricate con o senza pivots o in verticale, perni dorsali e frontali, russi, flops ed elementi combinati"
+    },
+    "numero": 113,
+    "valore": "E",
+    "descrizione": "Front. russo di 1080° o più su una maniglia o fra le maniglie.",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-1",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 1,
+    "valore": "A",
+    "descrizione": "Mulinello in app. long. con ogni tipo di trasp. lat. (Anche con ¼ di giro).",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-2",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 2,
+    "valore": "B",
+    "descrizione": "Mulinelli in app. long. con ogni tipo di trasp. lat. (3/3).",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-3",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 3,
+    "valore": "C",
+    "descrizione": "Ogni tipo di trasp. lat. (3/3) con le mani fra le maniglie.",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-4",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 4,
+    "valore": "D",
+    "descrizione": "Ogni tipo di trasp. lat. (3/3) al di sopra delle 2 maniglie.",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-8",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 8,
+    "valore": "B",
+    "descrizione": "Mulinello in app. long. con ogni tipo di trasp. saltato lat. (1/3).",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-9",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 9,
+    "valore": "C",
+    "descrizione": "Mulinello in app. long. con ogni tipo di trasp. saltato lat. 2 volte (3/3).",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-11",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 11,
+    "valore": "E",
+    "descrizione": "Dall'app. longitudinale dorsale a fianco della man., trasp. lat. saltato al di sopra delle 2 maniglie all'app. front. sull'altra estremità a fianco delle man. (3/3) (1-1a 5-5).",
+    "nome": "Yamawaki"
+  },
+  {
+    "id": "CM-III-14",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 14,
+    "valore": "B",
+    "descrizione": "In app. trasv. mulinelli con trasp. av. o d. con ¼ di pivot, all'app. long sulle 2 maniglie.",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-15",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 15,
+    "valore": "C",
+    "descrizione": "Tutti i trasporti in appoggio longitudinale con ½ pivot.",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-17",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 17,
+    "valore": "E",
+    "descrizione": "Dall'app. long. su una estremità, 2 volte ½ pivot per arrivare sull'altra estremità.",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-22",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 22,
+    "valore": "D",
+    "descrizione": "Tutti i trasporti 3/3 con ½ pivot passando dall'appoggio sulla prima maniglia e al di sopra della seconda.",
+    "nome": "Nin Reyes"
+  },
+  {
+    "id": "CM-III-23",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 23,
+    "valore": "E",
+    "descrizione": "Tutti i trasporti 3/3 con ½ pivot al di sopra delle 2 maniglie.",
+    "nome": "Nin Reyes 2"
+  },
+  {
+    "id": "CM-III-29",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 29,
+    "valore": "E",
+    "descrizione": "Tutti i trasporti 3/3 in Thomas con 1 pivot in 2 mulinelli.",
+    "nome": "Urzica"
+  },
+  {
+    "id": "CM-III-32",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 32,
+    "valore": "B",
+    "descrizione": "In app. trasv., trasp. av. (1/2 o 2/3).",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-33",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 33,
+    "valore": "C",
+    "descrizione": "Trasp. av. in app. trasv. da una estremità all'altra (3/3) con app. sulla prima e sulla seconda maniglia (1-2-4-5).",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-34",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 34,
+    "valore": "D",
+    "descrizione": "Tutti i tipi di trasp. av da una estrem. all'altra in app. trasv. (3/3).",
+    "nome": "Magyar"
+  },
+  {
+    "id": "CM-III-35",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 35,
+    "valore": "E",
+    "descrizione": "Trasporto av. in app. trasv. al di sopra delle 2 maniglie. Anche saltato.",
+    "nome": "Driggs"
+  },
+  {
+    "id": "CM-III-37",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 37,
+    "valore": "A",
+    "descrizione": "In app. trasv., mulinelli con trasp. dietro da una parte all'altra del cavallo o delle maniglie (1/3).",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-38",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 38,
+    "valore": "B",
+    "descrizione": "In app. trasv., trasp. ind. (1/2 o 2/3).",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-39",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 39,
+    "valore": "C",
+    "descrizione": "Trasp. ind. in app. trasv. da una estremità all'altra (3/3) con app. sulla prima e sulla seconda maniglia (5-4-2-1).",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-40",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 40,
+    "valore": "D",
+    "descrizione": "Tutti i tipi di trasp. ind. da una estrem. all'altra in app. trasv. (3/3).",
+    "nome": "Sivado"
+  },
+  {
+    "id": "CM-III-41",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 41,
+    "valore": "E",
+    "descrizione": "Trasporto dietro in appoggio trasversale al di sopra delle 2 maniglie. Anche saltato.",
+    "nome": "Kurbanov"
+  },
+  {
+    "id": "CM-III-46",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 46,
+    "valore": "D",
+    "descrizione": "Perno frontale, stockli inv. e perno frontale.",
+    "nome": "Moguilny"
+  },
+  {
+    "id": "CM-III-52",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 52,
+    "valore": "D",
+    "descrizione": "Stockli inv, perno frontale e stockli inverso.",
+    "nome": "Belenki"
+  },
+  {
+    "id": "CM-III-57",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 57,
+    "valore": "C",
+    "descrizione": "Dall'app. su una man., Russo frontale sull'altra groppa senza appoggio sulle o fra le man. (appoggio da longitud. a longitud., da longitud. a trasv., da trasv. a longit.)",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-58",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 58,
+    "valore": "D",
+    "descrizione": "Dall'app. su una estremità, doppio front. russo da una estremità all'altra senza app. sopra e tra le maniglie. (Dall'app. longit. all'app. longit., dall'app. trasv. all'app. longit., dall'app. longit. all'app. trasv., dall'app. trasv. all'app. trasv.).",
+    "nome": "Tong Fei"
+  },
+  {
+    "id": "CM-III-59",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 59,
+    "valore": "E",
+    "descrizione": "Sul corpo del cavallo, frontale russo di 360° o 540° al di sopra delle maniglie.",
+    "nome": "Vammen"
+  },
+  {
+    "id": "CM-III-64",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 64,
+    "valore": "D",
+    "descrizione": "Dall'app. 1-2, trasporto 3/3 in Russo frontale con 630° o più di rotazione.",
+    "nome": ""
+  },
+  {
+    "id": "CM-III-65",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 65,
+    "valore": "E",
+    "descrizione": "Tutti i trasporti 3/3 in Russo frontale con 720° e più di rotazione con le mani fra le maniglie.",
+    "nome": "Wu Guonian"
+  },
+  {
+    "id": "CM-III-70",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 70,
+    "valore": "D",
+    "descrizione": "Ogni Russo frontale di 360° con trasporto 3/3.",
+    "nome": "Roth"
+  },
+  {
+    "id": "CM-III-75",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 75,
+    "valore": "C",
+    "descrizione": "Dall'appoggio trasversale Stöckli inverso alla maniglia lontana.",
+    "nome": "Romero"
+  },
+  {
+    "id": "CM-III-76",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Trasporti inclusi Tong Fei, Wu Gouniang Roth e trasporti con pivot"
+    },
+    "numero": 76,
+    "valore": "D",
+    "descrizione": "Dall'app. trasversale Stockli inverso da una estremità all'altra.",
+    "nome": "Abu Alsoud"
+  },
+  {
+    "id": "CM-IV-1",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 1,
+    "valore": "A",
+    "descrizione": "Tedesco frontale (da mulinelli a g. unite o div.).",
+    "nome": ""
+  },
+  {
+    "id": "CM-IV-2",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 2,
+    "valore": "B",
+    "descrizione": "Costale tedesco seguito da tcheque sulla estremità e da frontale tedesco (Chaguinian e frontale tedesco).",
+    "nome": ""
+  },
+  {
+    "id": "CM-IV-4",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 4,
+    "valore": "D",
+    "descrizione": "Su una estremità, mulinelli a g. unite o div., alla vert. con trasp. di 3/3 e 450° o più di rotazione.",
+    "nome": "Kolyvanov"
+  },
+  {
+    "id": "CM-IV-5",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 5,
+    "valore": "E",
+    "descrizione": "SDA alla vert., 3/3 di trasporto con 360° o più di rotazione.",
+    "nome": ""
+  },
+  {
+    "id": "CM-IV-7",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 7,
+    "valore": "A",
+    "descrizione": "Doppio front. russo con 360° o 540° di rotaz. su una estremità.",
+    "nome": ""
+  },
+  {
+    "id": "CM-IV-8",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 8,
+    "valore": "B",
+    "descrizione": "Doppio front. russo con 720° o 900° di rotaz. su una estremità.",
+    "nome": ""
+  },
+  {
+    "id": "CM-IV-9",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 9,
+    "valore": "C",
+    "descrizione": "Doppio front. russo con 1080° o più di rotazione su una estremità.",
+    "nome": ""
+  },
+  {
+    "id": "CM-IV-10",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 10,
+    "valore": "D",
+    "descrizione": "Dall'app. longit. mulinello con ¼ di giro, russo di 270° su una maniglia alla verticale.",
+    "nome": "Dolidze"
+  },
+  {
+    "id": "CM-IV-13",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 13,
+    "valore": "A",
+    "descrizione": "Perno di petto e tedesco.",
+    "nome": ""
+  },
+  {
+    "id": "CM-IV-15",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 15,
+    "valore": "C",
+    "descrizione": "SDA, Stockli inverso o mulinello su una maniglia, alla verticale.",
+    "nome": ""
+  },
+  {
+    "id": "CM-IV-16",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 16,
+    "valore": "D",
+    "descrizione": "SDA, con salto dorsale alla vert. sull'altra estremità.",
+    "nome": "Jessen"
+  },
+  {
+    "id": "CM-IV-20",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 20,
+    "valore": "B",
+    "descrizione": "Mulinelli con gambe unite o div., alla vert. (anche con 270° di rotaz., con o senza trasporto).",
+    "nome": ""
+  },
+  {
+    "id": "CM-IV-21",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 21,
+    "valore": "C",
+    "descrizione": "Mulinelli con gambe unite o div. e trasporto dorsale saltato alla vert.",
+    "nome": ""
+  },
+  {
+    "id": "CM-IV-22",
+    "attrezzo": "CM",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 22,
+    "valore": "D",
+    "descrizione": "180° di russo da una estremità all'altra del cavallo alla verticale in uscita.",
+    "nome": "Pellerin"
+  }
+]

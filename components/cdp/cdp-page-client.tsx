@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 
-import type { ElementoCdp, ValoreDifficolta } from "@/lib/types/cdp";
+import type { Attrezzo, ElementoCdp, ValoreDifficolta } from "@/lib/types/cdp";
 
 import { VALORI_DIFFICOLTA } from "./cdp-constants";
 import { CdpAttrezzoSelector } from "./cdp-attrezzo-selector";
@@ -15,14 +15,23 @@ import { CdpVistaMatrice } from "./cdp-vista-matrice";
 import { CdpElementoDialog } from "./cdp-elemento-dialog";
 
 interface CdpPageClientProps {
-  elementi: ElementoCdp[];
+  datiPerAttrezzo: Partial<Record<Attrezzo, ElementoCdp[]>>;
 }
 
-export function CdpPageClient({ elementi }: CdpPageClientProps) {
+export function CdpPageClient({ datiPerAttrezzo }: CdpPageClientProps) {
+  const [attrezzoAttivo, setAttrezzoAttivo] = useState<Attrezzo>("CL");
   const [vista, setVista] = useState<Vista>("tabella-pdf");
   const [elementoSelezionato, setElementoSelezionato] = useState<ElementoCdp | null>(null);
   const [gruppoAttivo, setGruppoAttivo] = useState<number | null>(null);
   const [difficoltaAttiva, setDifficoltaAttiva] = useState<ValoreDifficolta | null>(null);
+
+  const elementi = datiPerAttrezzo[attrezzoAttivo] ?? [];
+
+  function handleAttrezzoChange(a: Attrezzo) {
+    setAttrezzoAttivo(a);
+    setGruppoAttivo(null);
+    setDifficoltaAttiva(null);
+  }
 
   const nomiGruppi = useMemo(() => {
     const mappa: Record<number, string> = {};
@@ -53,9 +62,12 @@ export function CdpPageClient({ elementi }: CdpPageClientProps) {
   return (
     <div className="flex flex-col gap-4">
       {/* Attrezzo selector */}
-      <CdpAttrezzoSelector />
+      <CdpAttrezzoSelector
+        attrezzoAttivo={attrezzoAttivo}
+        onAttrezzoChange={handleAttrezzoChange}
+      />
 
-      {/* Search bar (global, operates on all elements) */}
+      {/* Search bar (global, operates on all elements of current attrezzo) */}
       <CdpSearch elementi={elementi} onSelectElement={setElementoSelezionato} />
 
       {/* Filters */}
