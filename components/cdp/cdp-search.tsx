@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 
+import { getPlatformShortcutLabel, matchesPlatformShortcut } from "@/lib/keyboard-shortcuts";
 import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import type { ElementoCdp } from "@/lib/types/cdp";
@@ -20,11 +21,12 @@ export function CdpSearch({ elementi, onSelectElement }: CdpSearchProps) {
   const inputRef = useRef<HTMLInputElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
   const resultsRef = useRef<HTMLDivElement>(null);
+  const shortcutLabel = useMemo(() => getPlatformShortcutLabel("K"), []);
 
-  // Cmd+K listener
+  // Global shortcut listener
   useEffect(() => {
     function handleKeyDown(e: KeyboardEvent) {
-      if ((e.metaKey || e.ctrlKey) && e.key === "k") {
+      if (matchesPlatformShortcut(e, "k")) {
         e.preventDefault();
         inputRef.current?.focus();
         setAperto(true);
@@ -97,7 +99,7 @@ export function CdpSearch({ elementi, onSelectElement }: CdpSearchProps) {
     <div ref={containerRef} className="relative mx-auto w-full max-w-2xl">
       <Input
         ref={inputRef}
-        placeholder="Cerca elementi... (⌘K)"
+        placeholder={`Cerca elementi... (${shortcutLabel})`}
         value={query}
         onChange={(e) => {
           setQuery(e.target.value);

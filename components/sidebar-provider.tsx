@@ -3,6 +3,7 @@
 import { createContext, useContext, useEffect, useState } from "react";
 import { PanelLeft } from "lucide-react";
 
+import { matchesPlatformShortcut } from "@/lib/keyboard-shortcuts";
 import { Button } from "@/components/ui/button";
 
 interface SidebarContextValue {
@@ -24,6 +25,20 @@ export function SidebarProvider({ children }: { children: React.ReactNode }) {
   // Default open on desktop
   useEffect(() => {
     setOpen(window.innerWidth >= 1024);
+  }, []);
+
+  useEffect(() => {
+    function handleKeyDown(event: KeyboardEvent) {
+      if (!matchesPlatformShortcut(event, "b")) {
+        return;
+      }
+
+      event.preventDefault();
+      setOpen((currentOpen) => !currentOpen);
+    }
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
 
   return (
