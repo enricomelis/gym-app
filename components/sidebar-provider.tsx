@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useEffect, useState } from "react";
+import { createContext, useCallback, useContext, useEffect, useState } from "react";
 import { PanelLeft } from "lucide-react";
 
 import { matchesPlatformShortcut } from "@/lib/keyboard-shortcuts";
@@ -21,6 +21,9 @@ export function useSidebar() {
 
 export function SidebarProvider({ children }: { children: React.ReactNode }) {
   const [open, setOpen] = useState(false);
+  const toggle = useCallback(() => {
+    setOpen((currentOpen) => !currentOpen);
+  }, []);
 
   // Default open on desktop
   useEffect(() => {
@@ -41,11 +44,7 @@ export function SidebarProvider({ children }: { children: React.ReactNode }) {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, []);
 
-  return (
-    <SidebarContext.Provider value={{ open, toggle: () => setOpen((o) => !o) }}>
-      {children}
-    </SidebarContext.Provider>
-  );
+  return <SidebarContext.Provider value={{ open, toggle }}>{children}</SidebarContext.Provider>;
 }
 
 export function SidebarTrigger() {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { BookOpen, LayoutDashboard, X } from "lucide-react";
@@ -22,14 +22,19 @@ const NAV_ITEMS = [
 export function AppSidebar({ user }: AppSidebarProps) {
   const pathname = usePathname();
   const { open, toggle } = useSidebar();
+  const previousPathnameRef = useRef(pathname);
 
   // Close sidebar on route change (mobile only)
   useEffect(() => {
-    if (window.innerWidth < 1024) {
-      if (open) toggle();
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pathname]);
+    const previousPathname = previousPathnameRef.current;
+    previousPathnameRef.current = pathname;
+
+    if (previousPathname === pathname) return;
+    if (window.innerWidth >= 1024) return;
+    if (!open) return;
+
+    toggle();
+  }, [open, pathname, toggle]);
 
   return (
     <>

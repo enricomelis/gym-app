@@ -1,6 +1,7 @@
 "use client";
 
 import { Dialog } from "@base-ui/react/dialog";
+import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
@@ -70,9 +71,12 @@ export function CdpElementoDialog({ elemento, onClose }: CdpElementoDialogProps)
               {/* SVG illustration or placeholder */}
               {svgPath ? (
                 <div className="flex items-center justify-center rounded-lg border p-4">
-                  <img
+                  <Image
                     src={svgPath}
                     alt={titoloElemento(elemento)}
+                    width={280}
+                    height={280}
+                    unoptimized
                     className="h-[280px] w-[280px] object-contain"
                   />
                 </div>

@@ -15,8 +15,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "test:coverage": "vitest run --coverage",
-    "lint": "oxlint .",
-    "lint:fix": "oxlint --fix .",
+    "lint": "oxlint -c oxlint.json --deny-warnings --report-unused-disable-directives .",
+    "lint:fix": "oxlint -c oxlint.json --fix --deny-warnings --report-unused-disable-directives .",
     "format": "oxfmt --write .",
     "format:check": "oxfmt --check ."
   },
