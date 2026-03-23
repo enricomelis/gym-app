@@ -130,7 +130,15 @@ export function CdpVistaTabellaPdf({ elementi, onSelectElement }: CdpVistaTabell
                       {/* SVG thumbnail or placeholder */}
                       <div className="mt-auto flex flex-1 items-end justify-center">
                         {svgPath ? (
-                          <img src={svgPath} alt="" className="max-h-12 w-auto object-contain" />
+                          <Image
+                            src={svgPath}
+                            alt=""
+                            aria-hidden="true"
+                            width={48}
+                            height={48}
+                            unoptimized
+                            className="max-h-12 w-auto object-contain"
+                          />
                         ) : (
                           <div className="bg-muted/50 size-8 rounded border border-dashed" />
                         )}
@@ -146,3 +154,4 @@ export function CdpVistaTabellaPdf({ elementi, onSelectElement }: CdpVistaTabell
     </div>
   );
 }
+import Image from "next/image";

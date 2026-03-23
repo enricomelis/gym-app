@@ -18,6 +18,8 @@ interface CdpPageClientProps {
   datiPerAttrezzo: Partial<Record<Attrezzo, ElementoCdp[]>>;
 }
 
+const EMPTY_ELEMENTI: ElementoCdp[] = [];
+
 export function CdpPageClient({ datiPerAttrezzo }: CdpPageClientProps) {
   const [attrezzoAttivo, setAttrezzoAttivo] = useState<Attrezzo>("CL");
   const [vista, setVista] = useState<Vista>("tabella-pdf");
@@ -25,7 +27,7 @@ export function CdpPageClient({ datiPerAttrezzo }: CdpPageClientProps) {
   const [gruppoAttivo, setGruppoAttivo] = useState<number | null>(null);
   const [difficoltaAttiva, setDifficoltaAttiva] = useState<ValoreDifficolta | null>(null);
 
-  const elementi = datiPerAttrezzo[attrezzoAttivo] ?? [];
+  const elementi = datiPerAttrezzo[attrezzoAttivo] ?? EMPTY_ELEMENTI;
 
   function handleAttrezzoChange(a: Attrezzo) {
     setAttrezzoAttivo(a);

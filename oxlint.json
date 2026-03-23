@@ -1,4 +1,10 @@
 {
   "$schema": "https://raw.githubusercontent.com/oxc-project/oxc/main/npm/oxlint/configuration_schema.json",
+  "plugins": ["unicorn", "typescript", "oxc", "react", "nextjs", "import", "vitest"],
+  "settings": {
+    "react": {
+      "version": "19.2.3"
+    }
+  },
   "rules": {}
 }
