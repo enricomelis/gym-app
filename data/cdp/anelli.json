@@ -1,0 +1,1682 @@
+[
+  {
+    "id": "AN-I-1",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 1,
+    "valore": "A",
+    "descrizione": "Slanciappoggio av.",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-7",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 7,
+    "valore": "A",
+    "descrizione": "Da qualsiasi posizione in appoggio, dalla rondine o da uno slancio d. in app., e ruotare av. alla oscillazione dietro in sospensione.",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-8",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 8,
+    "valore": "B",
+    "descrizione": "Slanciappoggio av., contro-salto av. alla oscillazione dietro in sospensione.",
+    "nome": "Chechi"
+  },
+  {
+    "id": "AN-I-19",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 19,
+    "valore": "A",
+    "descrizione": "Capovolta d. all'appoggio.",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-20",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 20,
+    "valore": "B",
+    "descrizione": "Capovolta d. alla vert. di passaggio o granvolta dietro alla vert. di passaggio.",
+    "nome": "Guzcoghy"
+  },
+  {
+    "id": "AN-I-21",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 21,
+    "valore": "C",
+    "descrizione": "Doppio giro d. raccolto in appoggio alla oscillazione av. in sospensione.",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-22",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 22,
+    "valore": "D",
+    "descrizione": "Doppio giro d. carpio o teso in appoggio alla oscillazione av. in sospensione.",
+    "nome": "O' Neill"
+  },
+  {
+    "id": "AN-I-25",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 25,
+    "valore": "A",
+    "descrizione": "Traslocazione d. a corpo carpiato o teso.",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-26",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 26,
+    "valore": "B",
+    "descrizione": "Capovolta d. all'appoggio con gambe posate sulle impugnature, 2\".",
+    "nome": "Deltchev"
+  },
+  {
+    "id": "AN-I-31",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 31,
+    "valore": "A",
+    "descrizione": "Slanciappoggio dietro.",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-32",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 32,
+    "valore": "B",
+    "descrizione": "Slanciappoggio d. alla vert. di passaggio o granvolta av. tesa, alla vert. di passaggio.",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-37",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 37,
+    "valore": "A",
+    "descrizione": "Traslocazione av. a corpo carpiato o teso.",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-38",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 38,
+    "valore": "B",
+    "descrizione": "Dall'oscillaz. d. cap. av. con arrivo all'app.",
+    "nome": "Honma"
+  },
+  {
+    "id": "AN-I-39",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 39,
+    "valore": "C",
+    "descrizione": "Honma all'appoggio con corpo teso.",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-43",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 43,
+    "valore": "A",
+    "descrizione": "Dalla sospensione traslocaz. av. lenta.",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-44",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 44,
+    "valore": "B",
+    "descrizione": "Doppio giro in appoggio av. raccolto alla oscillazione d. in sospensione.",
+    "nome": "Yamawaki"
+  },
+  {
+    "id": "AN-I-45",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 45,
+    "valore": "C",
+    "descrizione": "Doppio giro in appoggio av. carpio o teso alla oscillazione d. in sospensione.",
+    "nome": "Jonasson"
+  },
+  {
+    "id": "AN-I-49",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 49,
+    "valore": "A",
+    "descrizione": "Kip all'appoggio.",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-55",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 55,
+    "valore": "A",
+    "descrizione": "Kip dorsale a braccia piegate all'appoggio.",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-56",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 56,
+    "valore": "B",
+    "descrizione": "Kip dorsale all'appoggio.",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-61",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 61,
+    "valore": "A",
+    "descrizione": "Dall'app. oscillazione av. e discesa alla oscillazione d. in sospensione.",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-63",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 63,
+    "valore": "C",
+    "descrizione": "Dall'app. oscillazione d. e salto av. carp. in appoggio.",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-67",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 67,
+    "valore": "A",
+    "descrizione": "Dall'app. o dalla croce, kip dorsale a corpo carpiato o teso e braccia piegate, all'appoggio.",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-74",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 74,
+    "valore": "B",
+    "descrizione": "Kip dorsale alla vert. 2\" o dall'app. giro d. a corpo teso e braccia piegate, alla vert. 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-75",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 75,
+    "valore": "C",
+    "descrizione": "Capovolta alla vert. o granvolta d. alla vert. 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-81",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 81,
+    "valore": "C",
+    "descrizione": "Slanciappoggio d. o granvolta d. alla vert. 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-86",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 86,
+    "valore": "B",
+    "descrizione": "Dall'app. oscillazione d. alla verticale 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-87",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 87,
+    "valore": "C",
+    "descrizione": "Honma all'app. con oscillaz. d. alla verticale 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-I-88",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Kippe ed elementi di slancio, slanci per o alla verticale (2\")"
+    },
+    "numero": 88,
+    "valore": "D",
+    "descrizione": "Honma teso all'app. con oscillaz. d. alla verticale 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-1",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 1,
+    "valore": "A",
+    "descrizione": "Squadra a gambe unite o div., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-2",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 2,
+    "valore": "B",
+    "descrizione": "Squadra con gambe vert., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-4",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 4,
+    "valore": "D",
+    "descrizione": "Croce in verticale, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-7",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 7,
+    "valore": "A",
+    "descrizione": "Orizz. in sosp. dors., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-9",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 9,
+    "valore": "C",
+    "descrizione": "Orizz. prona in app. con gambe unite, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-10",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 10,
+    "valore": "D",
+    "descrizione": "Orizz. prona in app. con corpo all'altezza delle impugnature, 2\" (rondine).",
+    "nome": "Hirondelle"
+  },
+  {
+    "id": "AN-II-11",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 11,
+    "valore": "E",
+    "descrizione": "Orizz. supina con corpo all'altezza delle impugnature, 2\" (rondine inversa).",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-13",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 13,
+    "valore": "A",
+    "descrizione": "Orizz. supina in sosp., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-15",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 15,
+    "valore": "C",
+    "descrizione": "Ogni tipo di croce 2\", o croce in squadra con gambe elevate verticalmente, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-19",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 19,
+    "valore": "A",
+    "descrizione": "Orizz. prona in app. con gambe div., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-22",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 22,
+    "valore": "D",
+    "descrizione": "Dalla Croce in squadra con gambe elevate verticalmente, salire all'appoggio in sq. con gambe verticali. 2\".",
+    "nome": "Tsukahara 3"
+  },
+  {
+    "id": "AN-II-23",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 23,
+    "valore": "E",
+    "descrizione": "Dalla sospensione salire di forza a braccia tese alla croce con gambe verticali. 2\".",
+    "nome": "Colak"
+  },
+  {
+    "id": "AN-II-25",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 25,
+    "valore": "A",
+    "descrizione": "Salire con corpo carp. e braccia piegate, alla vert. ritta, 2\". - Anche con gambe divaricate.",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-26",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 26,
+    "valore": "B",
+    "descrizione": "Salire con corpo teso e braccia piegate, o con corpo carp. e braccia tese o dalla orizz. prona a gambe div., alla vert. ritta, 2\". - Anche con gambe divaricate.",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-27",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 27,
+    "valore": "C",
+    "descrizione": "Elevarsi dall'app. o dalla orizz. prona a g. unite, con corpo teso e braccia ritte, alla vert., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-28",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 28,
+    "valore": "D",
+    "descrizione": "Elevarsi dalla rondine, con corpo teso e braccia tese, alla vert., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-31",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 31,
+    "valore": "A",
+    "descrizione": "Dall'app., giro av. a corpo carp., e braccia piegate, per ritornare all'app.",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-32",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 32,
+    "valore": "B",
+    "descrizione": "Dall'app., giro av. eseguito lentamente a corpo teso e braccia piegate, per ritornare all'app.",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-38",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 38,
+    "valore": "B",
+    "descrizione": "Dalla sospensione semirovesciata, salire ruotando lentamente dietro con corpo e braccia tese alla sq. in appoggio (2 sec).",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-39",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 39,
+    "valore": "C",
+    "descrizione": "Dall'app., giro av. a corpo teso, alla croce, 2\" o croce squadra, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-50",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 50,
+    "valore": "B",
+    "descrizione": "Dalla sospensione, salire di forza, con braccia flesse, alla orizz. prona in sosp., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-51",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 51,
+    "valore": "C",
+    "descrizione": "Dalla sospensione, salire di forza, con braccia tese, alla orizz. prona in sosp., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-52",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 52,
+    "valore": "D",
+    "descrizione": "Ruotare lentamente all'indietro a corpo teso alla croce, 2\" o croce squadra, 2\". o alla croce squadra con gambe verticali, 2\".",
+    "nome": "Azarian"
+  },
+  {
+    "id": "AN-II-56",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 56,
+    "valore": "B",
+    "descrizione": "Dalla croce o croce squadra, ruotare in av. alla orizz. prona in sosp., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-57",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 57,
+    "valore": "C",
+    "descrizione": "Dalla sospensione, salire verticalmente di forza alla squadra in appoggio, 2\".",
+    "nome": "Nakayama"
+  },
+  {
+    "id": "AN-II-58",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 58,
+    "valore": "D",
+    "descrizione": "Da o per l'orizz. prona in sosp., salire di forza, alla croce 2\", o alla croce sq. 2\", o alla croce squadra con gambe vert., 2\".",
+    "nome": "NG Kiu Chung"
+  },
+  {
+    "id": "AN-II-60",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 60,
+    "valore": "F",
+    "descrizione": "Passando per l'orizzontale prona in sospensione (senza stop richiesto) salire di forza a corpo teso passando per la croce, alla rondine rovesciata (2 sec.).",
+    "nome": "Zahran"
+  },
+  {
+    "id": "AN-II-62",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 62,
+    "valore": "B",
+    "descrizione": "Dalla vert. scendere passando dalla rondine alla orizzontale prona in sosp., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-63",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 63,
+    "valore": "C",
+    "descrizione": "Dall'app., o dalla croce, scendere lentamente con braccia ritte in sosp. e risalire, alla croce, 2\".",
+    "nome": "Li Xiaoshuang"
+  },
+  {
+    "id": "AN-II-64",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 64,
+    "valore": "D",
+    "descrizione": "Dalla sosp. salire, alla croce, 2\" o croce squadra 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-65",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 65,
+    "valore": "E",
+    "descrizione": "Dalla orizz. in appoggio scendere lentamente alla orizzontale in sospens. e risalire alla rondine, 2\" o alla orizz. in app. 2\". Oppure dalla rondine scendere e risalire alla orizz. in app.",
+    "nome": "Van Gelder"
+  },
+  {
+    "id": "AN-II-66",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 66,
+    "valore": "G",
+    "descrizione": "Dalla sospensione tesa salire di forza passando per la croce, alla rondine rovesciata (2 sec.).",
+    "nome": "Tulloch 2"
+  },
+  {
+    "id": "AN-II-68",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 68,
+    "valore": "B",
+    "descrizione": "Dalla vert., scendere per fuori, passando dalla croce in vert. alla sosp. rovesciata.",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-70",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 70,
+    "valore": "D",
+    "descrizione": "Dalla rondine, salire alla orizz. prona in app., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-71",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 71,
+    "valore": "E",
+    "descrizione": "Dalla rondine scendere lentamente alla orizzontale prona in sospensione e risalire alla rondine, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-72",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 72,
+    "valore": "F",
+    "descrizione": "Dalla orizz. prona in sospensione, salire alla rondine, 2\", o alla orizzontale prona in appoggio, 2\".",
+    "nome": "Zanetti"
+  },
+  {
+    "id": "AN-II-75",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 75,
+    "valore": "C",
+    "descrizione": "Dalla croce o croce squadra, salire con braccia ritte alla squadra, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-77",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 77,
+    "valore": "E",
+    "descrizione": "Dalla croce squadra, salire con braccia tese e corpo squadrato, alla croce in vert., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-78",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 78,
+    "valore": "F",
+    "descrizione": "Dalla croce, salire con braccia tese e corpo teso, alla croce in vert., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-84",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 84,
+    "valore": "F",
+    "descrizione": "Dalla rondine, salire a corpo teso alla croce in vert., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-88",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 88,
+    "valore": "D",
+    "descrizione": "Dalla croce, salire alla orizz. prona in app. 2\", senza passare prima dall'appoggio.",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-89",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 89,
+    "valore": "E",
+    "descrizione": "Dalla croce, salire alla rondine, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-90",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 90,
+    "valore": "G",
+    "descrizione": "Dalla orizzontale prona in sospensione, salire a corpo teso alla croce in verticale (2 sec).",
+    "nome": "Carmona"
+  },
+  {
+    "id": "AN-II-94",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 94,
+    "valore": "D",
+    "descrizione": "Dalla croce in vert. scendere lentamente alla verticale in sospensione e risalire lentamente ruotando dietro alla croce, 2\" o croce con gambe verticali, 2\".",
+    "nome": "Vorobiov"
+  },
+  {
+    "id": "AN-II-95",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 95,
+    "valore": "E",
+    "descrizione": "Dalla croce in vert. scendere lentamente alla verticale in sospensione e risalire lentamente ruotando d. alla rondine, 2\" o alla orizzontale prona in appoggio, 2\".",
+    "nome": "Jotchev"
+  },
+  {
+    "id": "AN-II-101",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 101,
+    "valore": "E",
+    "descrizione": "Giro d. lento con corpo teso, alla orizzontale in appoggio, 2\".",
+    "nome": "Yan Mijayoung"
+  },
+  {
+    "id": "AN-II-107",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 107,
+    "valore": "E",
+    "descrizione": "Giro d. lento con corpo teso, alla rondine, 2\".",
+    "nome": "Simonov"
+  },
+  {
+    "id": "AN-II-108",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 108,
+    "valore": "F",
+    "descrizione": "Rotolare indietro lentamente con corpo e braccia tese alla croce in verticale passando per la rondine.",
+    "nome": ""
+  },
+  {
+    "id": "AN-II-118",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 118,
+    "valore": "D",
+    "descrizione": "In sospensione ruotare avanti lentamente con corpo teso passando dalla croce per terminare alla orizz. prona in appoggio, 2\".",
+    "nome": "Ng Kiu Chung 2"
+  },
+  {
+    "id": "AN-II-119",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 119,
+    "valore": "E",
+    "descrizione": "In sospensione ruotare avanti lentamente con corpo teso passando dalla croce per terminare alla croce in verticale, 2\".",
+    "nome": "Wynn"
+  },
+  {
+    "id": "AN-II-120",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 120,
+    "valore": "F",
+    "descrizione": "Azarian alla rondine inversa, 2\".",
+    "nome": "Tulloch"
+  },
+  {
+    "id": "AN-II-124",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 124,
+    "valore": "D",
+    "descrizione": "In sospensione ruotare avanti lentamente con corpo teso alla croce o croce in squadra, 2\". Anche dalla sospensione inversa.",
+    "nome": "Davtyan"
+  },
+  {
+    "id": "AN-II-125",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 125,
+    "valore": "E",
+    "descrizione": "Dalla sospensione, giro in avanti lento con corpo teso passando per la croce per terminare alla rondine. 2\".",
+    "nome": "Pham 2"
+  },
+  {
+    "id": "AN-II-130",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 130,
+    "valore": "D",
+    "descrizione": "Dalla sospensione tesa salire di forza con corpo e braccia tese alla verticale tesa, 2\".",
+    "nome": "Cingolani"
+  },
+  {
+    "id": "AN-II-132",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 132,
+    "valore": "F",
+    "descrizione": "Dalla sospensione tesa salire di forza alla rondine, 2\".",
+    "nome": "Balandin 1"
+  },
+  {
+    "id": "AN-II-137",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 137,
+    "valore": "E",
+    "descrizione": "Dalla sospensione tesa salire di forza passando dalla rondine alla orizzontale prona in appoggio, 2\".",
+    "nome": "Balandin 3"
+  },
+  {
+    "id": "AN-II-138",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi di forza e posizioni statiche mantenute 2\""
+    },
+    "numero": 138,
+    "valore": "G",
+    "descrizione": "Dalla sospensione tesa salire di forza alla croce in verticale, 2\".",
+    "nome": "Balandin 2"
+  },
+  {
+    "id": "AN-III-2",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 2,
+    "valore": "B",
+    "descrizione": "Slanciappoggio av. alla squadra 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-3",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 3,
+    "valore": "C",
+    "descrizione": "Slanciapp. av. alla squadra con gambe vert., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-4",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 4,
+    "valore": "D",
+    "descrizione": "Slanciapp. av. alla croce in squadra con gambe vert., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-8",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 8,
+    "valore": "B",
+    "descrizione": "Kip alla squadra, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-9",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 9,
+    "valore": "C",
+    "descrizione": "Kip alla squadra con gambe vert., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-14",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 14,
+    "valore": "B",
+    "descrizione": "Honma alla squadra 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-15",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 15,
+    "valore": "C",
+    "descrizione": "Honma alla squadra con gambe verticali, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-16",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 16,
+    "valore": "D",
+    "descrizione": "Honma alla croce o croce squadra 2\".",
+    "nome": "Tanaka"
+  },
+  {
+    "id": "AN-III-17",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 17,
+    "valore": "E",
+    "descrizione": "Honma croce con squadra con g. vert. 2\".",
+    "nome": "Gracia"
+  },
+  {
+    "id": "AN-III-22",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 22,
+    "valore": "D",
+    "descrizione": "Dalla oscillaz. d, salto av. carpio alla croce, 2\" o croce squadra, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-27",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 27,
+    "valore": "C",
+    "descrizione": "Slanciapp. av. alla croce o alla croce sq., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-33",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 33,
+    "valore": "C",
+    "descrizione": "Slanciappoggio d. alla croce, 2\" o croce squadra, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-39",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 39,
+    "valore": "C",
+    "descrizione": "Kip alla croce, 2\" o croce squadra, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-40",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 40,
+    "valore": "D",
+    "descrizione": "Kip alla croce in sq. con gambe vert., 2\".",
+    "nome": "Molinari"
+  },
+  {
+    "id": "AN-III-42",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 42,
+    "valore": "F",
+    "descrizione": "Kip alla rondine inversa, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-45",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 45,
+    "valore": "C",
+    "descrizione": "Kip dors. alla croce, 2\" o croce squadra, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-46",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 46,
+    "valore": "D",
+    "descrizione": "Kip dors., alla orizz. prona in app., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-47",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 47,
+    "valore": "E",
+    "descrizione": "Kip dors., alla rondine, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-50",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 50,
+    "valore": "B",
+    "descrizione": "Capovolta d. all'appoggio con gambe posate sulle impugnature, 2\".",
+    "nome": "Deltchev"
+  },
+  {
+    "id": "AN-III-53",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 53,
+    "valore": "E",
+    "descrizione": "Kip dors. alla croce in verticale, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-56",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 56,
+    "valore": "B",
+    "descrizione": "Capovolta d. con arrivo all'app. in orizz. prona a gambe div., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-57",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 57,
+    "valore": "C",
+    "descrizione": "Capovolta d. con arrivo alla croce, 2\" o croce squadra, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-58",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 58,
+    "valore": "D",
+    "descrizione": "Capovolta d. con arrivo all'app. in orizz. prona, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-59",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 59,
+    "valore": "E",
+    "descrizione": "Capovolta d. con arrivo alla rondine, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-60",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 60,
+    "valore": "F",
+    "descrizione": "Slanciapp. av. senza fase di appoggio alla rondine inversa, 2\".",
+    "nome": "Rodrigues"
+  },
+  {
+    "id": "AN-III-65",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 65,
+    "valore": "E",
+    "descrizione": "Capovolta d. alla croce in verticale, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-68",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 68,
+    "valore": "B",
+    "descrizione": "Slanciappoggio d. alla orizz. prona a gambe div. con braccia ritte, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-70",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 70,
+    "valore": "D",
+    "descrizione": "Slanciappoggio d. alla orizz. prona con braccia ritte, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-71",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 71,
+    "valore": "E",
+    "descrizione": "Slanciappoggio dietro alla rondine, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-77",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 77,
+    "valore": "E",
+    "descrizione": "Slanciappoggio d. alla croce in vert., 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-III-82",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio ad una posizione statica di forza mantenuta 2\""
+    },
+    "numero": 82,
+    "valore": "D",
+    "descrizione": "Dall'app. giro d. a corpo teso alla orizz. prona in app., libero 2\".",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-1",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 1,
+    "valore": "A",
+    "descrizione": "Salto av. carpio o teso anche con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-2",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 2,
+    "valore": "B",
+    "descrizione": "Salto av. carpio o teso con 1 avv.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-3",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 3,
+    "valore": "C",
+    "descrizione": "Salto av. carpio o teso con 1 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-4",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 4,
+    "valore": "D",
+    "descrizione": "Salto avanti carpio o teso con 2/1 avv.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-9",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 9,
+    "valore": "C",
+    "descrizione": "Doppio salto av. racc. o racc. ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-10",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 10,
+    "valore": "D",
+    "descrizione": "Doppio salto av. racc. con 1 avv. o racc. con 1 ½ avv.",
+    "nome": "Fischer"
+  },
+  {
+    "id": "AN-IV-16",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 16,
+    "valore": "D",
+    "descrizione": "Doppio salto av. carpiato o carpiato con ½ avv.",
+    "nome": "Balabanov"
+  },
+  {
+    "id": "AN-IV-17",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 17,
+    "valore": "E",
+    "descrizione": "Doppio salto av. carpiato con 1 avv. o carpiato con 1 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-25",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 25,
+    "valore": "A",
+    "descrizione": "Salto d. carpiato o teso. Anche con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-26",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 26,
+    "valore": "B",
+    "descrizione": "Salto d. teso con 1 avv.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-27",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 27,
+    "valore": "C",
+    "descrizione": "Salto d. teso con 1 ½ avv. o 2 avv.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-29",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 29,
+    "valore": "E",
+    "descrizione": "Salto d. teso con 3 avv.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-32",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 32,
+    "valore": "B",
+    "descrizione": "Doppio salto d. racc. o carp.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-33",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 33,
+    "valore": "C",
+    "descrizione": "Doppio salto d. teso.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-36",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 36,
+    "valore": "G",
+    "descrizione": "Triplo salto d. racc.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-42",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 42,
+    "valore": "I",
+    "descrizione": "Triplo salto d. Carpio.",
+    "nome": "Whittemburg"
+  },
+  {
+    "id": "AN-IV-45",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 45,
+    "valore": "C",
+    "descrizione": "Doppio salto d. racc. con ½, 1 avv. o 1 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-47",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 47,
+    "valore": "E",
+    "descrizione": "Doppio salto d. racc. con 2 avv.",
+    "nome": "Tuuha"
+  },
+  {
+    "id": "AN-IV-48",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 48,
+    "valore": "F",
+    "descrizione": "Doppio salto d. racc. con 2 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-51",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 51,
+    "valore": "C",
+    "descrizione": "Salto d. con 1 avv. e salto d. racc.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-52",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 52,
+    "valore": "D",
+    "descrizione": "Doppio salto d. teso con ½ o 1 avv.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-54",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 54,
+    "valore": "F",
+    "descrizione": "Doppio salto d. teso con 1 ½ o 2 avv.",
+    "nome": ""
+  },
+  {
+    "id": "AN-IV-60",
+    "attrezzo": "AN",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 60,
+    "valore": "G",
+    "descrizione": "Doppio salto d. racc. con 3 avv.",
+    "nome": ""
+  }
+]

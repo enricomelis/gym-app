@@ -6,14 +6,14 @@ import { Dialog } from "@base-ui/react/dialog";
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import type { ElementoCdp, ValoreDifficolta } from "@/lib/types/cdp";
+import type { ElementoCdp } from "@/lib/types/cdp";
 
 import {
-  COLORI_DIFFICOLTA,
   COLORI_GRUPPO,
-  GRUPPI,
   NUMERI_ROMANI,
-  VALORI_DIFFICOLTA,
+  coloreDifficolta,
+  etichettaDifficolta,
+  ordinaDifficolta,
   titoloElemento,
 } from "./cdp-constants";
 
@@ -24,12 +24,18 @@ interface CdpVistaMatriceProps {
 
 interface SubDialogState {
   gruppo: number;
-  valore: ValoreDifficolta;
+  valore: string;
   elementi: ElementoCdp[];
 }
 
 export function CdpVistaMatrice({ elementi, onSelectElement }: CdpVistaMatriceProps) {
   const [subDialog, setSubDialog] = useState<SubDialogState | null>(null);
+
+  const gruppiPresenti = useMemo(() => {
+    const set = new Set<number>();
+    for (const el of elementi) set.add(el.gruppo.numero);
+    return [...set].sort((a, b) => a - b);
+  }, [elementi]);
 
   const { matrice, maxCount } = useMemo(() => {
     const m: Record<string, ElementoCdp[]> = {};
@@ -47,12 +53,12 @@ export function CdpVistaMatrice({ elementi, onSelectElement }: CdpVistaMatricePr
 
   // Determine which difficulty rows have any elements
   const difficoltaPresenti = useMemo(() => {
-    return VALORI_DIFFICOLTA.filter((v) =>
-      GRUPPI.some((g) => {
-        const key = `${g}-${v}`;
-        return matrice[key] && matrice[key].length > 0;
-      }),
-    );
+    const valori = new Set<string>();
+    for (const key of Object.keys(matrice)) {
+      const v = key.split("-").slice(1).join("-");
+      valori.add(v);
+    }
+    return ordinaDifficolta([...valori]);
   }, [matrice]);
 
   return (
@@ -62,7 +68,7 @@ export function CdpVistaMatrice({ elementi, onSelectElement }: CdpVistaMatricePr
           <thead>
             <tr>
               <th className="px-3 py-2" />
-              {GRUPPI.map((g) => (
+              {gruppiPresenti.map((g) => (
                 <th
                   key={g}
                   className="px-3 py-2 text-center text-sm font-bold"
@@ -83,13 +89,13 @@ export function CdpVistaMatrice({ elementi, onSelectElement }: CdpVistaMatricePr
                   <span
                     className={cn(
                       "inline-flex size-8 items-center justify-center rounded text-sm font-bold",
-                      COLORI_DIFFICOLTA[v],
+                      coloreDifficolta(v),
                     )}
                   >
-                    {v}
+                    {etichettaDifficolta(v)}
                   </span>
                 </td>
-                {GRUPPI.map((g) => {
+                {gruppiPresenti.map((g) => {
                   const key = `${g}-${v}`;
                   const els = matrice[key] ?? [];
                   const count = els.length;
@@ -136,7 +142,8 @@ export function CdpVistaMatrice({ elementi, onSelectElement }: CdpVistaMatricePr
             {subDialog && (
               <div className="flex flex-col gap-4">
                 <Dialog.Title className="text-lg font-semibold">
-                  Gruppo {NUMERI_ROMANI[subDialog.gruppo]} — Difficoltà {subDialog.valore}
+                  Gruppo {NUMERI_ROMANI[subDialog.gruppo]} — Difficoltà{" "}
+                  {etichettaDifficolta(subDialog.valore)}
                 </Dialog.Title>
                 <Dialog.Description className="text-muted-foreground text-sm">
                   {subDialog.elementi.length} element

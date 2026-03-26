@@ -1,0 +1,1046 @@
+[
+  {
+    "id": "VT-I-1",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 1,
+    "valore": "2,4",
+    "descrizione": "Ribaltata e salto av. racc. con ½ avv. (o Cuervo racc.).",
+    "nome": "Cuervo"
+  },
+  {
+    "id": "VT-I-2",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 2,
+    "valore": "2,8",
+    "descrizione": "Ribaltata e salto av. racc. con 1 avv. (o Cuervo racc. con ½ avv.).",
+    "nome": ""
+  },
+  {
+    "id": "VT-I-3",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 3,
+    "valore": "3,2",
+    "descrizione": "Ribaltata salto av. racc. con 1 ½ avv. (o Cuervo racc. con 1 avv.).",
+    "nome": "Kroll"
+  },
+  {
+    "id": "VT-I-4",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 4,
+    "valore": "3,6",
+    "descrizione": "Ribaltata salto av. racc. con 2 avv. (o Cuervo racc. con 1 ½ avv.).",
+    "nome": "Cambas"
+  },
+  {
+    "id": "VT-I-7",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 7,
+    "valore": "2,8",
+    "descrizione": "Ribaltata e salto av. carpio con ½ avv. (o Cuervo carpio).",
+    "nome": ""
+  },
+  {
+    "id": "VT-I-8",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 8,
+    "valore": "3,2",
+    "descrizione": "Ribaltata e salto av. carpio con 1 avv. (o Cuervo carpio con ½ avv.).",
+    "nome": ""
+  },
+  {
+    "id": "VT-I-9",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 9,
+    "valore": "3,6",
+    "descrizione": "Ribaltata e salto av. carpio con 1½ avv. (o Cuervo carpio con 1 avv.).",
+    "nome": ""
+  },
+  {
+    "id": "VT-I-11",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 11,
+    "valore": "3,6",
+    "descrizione": "Ribaltata salto av. carp. con 1 avv. (o Cuervo carp. con ½ avv.).",
+    "nome": ""
+  },
+  {
+    "id": "VT-I-12",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 12,
+    "valore": "4,0",
+    "descrizione": "Ribaltata salto av. carp. con 1 ½ avv. (o Cuervo carp. con 1 avv.).",
+    "nome": ""
+  },
+  {
+    "id": "VT-I-13",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 13,
+    "valore": "3,6",
+    "descrizione": "Ribaltata e salto av. teso con ½ avv. (o Cuervo teso).",
+    "nome": ""
+  },
+  {
+    "id": "VT-I-14",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 14,
+    "valore": "4,0",
+    "descrizione": "Ribaltata e salto av. teso con 1 avv. (o Cuervo teso con ½ avv.).",
+    "nome": ""
+  },
+  {
+    "id": "VT-I-15",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 15,
+    "valore": "4,4",
+    "descrizione": "Ribaltata e salto av. teso con 1½ avv. (o Cuervo teso con 1 avv.).",
+    "nome": "Lou Yun"
+  },
+  {
+    "id": "VT-I-16",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 16,
+    "valore": "4,8",
+    "descrizione": "Ribaltata e salto av. teso con 2 avv. (o Cuervo teso con 1 ½ avv.).",
+    "nome": ""
+  },
+  {
+    "id": "VT-I-17",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 17,
+    "valore": "5,2",
+    "descrizione": "Ribaltata e salto av. teso con 2½ avv. (o Cuervo teso con 2 avv.).",
+    "nome": "Yeo 2"
+  },
+  {
+    "id": "VT-I-18",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 18,
+    "valore": "5,6",
+    "descrizione": "Ribaltata e salto av. teso con 3 avv.",
+    "nome": "Yang Hak Seon"
+  },
+  {
+    "id": "VT-I-19",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 19,
+    "valore": "2,4",
+    "descrizione": "Rovesciamento lat. con ¼ di avv. e salto av. racc. con ½ avv.",
+    "nome": "Kasamatsu"
+  },
+  {
+    "id": "VT-I-20",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 20,
+    "valore": "2,8",
+    "descrizione": "Tsukahara racc. con 1 ½ avv. (o Kasamatsu racc. con ½ avv.).",
+    "nome": ""
+  },
+  {
+    "id": "VT-I-21",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 21,
+    "valore": "3,2",
+    "descrizione": "Tsukahara racc. con 2 avv. (o Kasamatsu racc. con 1 avv.).",
+    "nome": "Barbieri"
+  },
+  {
+    "id": "VT-I-22",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 22,
+    "valore": "3,6",
+    "descrizione": "Tsukahara racc. con 2 ½ avv. (o Kasamatsu racc. con 1 ½ avv.).",
+    "nome": ""
+  },
+  {
+    "id": "VT-I-25",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 25,
+    "valore": "3,6",
+    "descrizione": "Tsukahara teso con 1 avv. (o Kasamatsu teso).",
+    "nome": ""
+  },
+  {
+    "id": "VT-I-26",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 26,
+    "valore": "4,0",
+    "descrizione": "Tsukahara teso con 1 ½ avv. (o Kasamatsu teso con ½ avv.).",
+    "nome": ""
+  },
+  {
+    "id": "VT-I-27",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 27,
+    "valore": "4,4",
+    "descrizione": "Tsukahara teso con 2 avv. (o Kasamatsu teso con 1 avv.).",
+    "nome": "Akopian"
+  },
+  {
+    "id": "VT-I-31",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 31,
+    "valore": "4,8",
+    "descrizione": "Tsukahara teso con 2 ½ avv. (o Kasamatsu teso con 1 ½ avv.).",
+    "nome": "Driggs"
+  },
+  {
+    "id": "VT-I-32",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 32,
+    "valore": "5,2",
+    "descrizione": "Tsukahara teso con 3 avv. (o Kasamatsu teso con 2 avv.).",
+    "nome": "López"
+  },
+  {
+    "id": "VT-I-33",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Volteggi con singolo salto con avvitamenti"
+    },
+    "numero": 33,
+    "valore": "5,6",
+    "descrizione": "Tsukahara teso con 3 ½ avv. (o Kasamatsu teso con 2 ½ avv.).",
+    "nome": "Yonekura"
+  },
+  {
+    "id": "VT-II-1",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Ribaltate semplici e con avv., ribaltate con semplice o doppio salto avanti con o senza semplici avv."
+    },
+    "numero": 1,
+    "valore": "1,2",
+    "descrizione": "Ribaltata.",
+    "nome": ""
+  },
+  {
+    "id": "VT-II-2",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Ribaltate semplici e con avv., ribaltate con semplice o doppio salto avanti con o senza semplici avv."
+    },
+    "numero": 2,
+    "valore": "1,4",
+    "descrizione": "Ribaltata con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-II-3",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Ribaltate semplici e con avv., ribaltate con semplice o doppio salto avanti con o senza semplici avv."
+    },
+    "numero": 3,
+    "valore": "1,6",
+    "descrizione": "Ribaltata con 1 avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-II-4",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Ribaltate semplici e con avv., ribaltate con semplice o doppio salto avanti con o senza semplici avv."
+    },
+    "numero": 4,
+    "valore": "1,8",
+    "descrizione": "Ribaltata con 1 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-II-5",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Ribaltate semplici e con avv., ribaltate con semplice o doppio salto avanti con o senza semplici avv."
+    },
+    "numero": 5,
+    "valore": "2,0",
+    "descrizione": "Ribaltata con 2 avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-II-6",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Ribaltate semplici e con avv., ribaltate con semplice o doppio salto avanti con o senza semplici avv."
+    },
+    "numero": 6,
+    "valore": "2,2",
+    "descrizione": "Ribaltata con 2 ½ avv.",
+    "nome": "Tsygankov"
+  },
+  {
+    "id": "VT-II-7",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Ribaltate semplici e con avv., ribaltate con semplice o doppio salto avanti con o senza semplici avv."
+    },
+    "numero": 7,
+    "valore": "2,0",
+    "descrizione": "Ribaltata salto av. raccolto.",
+    "nome": ""
+  },
+  {
+    "id": "VT-II-13",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Ribaltate semplici e con avv., ribaltate con semplice o doppio salto avanti con o senza semplici avv."
+    },
+    "numero": 13,
+    "valore": "2,4",
+    "descrizione": "Ribaltata salto av. carp.",
+    "nome": ""
+  },
+  {
+    "id": "VT-II-19",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Ribaltate semplici e con avv., ribaltate con semplice o doppio salto avanti con o senza semplici avv."
+    },
+    "numero": 19,
+    "valore": "3,2",
+    "descrizione": "Ribaltata salto av. teso.",
+    "nome": ""
+  },
+  {
+    "id": "VT-II-25",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Ribaltate semplici e con avv., ribaltate con semplice o doppio salto avanti con o senza semplici avv."
+    },
+    "numero": 25,
+    "valore": "4,8",
+    "descrizione": "Ribaltata e doppio salto av. racc.",
+    "nome": "Roche"
+  },
+  {
+    "id": "VT-II-26",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Ribaltate semplici e con avv., ribaltate con semplice o doppio salto avanti con o senza semplici avv."
+    },
+    "numero": 26,
+    "valore": "5,2",
+    "descrizione": "Roche con ½ avv.",
+    "nome": "Dragulescu"
+  },
+  {
+    "id": "VT-II-28",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Ribaltate semplici e con avv., ribaltate con semplice o doppio salto avanti con o senza semplici avv."
+    },
+    "numero": 28,
+    "valore": "5,2",
+    "descrizione": "Ribaltata salto av. racc. con ½ avv. e salto d. racc.",
+    "nome": "Zimmerman"
+  },
+  {
+    "id": "VT-II-31",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Ribaltate semplici e con avv., ribaltate con semplice o doppio salto avanti con o senza semplici avv."
+    },
+    "numero": 31,
+    "valore": "5,2",
+    "descrizione": "Ribaltata e doppio salto av. carp.",
+    "nome": "Blanik"
+  },
+  {
+    "id": "VT-II-32",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Ribaltate semplici e con avv., ribaltate con semplice o doppio salto avanti con o senza semplici avv."
+    },
+    "numero": 32,
+    "valore": "5,6",
+    "descrizione": "Dragulescu carp.",
+    "nome": "RI Se Gwang 2"
+  },
+  {
+    "id": "VT-III-1",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Rovesciamenti laterali o volteggi Tsukahara con o senza semplice avv. e tutti i doppi salti dietro"
+    },
+    "numero": 1,
+    "valore": "1,2",
+    "descrizione": "Rovesciamento laterale, ¼ avv. a sn. o a ds.",
+    "nome": ""
+  },
+  {
+    "id": "VT-III-2",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Rovesciamenti laterali o volteggi Tsukahara con o senza semplice avv. e tutti i doppi salti dietro"
+    },
+    "numero": 2,
+    "valore": "1,4",
+    "descrizione": "Rovesciamento laterale, ¾ avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-III-3",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Rovesciamenti laterali o volteggi Tsukahara con o senza semplice avv. e tutti i doppi salti dietro"
+    },
+    "numero": 3,
+    "valore": "1,6",
+    "descrizione": "Rovesciamento laterale, 5/4 avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-III-7",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Rovesciamenti laterali o volteggi Tsukahara con o senza semplice avv. e tutti i doppi salti dietro"
+    },
+    "numero": 7,
+    "valore": "1,8",
+    "descrizione": "Rovesc. lat., ¼ avv. e s. d. racc.",
+    "nome": "Tsukahara"
+  },
+  {
+    "id": "VT-III-8",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Rovesciamenti laterali o volteggi Tsukahara con o senza semplice avv. e tutti i doppi salti dietro"
+    },
+    "numero": 8,
+    "valore": "2,0",
+    "descrizione": "Tsukahara carpio.",
+    "nome": ""
+  },
+  {
+    "id": "VT-III-9",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Rovesciamenti laterali o volteggi Tsukahara con o senza semplice avv. e tutti i doppi salti dietro"
+    },
+    "numero": 9,
+    "valore": "2,0",
+    "descrizione": "Tsukahara racc. con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-III-13",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Rovesciamenti laterali o volteggi Tsukahara con o senza semplice avv. e tutti i doppi salti dietro"
+    },
+    "numero": 13,
+    "valore": "2,8",
+    "descrizione": "Tsukahara teso.",
+    "nome": ""
+  },
+  {
+    "id": "VT-III-14",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Rovesciamenti laterali o volteggi Tsukahara con o senza semplice avv. e tutti i doppi salti dietro"
+    },
+    "numero": 14,
+    "valore": "3,2",
+    "descrizione": "Tsukahara teso con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-III-19",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Rovesciamenti laterali o volteggi Tsukahara con o senza semplice avv. e tutti i doppi salti dietro"
+    },
+    "numero": 19,
+    "valore": "4,8",
+    "descrizione": "Tsukahara e salto d. racc.",
+    "nome": "Yeo"
+  },
+  {
+    "id": "VT-III-20",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Rovesciamenti laterali o volteggi Tsukahara con o senza semplice avv. e tutti i doppi salti dietro"
+    },
+    "numero": 20,
+    "valore": "5,2",
+    "descrizione": "Tsukahara e salto d. carp.",
+    "nome": "Lu Yu Fu"
+  },
+  {
+    "id": "VT-III-21",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Rovesciamenti laterali o volteggi Tsukahara con o senza semplice avv. e tutti i doppi salti dietro"
+    },
+    "numero": 21,
+    "valore": "5,6",
+    "descrizione": "Tsukahara e salto d. racc. con 1/1 avvitamento.",
+    "nome": "Ri Se Gwang"
+  },
+  {
+    "id": "VT-IV-1",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 1,
+    "valore": "2,4",
+    "descrizione": "Yurchenko racc. con 1 avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-IV-2",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 2,
+    "valore": "2,8",
+    "descrizione": "Yurchenko racc. con 1 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-IV-3",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 3,
+    "valore": "3,2",
+    "descrizione": "Yurchenko racc. con 2 avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-IV-4",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 4,
+    "valore": "3,6",
+    "descrizione": "Yurchenko racc. con 2 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-IV-5",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 5,
+    "valore": "3,6",
+    "descrizione": "Yurchenko teso con 1 avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-IV-6",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 6,
+    "valore": "4,0",
+    "descrizione": "Yurchenko teso con 1 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-IV-7",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 7,
+    "valore": "4,4",
+    "descrizione": "Yurchenko teso con 2 avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-IV-8",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 8,
+    "valore": "4,8",
+    "descrizione": "Yurchenko teso 2 ½ avv.",
+    "nome": "Shewfelt"
+  },
+  {
+    "id": "VT-IV-9",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 9,
+    "valore": "5,2",
+    "descrizione": "Yurchenko teso con 3 avv.",
+    "nome": "Shirai - KIM Hee Hoon"
+  },
+  {
+    "id": "VT-IV-10",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 10,
+    "valore": "5,6",
+    "descrizione": "Yurchenko teso con 3 ½ avv.",
+    "nome": "Shirai 2"
+  },
+  {
+    "id": "VT-IV-13",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 13,
+    "valore": "2,6",
+    "descrizione": "Rondata, ½ avv. e ribaltata salto av. racc. con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-IV-14",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 14,
+    "valore": "3,0",
+    "descrizione": "Rondata, ½ avv. e ribaltata salto av. carpio con ½ avv.",
+    "nome": "Nemov"
+  },
+  {
+    "id": "VT-IV-15",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 15,
+    "valore": "3,8",
+    "descrizione": "Rondata, ½ avv. e ribaltata e salto av. teso con ½ avv.",
+    "nome": "Hutcheon"
+  },
+  {
+    "id": "VT-IV-16",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 16,
+    "valore": "4,2",
+    "descrizione": "Rondata, ½ avv. e ribaltata e salto av. teso con 1 avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-IV-17",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 17,
+    "valore": "4,6",
+    "descrizione": "Rondata, ½ avv. e ribaltata e salto av. teso con 1½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-IV-19",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 19,
+    "valore": "5,0",
+    "descrizione": "Rondata, ½ avv. e ribaltata e salto av. teso con 2 avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-IV-20",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Volteggi dalla rondata sulla pedana con singolo salto con avv. complessi"
+    },
+    "numero": 20,
+    "valore": "5,4",
+    "descrizione": "Rondata, ½ avv. e ribaltata e salto av. teso con 2 ½ avv.",
+    "nome": "Li Xiao Peng"
+  },
+  {
+    "id": "VT-V-1",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 1,
+    "valore": "1,2",
+    "descrizione": "Rondata e rovesciamento indietro.",
+    "nome": ""
+  },
+  {
+    "id": "VT-V-2",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 2,
+    "valore": "1,4",
+    "descrizione": "Rondata, e rovesciamento d. con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-V-3",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 3,
+    "valore": "1,6",
+    "descrizione": "Rondata e rovesciamento d. con 1 avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-V-4",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 4,
+    "valore": "",
+    "descrizione": "Rondata, flic flac con 1 avv. e salto d. racc.",
+    "nome": ""
+  },
+  {
+    "id": "VT-V-5",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 5,
+    "valore": "",
+    "descrizione": "Rondata, flic flac con 1 avv. salto d. carpio.",
+    "nome": ""
+  },
+  {
+    "id": "VT-V-6",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 6,
+    "valore": "",
+    "descrizione": "Rondata, flic flac con 1 avv. e salto d. racc. con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-V-7",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 7,
+    "valore": "1,8",
+    "descrizione": "Rondata, rovesciamento indietro e salto d. racc.",
+    "nome": "Yurchenko"
+  },
+  {
+    "id": "VT-V-8",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 8,
+    "valore": "2,0",
+    "descrizione": "Rondata, rovesciamento indietro e salto d. racc. con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-V-9",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 9,
+    "valore": "2,0",
+    "descrizione": "Rondata, rovesciamento indietro e salto d. carpio.",
+    "nome": ""
+  },
+  {
+    "id": "VT-V-10",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 10,
+    "valore": "2,8",
+    "descrizione": "Rondata, rovesciamento indietro e salto d. teso.",
+    "nome": ""
+  },
+  {
+    "id": "VT-V-11",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 11,
+    "valore": "3,2",
+    "descrizione": "Rondata, rovesciamento indietro e salto d. teso con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-V-13",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 13,
+    "valore": "1,4",
+    "descrizione": "Rondata ½ avv. e ribaltata.",
+    "nome": ""
+  },
+  {
+    "id": "VT-V-14",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 14,
+    "valore": "1,6",
+    "descrizione": "Rondata ½ avv. e ribaltata con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-V-15",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 15,
+    "valore": "1,8",
+    "descrizione": "Rondata ½ avv. e ribaltata con 1 avv.",
+    "nome": ""
+  },
+  {
+    "id": "VT-V-16",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 16,
+    "valore": "2,2",
+    "descrizione": "Rondata ½ avv. e ribaltata salto av. racc.",
+    "nome": ""
+  },
+  {
+    "id": "VT-V-17",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 17,
+    "valore": "2,6",
+    "descrizione": "Rondata ½ avv. e ribaltata salto av. carpio.",
+    "nome": ""
+  },
+  {
+    "id": "VT-V-18",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 18,
+    "valore": "3,4",
+    "descrizione": "Rondata ½ avv. e ribaltata salto av. teso.",
+    "nome": ""
+  },
+  {
+    "id": "VT-V-19",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 19,
+    "valore": "4,8",
+    "descrizione": "Rondata, rovesciamento indietro e doppio salto d. racc.",
+    "nome": "Melissanidis"
+  },
+  {
+    "id": "VT-V-20",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 20,
+    "valore": "5,2",
+    "descrizione": "Melissanidis carpio.",
+    "nome": "Yang Wei"
+  },
+  {
+    "id": "VT-V-21",
+    "attrezzo": "VT",
+    "gruppo": {
+      "numero": 5,
+      "nome": "Volteggi dalla rondata sulla pedana con o senza semplice salto e tutti i doppi salti av. o ind."
+    },
+    "numero": 21,
+    "valore": "5,0",
+    "descrizione": "Rondata ½ avv. e ribaltata doppio salto av. racc.",
+    "nome": ""
+  }
+]

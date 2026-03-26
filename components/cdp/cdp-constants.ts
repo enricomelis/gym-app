@@ -1,7 +1,5 @@
 import type { Attrezzo, ValoreDifficolta } from "@/lib/types/cdp";
 
-export const GRUPPI = [1, 2, 3, 4] as const;
-
 export const VALORI_DIFFICOLTA: ValoreDifficolta[] = [
   "A",
   "B",
@@ -46,6 +44,7 @@ export const NUMERI_ROMANI: Record<number, string> = {
   2: "II",
   3: "III",
   4: "IV",
+  5: "V",
 };
 
 export const COLORI_GRUPPO: Record<number, string> = {
@@ -53,6 +52,7 @@ export const COLORI_GRUPPO: Record<number, string> = {
   2: "#4EFC00",
   3: "#F627FE",
   4: "#FDFC07",
+  5: "#F40202",
 };
 
 export const COLONNE_PDF = ["A", "B", "C", "D", "E", "F+"] as const;
@@ -60,10 +60,10 @@ export const COLONNE_PDF = ["A", "B", "C", "D", "E", "F+"] as const;
 export const ATTREZZI: { codice: Attrezzo; nome: string; disponibile: boolean }[] = [
   { codice: "CL", nome: "Corpo Libero", disponibile: true },
   { codice: "CM", nome: "Cavallo con maniglie", disponibile: true },
-  { codice: "AN", nome: "Anelli", disponibile: false },
-  { codice: "VT", nome: "Volteggio", disponibile: false },
-  { codice: "PP", nome: "Parallele", disponibile: false },
-  { codice: "SB", nome: "Sbarra", disponibile: false },
+  { codice: "AN", nome: "Anelli", disponibile: true },
+  { codice: "VT", nome: "Volteggio", disponibile: true },
+  { codice: "PP", nome: "Parallele", disponibile: true },
+  { codice: "SB", nome: "Sbarra", disponibile: true },
 ];
 
 export const ELEMENTI_CON_ILLUSTRAZIONE = new Set([
@@ -91,4 +91,44 @@ export function troncaTesto(testo: string, max: number = 60): string {
 
 export function titoloElemento(el: { nome: string; descrizione: string }): string {
   return el.nome || el.descrizione;
+}
+
+const COLORE_DIFFICOLTA_NEUTRO = "bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300";
+
+export function coloreDifficolta(valore: string): string {
+  if (valore in COLORI_DIFFICOLTA) {
+    return COLORI_DIFFICOLTA[valore as ValoreDifficolta];
+  }
+  return COLORE_DIFFICOLTA_NEUTRO;
+}
+
+export function etichettaDifficolta(valore: string): string {
+  return valore || "N/D";
+}
+
+export function ordinaDifficolta(valori: string[]): string[] {
+  const lettere: string[] = [];
+  const numeri: string[] = [];
+  const altro: string[] = [];
+
+  for (const v of valori) {
+    if (VALORI_DIFFICOLTA.includes(v as ValoreDifficolta)) {
+      lettere.push(v);
+    } else if (v.includes(",") || v.includes(".")) {
+      numeri.push(v);
+    } else {
+      altro.push(v);
+    }
+  }
+
+  lettere.sort(
+    (a, b) =>
+      VALORI_DIFFICOLTA.indexOf(a as ValoreDifficolta) -
+      VALORI_DIFFICOLTA.indexOf(b as ValoreDifficolta),
+  );
+  numeri.sort(
+    (a, b) => Number.parseFloat(a.replace(",", ".")) - Number.parseFloat(b.replace(",", ".")),
+  );
+
+  return [...lettere, ...numeri, ...altro];
 }

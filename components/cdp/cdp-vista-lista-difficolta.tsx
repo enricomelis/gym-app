@@ -3,13 +3,14 @@
 import { useMemo } from "react";
 
 import { cn } from "@/lib/utils";
-import type { ElementoCdp, ValoreDifficolta } from "@/lib/types/cdp";
+import type { ElementoCdp } from "@/lib/types/cdp";
 
 import {
-  COLORI_DIFFICOLTA,
   COLORI_GRUPPO,
   NUMERI_ROMANI,
-  VALORI_DIFFICOLTA,
+  coloreDifficolta,
+  etichettaDifficolta,
+  ordinaDifficolta,
   titoloElemento,
   troncaTesto,
 } from "./cdp-constants";
@@ -24,7 +25,7 @@ export function CdpVistaListaDifficolta({
   onSelectElement,
 }: CdpVistaListaDifficoltaProps) {
   const sezioni = useMemo(() => {
-    const perDifficolta = new Map<ValoreDifficolta, ElementoCdp[]>();
+    const perDifficolta = new Map<string, ElementoCdp[]>();
 
     for (const el of elementi) {
       const lista = perDifficolta.get(el.valore) ?? [];
@@ -32,7 +33,7 @@ export function CdpVistaListaDifficolta({
       perDifficolta.set(el.valore, lista);
     }
 
-    return VALORI_DIFFICOLTA.filter((v) => perDifficolta.has(v)).map((v) => ({
+    return ordinaDifficolta([...perDifficolta.keys()]).map((v) => ({
       valore: v,
       elementi: perDifficolta.get(v)!.sort((a, b) => {
         if (a.gruppo.numero !== b.gruppo.numero) return a.gruppo.numero - b.gruppo.numero;
@@ -50,13 +51,15 @@ export function CdpVistaListaDifficolta({
             <span
               className={cn(
                 "inline-flex size-10 items-center justify-center rounded-lg text-lg font-bold",
-                COLORI_DIFFICOLTA[sezione.valore],
+                coloreDifficolta(sezione.valore),
               )}
             >
-              {sezione.valore}
+              {etichettaDifficolta(sezione.valore)}
             </span>
             <div>
-              <span className="font-semibold">Difficoltà {sezione.valore}</span>
+              <span className="font-semibold">
+                Difficoltà {etichettaDifficolta(sezione.valore)}
+              </span>
               <span className="text-muted-foreground ml-2 text-sm">
                 ({sezione.elementi.length} element{sezione.elementi.length === 1 ? "o" : "i"})
               </span>

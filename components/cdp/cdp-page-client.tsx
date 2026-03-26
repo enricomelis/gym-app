@@ -2,9 +2,9 @@
 
 import { useMemo, useState } from "react";
 
-import type { Attrezzo, ElementoCdp, ValoreDifficolta } from "@/lib/types/cdp";
+import type { Attrezzo, ElementoCdp } from "@/lib/types/cdp";
 
-import { VALORI_DIFFICOLTA } from "./cdp-constants";
+import { ordinaDifficolta } from "./cdp-constants";
 import { CdpAttrezzoSelector } from "./cdp-attrezzo-selector";
 import { CdpSearch } from "./cdp-search";
 import { CdpFilters } from "./cdp-filters";
@@ -25,7 +25,7 @@ export function CdpPageClient({ datiPerAttrezzo }: CdpPageClientProps) {
   const [vista, setVista] = useState<Vista>("tabella-pdf");
   const [elementoSelezionato, setElementoSelezionato] = useState<ElementoCdp | null>(null);
   const [gruppoAttivo, setGruppoAttivo] = useState<number | null>(null);
-  const [difficoltaAttiva, setDifficoltaAttiva] = useState<ValoreDifficolta | null>(null);
+  const [difficoltaAttiva, setDifficoltaAttiva] = useState<string | null>(null);
 
   const elementi = datiPerAttrezzo[attrezzoAttivo] ?? EMPTY_ELEMENTI;
 
@@ -46,11 +46,11 @@ export function CdpPageClient({ datiPerAttrezzo }: CdpPageClientProps) {
   }, [elementi]);
 
   const difficoltaPresenti = useMemo(() => {
-    const set = new Set<ValoreDifficolta>();
+    const set = new Set<string>();
     for (const el of elementi) {
       set.add(el.valore);
     }
-    return VALORI_DIFFICOLTA.filter((v) => set.has(v));
+    return ordinaDifficolta([...set]);
   }, [elementi]);
 
   const elementiFiltrati = useMemo(() => {

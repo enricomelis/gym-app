@@ -8,9 +8,10 @@ import { cn } from "@/lib/utils";
 import type { ElementoCdp } from "@/lib/types/cdp";
 
 import {
-  COLORI_DIFFICOLTA,
   COLORI_GRUPPO,
   NUMERI_ROMANI,
+  coloreDifficolta,
+  etichettaDifficolta,
   svgPathElemento,
   titoloElemento,
 } from "./cdp-constants";
@@ -42,10 +43,10 @@ export function CdpElementoDialog({ elemento, onClose }: CdpElementoDialogProps)
                 <span
                   className={cn(
                     "inline-flex shrink-0 items-center rounded-md px-2.5 py-1 text-sm font-semibold",
-                    COLORI_DIFFICOLTA[elemento.valore],
+                    coloreDifficolta(elemento.valore),
                   )}
                 >
-                  {elemento.valore}
+                  {etichettaDifficolta(elemento.valore)}
                 </span>
               </div>
 

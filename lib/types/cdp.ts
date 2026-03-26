@@ -12,7 +12,7 @@ export interface ElementoCdp {
   attrezzo: Attrezzo;
   gruppo: GruppoCdp;
   numero: number;
-  valore: ValoreDifficolta;
+  valore: string;
   descrizione: string;
   nome: string;
 }
