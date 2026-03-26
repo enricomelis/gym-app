@@ -1,0 +1,1574 @@
+[
+  {
+    "id": "SB-I-1",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 1,
+    "valore": "A",
+    "descrizione": "Slanciappoggio d. alla vert.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-2",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 2,
+    "valore": "B",
+    "descrizione": "Slanciapp. d. alla vert. con 1 g. Anche con presa mista.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-7",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 7,
+    "valore": "A",
+    "descrizione": "Slanciappoggio d. alla vert. con ½ g.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-8",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 8,
+    "valore": "B",
+    "descrizione": "Dallo slancio d. in sosp., piroetta alla sosp.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-9",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 9,
+    "valore": "C",
+    "descrizione": "Dallo slancio d. in sosp., piroetta all'appoggio.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-13",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 13,
+    "valore": "A",
+    "descrizione": "Granvolta av.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-14",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 14,
+    "valore": "B",
+    "descrizione": "1 g. in presa mista.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-15",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 15,
+    "valore": "C",
+    "descrizione": "1 g. in presa cubitale.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-19",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 19,
+    "valore": "A",
+    "descrizione": "½ g. in vert. (perno).",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-20",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 20,
+    "valore": "B",
+    "descrizione": "Granvolta av. con salto o con salto e ½ g.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-21",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 21,
+    "valore": "C",
+    "descrizione": "Granvolta av. con salto e 1 g.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-26",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 26,
+    "valore": "B",
+    "descrizione": "Granvolta av. con un braccio in presa palmare (360 g.).",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-27",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 27,
+    "valore": "C",
+    "descrizione": "Su un braccio, granvolta av., 1 g. alla presa cubitale e 1 g. alla presa palmare.",
+    "nome": "Zou Li Min"
+  },
+  {
+    "id": "SB-I-31",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 31,
+    "valore": "A",
+    "descrizione": "Granvolta d.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-32",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 32,
+    "valore": "B",
+    "descrizione": "Granvolta d. con un braccio (360 g.).",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-37",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 37,
+    "valore": "A",
+    "descrizione": "½ giro. (Cambio a petto)",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-43",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 43,
+    "valore": "A",
+    "descrizione": "Granvolta d. con salto delle mani in presa palmare.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-44",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 44,
+    "valore": "B",
+    "descrizione": "Granvolta d. con salto.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-45",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 45,
+    "valore": "C",
+    "descrizione": "Granvolta d. con salto e 1 g.",
+    "nome": "Quast"
+  },
+  {
+    "id": "SB-I-50",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 50,
+    "valore": "B",
+    "descrizione": "Granvolta d. con salto e ½ in presa cubitale.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-51",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 51,
+    "valore": "C",
+    "descrizione": "Granvolta d. con 1 ½ g. saltato in presa palmare, presa palm.-cub.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-52",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 52,
+    "valore": "D",
+    "descrizione": "Granvolta d. con 1 ½ giro saltato alla presa cubitale a due mani.",
+    "nome": "Rybalko"
+  },
+  {
+    "id": "SB-I-56",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 56,
+    "valore": "B",
+    "descrizione": "½ g. in presa cubitale.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-62",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 62,
+    "valore": "B",
+    "descrizione": "Oscillazione av. con salto delle impugnature in presa cubitale.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-68",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 68,
+    "valore": "B",
+    "descrizione": "Granvolta cubitale.",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-69",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 69,
+    "valore": "C",
+    "descrizione": "Granvolta dorsale av. (granvolta russa).",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-70",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 70,
+    "valore": "D",
+    "descrizione": "Granvolta d. in sosp. dorsale (granvolta tchèques).",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-74",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 74,
+    "valore": "B",
+    "descrizione": "Slanciappoggio Steinemann con ½ g. all'app.",
+    "nome": "Ono"
+  },
+  {
+    "id": "SB-I-75",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 75,
+    "valore": "C",
+    "descrizione": "Granvolta cub., 1 g. alla vert. con imp. mista",
+    "nome": ""
+  },
+  {
+    "id": "SB-I-76",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Slanci in posizione distesa con o senza rotazioni"
+    },
+    "numero": 76,
+    "valore": "D",
+    "descrizione": "Granvolta d. in sosp. dorsale (granvolta tcheque) con ½ g. alla granvolta avanti.",
+    "nome": ""
+  },
+  {
+    "id": "SB-II-2",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 2,
+    "valore": "B",
+    "descrizione": "Slanciappoggio d., staccata front. alla sospensione dorsale.",
+    "nome": ""
+  },
+  {
+    "id": "SB-II-3",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 3,
+    "valore": "C",
+    "descrizione": "Slanciappoggio d., planche a gambe div. con ½ avv. sopra la sbarra, alla sospensione anche con ½ giro e slancio in verticale.",
+    "nome": "Markelov"
+  },
+  {
+    "id": "SB-II-6",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 6,
+    "valore": "G",
+    "descrizione": "Slanciappoggio d., planche a corpo teso con 1 ½ avv. sopra la sbarra, alla sospensione.",
+    "nome": "Walstrom"
+  },
+  {
+    "id": "SB-II-9",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 9,
+    "valore": "C",
+    "descrizione": "Markelov teso a gambe unite, anche con ½ giro e slancio in verticale.",
+    "nome": "Yamawaki"
+  },
+  {
+    "id": "SB-II-15",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 15,
+    "valore": "C",
+    "descrizione": "Oscillare av. e superare dorsalmente la sbarra con gambe div. alla sospensione, anche con ½ giro e slancio in verticale.",
+    "nome": "Tkatchev"
+  },
+  {
+    "id": "SB-II-16",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 16,
+    "valore": "D",
+    "descrizione": "Tkatchev alla sospensione, anche con ½ giro alla presa palm.cub. e slancio dietro alla verticale.",
+    "nome": "Moznik"
+  },
+  {
+    "id": "SB-II-18",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 18,
+    "valore": "G",
+    "descrizione": "Tkatchev teso con 1 avv.",
+    "nome": "Ljukin"
+  },
+  {
+    "id": "SB-II-21",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 21,
+    "valore": "C",
+    "descrizione": "Oscillare av. e superare dorsalmente la sbarra con corpo carpiato, alla sospensione, anche con ½ giro e slancio in verticale.",
+    "nome": "Samiloglu"
+  },
+  {
+    "id": "SB-II-23",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 23,
+    "valore": "E",
+    "descrizione": "Tkatchev a gambe div. con ½ giro alla presa cubitale",
+    "nome": "Kulezca"
+  },
+  {
+    "id": "SB-II-26",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 26,
+    "valore": "B",
+    "descrizione": "Slanciappoggio d. e passaggio front. in posizione carpia saltato sopra la sbarra, con ½ g., alla sospensione.",
+    "nome": "Voronin"
+  },
+  {
+    "id": "SB-II-28",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 28,
+    "valore": "D",
+    "descrizione": "Giro libero d. con gambe unite o div. o capovolta d. e Tkatchev con gambe div., alla sospensione, anche con ½ giro e slancio in verticale.",
+    "nome": "Piatti"
+  },
+  {
+    "id": "SB-II-29",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 29,
+    "valore": "E",
+    "descrizione": "Piatti teso, anche con ½ giro alla presa mista palm. cubitale e slancio in verticale.",
+    "nome": "Kierzkowski"
+  },
+  {
+    "id": "SB-II-32",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 32,
+    "valore": "B",
+    "descrizione": "Slanciappoggio d. e passaggio dors. saltato sopra la sbarra con ¼ g., alla sospensione (salto di sbarra).",
+    "nome": ""
+  },
+  {
+    "id": "SB-II-34",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 34,
+    "valore": "D",
+    "descrizione": "Piatti carpiato.",
+    "nome": ""
+  },
+  {
+    "id": "SB-II-36",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 36,
+    "valore": "H",
+    "descrizione": "Piatti teso con 1 giro.",
+    "nome": "Suarez"
+  },
+  {
+    "id": "SB-II-39",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 39,
+    "valore": "C",
+    "descrizione": "Dallo slancio d., salto av. racc., o con gambe div., alla sosp. Anche dalla presa cubitale.",
+    "nome": "Jager"
+  },
+  {
+    "id": "SB-II-40",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 40,
+    "valore": "D",
+    "descrizione": "Dallo slancio d., salto av. carpio alla sosp. Anche dalla presa cubitale.",
+    "nome": ""
+  },
+  {
+    "id": "SB-II-41",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 41,
+    "valore": "E",
+    "descrizione": "Dallo slancio d., salto av. teso alla sosp. Anche dalla presa cubitale.",
+    "nome": "Balabanov"
+  },
+  {
+    "id": "SB-II-42",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 42,
+    "valore": "G",
+    "descrizione": "Salto av. teso con 1 avv. alla sosp. Anche dalla presa cubitale.",
+    "nome": "Winkler - Pogorolev"
+  },
+  {
+    "id": "SB-II-48",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 48,
+    "valore": "H",
+    "descrizione": "Salto av. teso con 2 avv. Anche dalla presa cubitale.",
+    "nome": ""
+  },
+  {
+    "id": "SB-II-51",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 51,
+    "valore": "C",
+    "descrizione": "Granvolta tchéque e salto dorsale a g. div. alla sospensione.",
+    "nome": ""
+  },
+  {
+    "id": "SB-II-52",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 52,
+    "valore": "D",
+    "descrizione": "Oscillare av. e contro salto av. con gambe div., alla sosp.",
+    "nome": "Xiao Ruizhi"
+  },
+  {
+    "id": "SB-II-57",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 57,
+    "valore": "C",
+    "descrizione": "Oscillare av. e salto d. a gambe div. con ½ avv. alla sosp.",
+    "nome": "Deltchev"
+  },
+  {
+    "id": "SB-II-58",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 58,
+    "valore": "D",
+    "descrizione": "Oscillare av. e salto d. carp. con ½ avv. alla sosp. Anche dalla granvolta Czech.",
+    "nome": "Gienger"
+  },
+  {
+    "id": "SB-II-60",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 60,
+    "valore": "G",
+    "descrizione": "Oscillare av. e salto d. teso con 1 ½ avv. alla sosp.",
+    "nome": "Deff"
+  },
+  {
+    "id": "SB-II-65",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 65,
+    "valore": "E",
+    "descrizione": "Salto av. racc., o con gambe div., al di sopra della sb., alla sosp. Anche dalla presa cubitale.",
+    "nome": "Gaylord"
+  },
+  {
+    "id": "SB-II-66",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 66,
+    "valore": "G",
+    "descrizione": "Gaylord con ½ avv.",
+    "nome": "Pegan"
+  },
+  {
+    "id": "SB-II-72",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 72,
+    "valore": "H",
+    "descrizione": "Gaylord con 1 avv.",
+    "nome": "Koudinov"
+  },
+  {
+    "id": "SB-II-78",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 78,
+    "valore": "F",
+    "descrizione": "Gaylord carpiato.",
+    "nome": ""
+  },
+  {
+    "id": "SB-II-82",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 82,
+    "valore": "D",
+    "descrizione": "Salto d. con ½ avv. raggruppato al di sopra della sbarra.",
+    "nome": ""
+  },
+  {
+    "id": "SB-II-83",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 83,
+    "valore": "E",
+    "descrizione": "Salto d. con ½ avv. carpiato al di sopra della sbarra.",
+    "nome": "Gaylord 2"
+  },
+  {
+    "id": "SB-II-84",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 84,
+    "valore": "H",
+    "descrizione": "Pegan carpiato.",
+    "nome": "Maras"
+  },
+  {
+    "id": "SB-II-88",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 88,
+    "valore": "D",
+    "descrizione": "Doppio salto d. racc. al di sopra della sb., alla sosp.",
+    "nome": "Kovacs"
+  },
+  {
+    "id": "SB-II-89",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 89,
+    "valore": "E",
+    "descrizione": "Kovacs con 1 avv.",
+    "nome": "Kolman"
+  },
+  {
+    "id": "SB-II-90",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 90,
+    "valore": "H",
+    "descrizione": "Kovacs con 2 avvitamenti.",
+    "nome": "Bretschneider"
+  },
+  {
+    "id": "SB-II-95",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 95,
+    "valore": "E",
+    "descrizione": "Kovacs carpiato o teso",
+    "nome": ""
+  },
+  {
+    "id": "SB-II-96",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 96,
+    "valore": "G",
+    "descrizione": "Kovacs teso con 1 avv. O Kovacs carpiato con 1 avv.",
+    "nome": "Cassina"
+  },
+  {
+    "id": "SB-II-102",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 102,
+    "valore": "I",
+    "descrizione": "Kovacs teso con 2 avv.",
+    "nome": "Miyachi"
+  },
+  {
+    "id": "SB-II-108",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Movimenti con fase di volo"
+    },
+    "numero": 108,
+    "valore": "G",
+    "descrizione": "Kovacs con 1½ avv. alla presa mista.",
+    "nome": "Shaham"
+  },
+  {
+    "id": "SB-III-1",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 1,
+    "valore": "A",
+    "descrizione": "Kip alla verticale o dalla presa mista alla verticale.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-8",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 8,
+    "valore": "B",
+    "descrizione": "Dalla vert., giro in app. av. alla verticale.",
+    "nome": "Weiler"
+  },
+  {
+    "id": "SB-III-13",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 13,
+    "valore": "A",
+    "descrizione": "Dalla sospensione o dall'app. presa di slancio alla vert. o capovolta d., alla vert.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-25",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 25,
+    "valore": "A",
+    "descrizione": "Dalla sospensione o dall'app. presa di slancio alla vert con cambio salt. delle imp. da dors. a palm.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-32",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 32,
+    "valore": "B",
+    "descrizione": "Giro libero av. con gambe unite o div., alla vert.",
+    "nome": "Endo"
+  },
+  {
+    "id": "SB-III-33",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 33,
+    "valore": "C",
+    "descrizione": "Slancio circolare libero carpiato in avanti alla verticale.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-38",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 38,
+    "valore": "B",
+    "descrizione": "Giro libero d. con gambe div., alla vert.",
+    "nome": "Stalder"
+  },
+  {
+    "id": "SB-III-40",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 40,
+    "valore": "D",
+    "descrizione": "Stalder con gambe div., con 1 ½ g. saltato alla vert. con imp. mista cub.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-41",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 41,
+    "valore": "E",
+    "descrizione": "Stalder con gambe div., con 1 ½ g. saltato alla vert. con imp. cub.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-45",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 45,
+    "valore": "C",
+    "descrizione": "Stalder a gambe unite.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-56",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 56,
+    "valore": "B",
+    "descrizione": "Stalder con gambe div., con cambio saltato delle imp. da dors. a palm.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-57",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 57,
+    "valore": "C",
+    "descrizione": "Stalder con gambe unite con cambio saltato delle imp. da dors. a palm.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-63",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 63,
+    "valore": "C",
+    "descrizione": "Giro Adler, alla vert.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-64",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 64,
+    "valore": "D",
+    "descrizione": "Giro Adler con ½ g., alla vert. con imp. dors.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-65",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 65,
+    "valore": "E",
+    "descrizione": "Giro Adler con 1 g., alla vert. in presa palmare.",
+    "nome": "Fuentes"
+  },
+  {
+    "id": "SB-III-70",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 70,
+    "valore": "D",
+    "descrizione": "Giro Adler con cambio saltato alla verticale in presa palmare, dorsale o mista.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-76",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 76,
+    "valore": "D",
+    "descrizione": "Giro Adler con 1 g., alla vert. in presa mista o con salto di mani.",
+    "nome": "Baldauf"
+  },
+  {
+    "id": "SB-III-79",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 79,
+    "valore": "A",
+    "descrizione": "Giro libero dorsale e, slancio d. alla sosp. dors.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-80",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 80,
+    "valore": "B",
+    "descrizione": "Dalla sosp. dorsale slanciappoggio av. all'app. dorsale.",
+    "nome": "Steineman"
+  },
+  {
+    "id": "SB-III-81",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 81,
+    "valore": "C",
+    "descrizione": "Infilata delle gambe fra le braccia, giro libero dorsale e, slancio d. alla sosp. dors.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-87",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 87,
+    "valore": "C",
+    "descrizione": "Slanciappoggio Steinemann con passaggio del corpo carpiato fra le mani, alla vert.",
+    "nome": "Koste"
+  },
+  {
+    "id": "SB-III-92",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 92,
+    "valore": "B",
+    "descrizione": "Slanciappoggio Steinemann con passaggio costale sopra la sbarra, alla sosp. o all'app.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-99",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 99,
+    "valore": "C",
+    "descrizione": "Endo con gambe div., con inp. cub., alla ver.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-100",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 100,
+    "valore": "D",
+    "descrizione": "Endo con gambe unite con inp. cub., alla ver.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-103",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 103,
+    "valore": "A",
+    "descrizione": "Dal giro libero av. carp., divaricare le gambe abbandonando e riprendendo le imp., alla sospensione o all'app.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-104",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 104,
+    "valore": "B",
+    "descrizione": "Dal giro libero av. carp., divaricare le gambe abbandonando e riprendendo le imp., alla vert.",
+    "nome": ""
+  },
+  {
+    "id": "SB-III-105",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 105,
+    "valore": "C",
+    "descrizione": "Dal giro libero av. carp., divaricare le gambe abbandonando e riprendendo le imp., con ½ giro.",
+    "nome": "Carballo"
+  },
+  {
+    "id": "SB-III-106",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 106,
+    "valore": "D",
+    "descrizione": "Dal giro lib. av. carp., divaricare le g. abband. e riprend. le imp. con 1 giro alla vert. con imp. mista.",
+    "nome": "Quintero"
+  },
+  {
+    "id": "SB-III-107",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi eseguiti vicino alla sbarra ed elementi Adler"
+    },
+    "numero": 107,
+    "valore": "E",
+    "descrizione": "Quintero alla presa in cubitale.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-1",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 1,
+    "valore": "A",
+    "descrizione": "Salto av. carp. o teso, anche con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-2",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 2,
+    "valore": "B",
+    "descrizione": "Salto av. teso con 1 o 1½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-3",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 3,
+    "valore": "C",
+    "descrizione": "Salto av. teso con 2 o 2½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-6",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 6,
+    "valore": "G",
+    "descrizione": "Triplo salto av. racc.",
+    "nome": "Rumbutis"
+  },
+  {
+    "id": "SB-IV-9",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 9,
+    "valore": "C",
+    "descrizione": "Doppio salto av. racc. o carp. o con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-10",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 10,
+    "valore": "D",
+    "descrizione": "Doppio salto av. racc. o carp. con 1 o 1½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-11",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 11,
+    "valore": "E",
+    "descrizione": "Doppio salto av. racc. o carp. con 2 o 2½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-16",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 16,
+    "valore": "D",
+    "descrizione": "Doppio salto av. teso o con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-17",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 17,
+    "valore": "E",
+    "descrizione": "Doppio salto av. teso con 1 o 1½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-21",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 21,
+    "valore": "C",
+    "descrizione": "Doppio salto av. racc. o carp. o con ½ avv. al di sopra della sbarra.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-22",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 22,
+    "valore": "D",
+    "descrizione": "Doppio salto av. racc. o carp. con 1 o 1½ avv. al di sopra della sbarra.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-25",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 25,
+    "valore": "A",
+    "descrizione": "Salto d. carp. o teso anche con ½ o 1 avv.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-26",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 26,
+    "valore": "B",
+    "descrizione": "Salto d. teso con 1 ½ o 2 avv.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-27",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 27,
+    "valore": "C",
+    "descrizione": "Salto d. teso con 2½ o 3 avv.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-32",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 32,
+    "valore": "B",
+    "descrizione": "Doppio salto d. racc. o carpiato.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-33",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 33,
+    "valore": "C",
+    "descrizione": "Doppio salto d. racc con 1 avv.",
+    "nome": "Tsukahara"
+  },
+  {
+    "id": "SB-IV-34",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 34,
+    "valore": "D",
+    "descrizione": "Doppio salto d. racc. con 2 avv.",
+    "nome": "Tsukahara con 1 avv."
+  },
+  {
+    "id": "SB-IV-39",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 39,
+    "valore": "C",
+    "descrizione": "Doppio salto d. teso.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-40",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 40,
+    "valore": "D",
+    "descrizione": "Doppio salto d. teso con 1 avv.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-41",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 41,
+    "valore": "E",
+    "descrizione": "Doppio salto d. teso con 2 avv.",
+    "nome": "Watenabe"
+  },
+  {
+    "id": "SB-IV-42",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 42,
+    "valore": "F",
+    "descrizione": "Doppio salto d. teso con 3 avv.",
+    "nome": "Fedorchenko"
+  },
+  {
+    "id": "SB-IV-48",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 48,
+    "valore": "F",
+    "descrizione": "Triplo salto d. racc., o triplo salto d. racc. al di sopra della sb.",
+    "nome": "Andrianov"
+  },
+  {
+    "id": "SB-IV-50",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 50,
+    "valore": "B",
+    "descrizione": "Doppio salto d. racc. al di sopra della sb.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-51",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 51,
+    "valore": "C",
+    "descrizione": "Doppio salto d. racc. con 1 avv., al di sopra della sb.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-52",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 52,
+    "valore": "D",
+    "descrizione": "Doppio salto d. racc. con 2 avv., al di sopra della sb.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-54",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 54,
+    "valore": "G",
+    "descrizione": "Triplo salto d. carp.",
+    "nome": "Fardan"
+  },
+  {
+    "id": "SB-IV-57",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 57,
+    "valore": "C",
+    "descrizione": "Doppio salto d. teso, al di sopra della sb.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-58",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 58,
+    "valore": "D",
+    "descrizione": "Doppio salto d. teso con 1 avv., al di sopra della sb.",
+    "nome": "Hayden"
+  },
+  {
+    "id": "SB-IV-59",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 59,
+    "valore": "E",
+    "descrizione": "Doppio salto d. teso con 1 ½ o 2 avv., al di sopra della sb.",
+    "nome": "Faulk"
+  },
+  {
+    "id": "SB-IV-60",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 60,
+    "valore": "G",
+    "descrizione": "Triplo salto d. racc. con 1 avv.",
+    "nome": "Belle"
+  },
+  {
+    "id": "SB-IV-61",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 61,
+    "valore": "A",
+    "descrizione": "Planche a gambe div., o unite, o unite con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-62",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 62,
+    "valore": "B",
+    "descrizione": "Planche con 1 o 1 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "SB-IV-64",
+    "attrezzo": "SB",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 64,
+    "valore": "D",
+    "descrizione": "Planche con 2 avv.",
+    "nome": ""
+  }
+]

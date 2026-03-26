@@ -7,7 +7,13 @@ import { cn } from "@/lib/utils";
 import { Input } from "@/components/ui/input";
 import type { ElementoCdp } from "@/lib/types/cdp";
 
-import { COLORI_DIFFICOLTA, COLORI_GRUPPO, NUMERI_ROMANI, titoloElemento } from "./cdp-constants";
+import {
+  COLORI_GRUPPO,
+  NUMERI_ROMANI,
+  coloreDifficolta,
+  etichettaDifficolta,
+  titoloElemento,
+} from "./cdp-constants";
 
 interface CdpSearchProps {
   elementi: ElementoCdp[];
@@ -156,10 +162,10 @@ export function CdpSearch({ elementi, onSelectElement }: CdpSearchProps) {
               <span
                 className={cn(
                   "inline-flex shrink-0 items-center rounded px-1.5 py-0.5 text-xs font-semibold",
-                  COLORI_DIFFICOLTA[el.valore],
+                  coloreDifficolta(el.valore),
                 )}
               >
-                {el.valore}
+                {etichettaDifficolta(el.valore)}
               </span>
 
               {/* Group label */}

@@ -7,10 +7,10 @@ import type { ElementoCdp } from "@/lib/types/cdp";
 
 import {
   COLONNE_PDF,
-  COLORI_DIFFICOLTA,
   COLORI_GRUPPO,
-  GRUPPI,
   NUMERI_ROMANI,
+  coloreDifficolta,
+  etichettaDifficolta,
   svgPathElemento,
   troncaTesto,
   titoloElemento,
@@ -22,37 +22,45 @@ interface CdpVistaTabellaPdfProps {
 }
 
 export function CdpVistaTabellaPdf({ elementi, onSelectElement }: CdpVistaTabellaPdfProps) {
+  const gruppiPresenti = useMemo(() => {
+    const set = new Set<number>();
+    for (const el of elementi) set.add(el.gruppo.numero);
+    return [...set].sort((a, b) => a - b);
+  }, [elementi]);
+
   const datiPerGruppo = useMemo(() => {
-    return GRUPPI.map((g) => {
-      const elementiGruppo = elementi.filter((el) => el.gruppo.numero === g);
-      if (elementiGruppo.length === 0) return null;
+    return gruppiPresenti
+      .map((g) => {
+        const elementiGruppo = elementi.filter((el) => el.gruppo.numero === g);
+        if (elementiGruppo.length === 0) return null;
 
-      const nomeGruppo = elementiGruppo[0].gruppo.nome;
-      const maxNumero = Math.max(...elementiGruppo.map((el) => el.numero));
-      const maxRow = Math.floor((maxNumero - 1) / 6);
+        const nomeGruppo = elementiGruppo[0].gruppo.nome;
+        const maxNumero = Math.max(...elementiGruppo.map((el) => el.numero));
+        const maxRow = Math.floor((maxNumero - 1) / 6);
 
-      // Build grid: rows x 6 columns
-      const griglia: (ElementoCdp | null)[][] = [];
-      for (let r = 0; r <= maxRow; r++) {
-        griglia.push([null, null, null, null, null, null]);
-      }
-
-      for (const el of elementiGruppo) {
-        const riga = Math.floor((el.numero - 1) / 6);
-        const colonna = (el.numero - 1) % 6;
-        if (riga <= maxRow && colonna < 6) {
-          griglia[riga][colonna] = el;
+        // Build grid: rows x 6 columns
+        const griglia: (ElementoCdp | null)[][] = [];
+        for (let r = 0; r <= maxRow; r++) {
+          griglia.push([null, null, null, null, null, null]);
         }
-      }
 
-      return { gruppo: g, nomeGruppo, griglia, maxRow };
-    }).filter(Boolean) as {
+        for (const el of elementiGruppo) {
+          const riga = Math.floor((el.numero - 1) / 6);
+          const colonna = (el.numero - 1) % 6;
+          if (riga <= maxRow && colonna < 6) {
+            griglia[riga][colonna] = el;
+          }
+        }
+
+        return { gruppo: g, nomeGruppo, griglia, maxRow };
+      })
+      .filter(Boolean) as {
       gruppo: number;
       nomeGruppo: string;
       griglia: (ElementoCdp | null)[][];
       maxRow: number;
     }[];
-  }, [elementi]);
+  }, [elementi, gruppiPresenti]);
 
   return (
     <div className="mx-auto flex w-full max-w-7xl flex-col gap-10 px-4 lg:px-12">
@@ -97,7 +105,8 @@ export function CdpVistaTabellaPdf({ elementi, onSelectElement }: CdpVistaTabell
                   }
 
                   const titolo = titoloElemento(el);
-                  const isAboveF = colIdx === 5 && el.valore !== "F";
+                  const isVT = el.attrezzo === "VT";
+                  const mostraBadge = isVT || (colIdx === 5 && el.valore !== "F");
                   const svgPath = svgPathElemento(el.id);
 
                   return (
@@ -110,14 +119,14 @@ export function CdpVistaTabellaPdf({ elementi, onSelectElement }: CdpVistaTabell
                       {/* Header: number + difficulty badge */}
                       <div className="flex items-center justify-between">
                         <span className="text-muted-foreground font-mono text-xs">{el.numero}</span>
-                        {isAboveF && (
+                        {mostraBadge && (
                           <span
                             className={cn(
                               "inline-flex items-center rounded px-1 py-0.5 text-xs font-bold",
-                              COLORI_DIFFICOLTA[el.valore],
+                              coloreDifficolta(el.valore),
                             )}
                           >
-                            {el.valore}
+                            {etichettaDifficolta(el.valore)}
                           </span>
                         )}
                       </div>

@@ -1,0 +1,2174 @@
+[
+  {
+    "id": "PP-I-1",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 1,
+    "valore": "A",
+    "descrizione": "Slanciappoggio av.",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-2",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 2,
+    "valore": "B",
+    "descrizione": "Slanciappoggio av. e staccata dors., alla vert.",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-3",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 3,
+    "valore": "C",
+    "descrizione": "Slanciappoggio av. e staccata dors., alla sospensione.",
+    "nome": "Muntean"
+  },
+  {
+    "id": "PP-I-5",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 5,
+    "valore": "E",
+    "descrizione": "Slanciappoggio av. con ½ g. alla vert.",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-6",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 6,
+    "valore": "F",
+    "descrizione": "Slanciappoggio av. con ¾ g. alla verticale su uno staggio.",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-7",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 7,
+    "valore": "A",
+    "descrizione": "Slanciappoggio av. e con ¼ di g. alla sospensione longit. su uno staggio.",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-8",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 8,
+    "valore": "B",
+    "descrizione": "Oscill. av. in sosp. brach. e ½ g. carp. saltato all'app. (Kato), o con capovolta d. con ½ g. alla sosp. brach.",
+    "nome": "Watenabe"
+  },
+  {
+    "id": "PP-I-11",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 11,
+    "valore": "E",
+    "descrizione": "Slanciappoggio av. con Makuts alla sospensione brachiale.",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-12",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 12,
+    "valore": "G",
+    "descrizione": "Slanciappoggio av. con Makuts all'appoggio",
+    "nome": "Tsolakidis 1"
+  },
+  {
+    "id": "PP-I-14",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 14,
+    "valore": "B",
+    "descrizione": "Oscill. av. in sosp. brach. e capovolta d. alla vert. con braccia tese.",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-15",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 15,
+    "valore": "C",
+    "descrizione": "Oscill. av. in sosp.brach. e capovolta d. con 1/4 di giro alla verticale su uno staggio.",
+    "nome": "Kovtun"
+  },
+  {
+    "id": "PP-I-17",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 17,
+    "valore": "E",
+    "descrizione": "Slanciappoggio av. con 1 g. alla vert.",
+    "nome": "Richards"
+  },
+  {
+    "id": "PP-I-18",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 18,
+    "valore": "F",
+    "descrizione": "Slanciappoggio av. con 1 ½ giro alla vert.",
+    "nome": "Tsolakidis 2"
+  },
+  {
+    "id": "PP-I-20",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 20,
+    "valore": "B",
+    "descrizione": "Oscill. av. in sosp. brach., capovolta d. con staccata av. alla sosp. brach.",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-21",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 21,
+    "valore": "C",
+    "descrizione": "Oscill. av. in sosp. brach., capovolta d. con staccata av. all'app.",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-24",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 24,
+    "valore": "F",
+    "descrizione": "Slanciappoggio av. e doppio salto d. racc. alla sosp. brachiale",
+    "nome": "Dimitrenko"
+  },
+  {
+    "id": "PP-I-30",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 30,
+    "valore": "G",
+    "descrizione": "Slanciappoggio av. e doppio salto d. carpiato alla sosp. brachiale",
+    "nome": "LI Xiaopeng"
+  },
+  {
+    "id": "PP-I-34",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 34,
+    "valore": "D",
+    "descrizione": "Slanciappoggio av. e salto d. con ½ giro all'appoggio brachiale",
+    "nome": "Harada"
+  },
+  {
+    "id": "PP-I-35",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 35,
+    "valore": "E",
+    "descrizione": "Slanciappoggio av. e salto d. con ½ giro alla sospensione.",
+    "nome": "Dalton"
+  },
+  {
+    "id": "PP-I-38",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 38,
+    "valore": "B",
+    "descrizione": "Slanciappoggio d. alla vert. (anche con ½ giro).",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-40",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 40,
+    "valore": "D",
+    "descrizione": "Slanciappoggio d. con ¼ g. saltato alla vert.",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-41",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 41,
+    "valore": "E",
+    "descrizione": "Slanciappoggio d. con 1 ¼ g. saltato alla vert. su uno staggio",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-44",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 44,
+    "valore": "B",
+    "descrizione": "Slanciappoggio d. con ½ g. e staccata dors., alla sosp. brachiale",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-45",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 45,
+    "valore": "C",
+    "descrizione": "Slanciappoggio d. con ½ g. e staccata dors., all' appoggio.",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-50",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 50,
+    "valore": "B",
+    "descrizione": "Slanciappoggio d. con dietro front dorsale all'appoggio.",
+    "nome": "Yamawaki"
+  },
+  {
+    "id": "PP-I-51",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 51,
+    "valore": "C",
+    "descrizione": "Slanciappoggio d. e 1 ¼ salto av. racc. o carp., alla sosp. brachiale",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-52",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 52,
+    "valore": "D",
+    "descrizione": "Slanciappoggio d. e salto av. carp., all'appoggio",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-54",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 54,
+    "valore": "F",
+    "descrizione": "Slanciappoggio d. doppio salto av.racc. alla sosp. brachiale.",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-59",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 59,
+    "valore": "E",
+    "descrizione": "Slanciappoggio d. e salto av. a gambe div. alla sosp. brachiale.",
+    "nome": "Pakhniuk 1"
+  },
+  {
+    "id": "PP-I-60",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 60,
+    "valore": "F",
+    "descrizione": "Slanciappoggio d. e salto av. a gambe div. alla sospensione.",
+    "nome": "Pakhniuk 2"
+  },
+  {
+    "id": "PP-I-61",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 61,
+    "valore": "A",
+    "descrizione": "Slanciappoggio d. e staccata front. all'appoggio a braccia piegate",
+    "nome": ""
+  },
+  {
+    "id": "PP-I-62",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 1,
+      "nome": "Elementi dalla sospensione brachiale"
+    },
+    "numero": 62,
+    "valore": "B",
+    "descrizione": "Slanciappoggio d. e staccata front. all'appoggio a braccia tese.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-1",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 1,
+    "valore": "A",
+    "descrizione": "Tutti gli slanci alla verticale.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-2",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 2,
+    "valore": "B",
+    "descrizione": "Dall' app., a braccia piegate, saltare con ½ g. superando dorsalmente lo staggio per arrivare in app. e oscillare dietro.",
+    "nome": "Kato"
+  },
+  {
+    "id": "PP-II-3",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 3,
+    "valore": "C",
+    "descrizione": "Dietro front alla vert. o su uno o due staggi.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-4",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 4,
+    "valore": "D",
+    "descrizione": "Dietro front o salto dietro alla vert. su uno staggio. (anche con ¼ o ¾ di giro).",
+    "nome": "Bilozerchev - Peters"
+  },
+  {
+    "id": "PP-II-5",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 5,
+    "valore": "E",
+    "descrizione": "Dietro front alla vert. su uno staggio per staggio.",
+    "nome": "Dimic"
+  },
+  {
+    "id": "PP-II-7",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 7,
+    "valore": "A",
+    "descrizione": "Tute le squadre, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-8",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 8,
+    "valore": "B",
+    "descrizione": "Salire lentamente alla vert. con corpo teso e braccia piegate o con corpo flesso e braccia tese, 2\". Anche a gambe divaricate.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-9",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 9,
+    "valore": "C",
+    "descrizione": "Diamidov e ½ giro alla sosp. brachiale.",
+    "nome": "Salazar"
+  },
+  {
+    "id": "PP-II-10",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 10,
+    "valore": "D",
+    "descrizione": "¾ di Diamidov alla vert. longit. su uno staggio, passaggio dorsale lat. alla sosp. longit. su uno staggio.",
+    "nome": "De Freitas"
+  },
+  {
+    "id": "PP-II-13",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 13,
+    "valore": "A",
+    "descrizione": "Staccata dorsale all'app.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-14",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 14,
+    "valore": "B",
+    "descrizione": "Staccata dors. alla vert.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-15",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 15,
+    "valore": "C",
+    "descrizione": "Staccata dors. Direttamente alla sospensione.",
+    "nome": "Babos"
+  },
+  {
+    "id": "PP-II-19",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 19,
+    "valore": "A",
+    "descrizione": "Staccata frontale all'app. o alla squadra, 2\".",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-27",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 27,
+    "valore": "C",
+    "descrizione": "Oscillaz. av. con 1 giro in app. su un braccio alla vert. su uno o due staggi.",
+    "nome": "Diamidov"
+  },
+  {
+    "id": "PP-II-28",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 28,
+    "valore": "D",
+    "descrizione": "Diamidov con ¼ o ½ giro alla verticale..",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-32",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 32,
+    "valore": "B",
+    "descrizione": "Oscillaz. av. con 1 avv. alla sosp. brachiale.",
+    "nome": "Carminucci"
+  },
+  {
+    "id": "PP-II-34",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 34,
+    "valore": "D",
+    "descrizione": "Oscillaz. av con 5/4 di giro alla verticale su uno staggio e Healy all'appoggio brachiale",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-35",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 35,
+    "valore": "E",
+    "descrizione": "¾ Diamidov, alla vert. su uno staggio e Healy sull'altra mano, all'app.",
+    "nome": "Makuts"
+  },
+  {
+    "id": "PP-II-36",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 36,
+    "valore": "F",
+    "descrizione": "Oscillaz. av con 5/4 di giro alla verticale su uno staggio e Healy all'appoggio.",
+    "nome": "Zonderland"
+  },
+  {
+    "id": "PP-II-38",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 38,
+    "valore": "B",
+    "descrizione": "Oscillare av. alla vert. traslocaz. e salto delle imp., all'appoggio.",
+    "nome": "Carballo"
+  },
+  {
+    "id": "PP-II-39",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 39,
+    "valore": "C",
+    "descrizione": "Salto d. alla vert. Anche su su uno staggio",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-40",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 40,
+    "valore": "D",
+    "descrizione": "Salto d. e staccata all'app., senza app. intermedio delle mani.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-45",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 45,
+    "valore": "C",
+    "descrizione": "Salto d. con ½ g., alla sosp. brachiale.",
+    "nome": "Toumilovitch"
+  },
+  {
+    "id": "PP-II-46",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 46,
+    "valore": "D",
+    "descrizione": "Salto d. alla vert. su un solo staggio (collegato con elemento tipo Healy).",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-47",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 47,
+    "valore": "E",
+    "descrizione": "Doppio salto d. racc., alla sosp. brachiale.",
+    "nome": "Morisue"
+  },
+  {
+    "id": "PP-II-48",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 48,
+    "valore": "F",
+    "descrizione": "Doppio salto d. carpiato, alla sosp. brachiale.",
+    "nome": "Huang Liping"
+  },
+  {
+    "id": "PP-II-52",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 52,
+    "valore": "D",
+    "descrizione": "1 ½ salto d. con ½ avv., alla sosp. brachiale.",
+    "nome": "Suarez"
+  },
+  {
+    "id": "PP-II-54",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 54,
+    "valore": "G",
+    "descrizione": "Doppio salto indietro con mezzo giro alla sospensione brachiale.",
+    "nome": "Kuavita"
+  },
+  {
+    "id": "PP-II-56",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 56,
+    "valore": "B",
+    "descrizione": "Dalla vert. ¼ di g. su uno staggio e scendere con ½ di giro all'app. dorsale",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-57",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 57,
+    "valore": "C",
+    "descrizione": "Dalla vert. ¾ di g. su uno staggio e scendere con ¼ di giro all'app. dorsale.",
+    "nome": "Brandstrom"
+  },
+  {
+    "id": "PP-II-58",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 58,
+    "valore": "D",
+    "descrizione": "Dietro front dors. e staccata dors. all'appoggio",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-62",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 62,
+    "valore": "B",
+    "descrizione": "Dietro front dorsale all'appoggio.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-63",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 63,
+    "valore": "C",
+    "descrizione": "Dietro front dorsale passando dalla vert.",
+    "nome": "Novikov"
+  },
+  {
+    "id": "PP-II-69",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 69,
+    "valore": "C",
+    "descrizione": "Dietro front dors. e staccata dorsale all'appoggio.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-73",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 73,
+    "valore": "A",
+    "descrizione": "Healy alle sopensione brachiale. (Anche dalla verticale su uno staggio).",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-74",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 74,
+    "valore": "B",
+    "descrizione": "Dopo un elemento di slancio minimo B, alla vert. su uno staggio, Healy alla sosp. brachiale.",
+    "nome": "Healy"
+  },
+  {
+    "id": "PP-II-75",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 75,
+    "valore": "C",
+    "descrizione": "Dalla vert. su uno o due staggi, Healy all'appoggio.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-76",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 76,
+    "valore": "D",
+    "descrizione": "Dopo un elemento di slancio minimo B, alla vert. su uno staggio, Healy all'appoggio.",
+    "nome": "Bejenaru"
+  },
+  {
+    "id": "PP-II-81",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 81,
+    "valore": "C",
+    "descrizione": "Oscillare d. con ½ giro saltato alla verticale.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-82",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 82,
+    "valore": "D",
+    "descrizione": "Oscillare d. con ¾ di giro saltato alla verticale su uno staggio.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-83",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 83,
+    "valore": "E",
+    "descrizione": "Oscillare d.con 1 giro saltato alla vert. o 1 giro inverso saltato alla vertiocale.",
+    "nome": "Gatson 1"
+  },
+  {
+    "id": "PP-II-84",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 84,
+    "valore": "F",
+    "descrizione": "Gatson 1 con ½ g. alla vert. su uno staggio Gatson 1 con ½ g. alla vert. su uno staggio.",
+    "nome": "Gatson 2"
+  },
+  {
+    "id": "PP-II-86",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 86,
+    "valore": "B",
+    "descrizione": "Dalla vert. su uno staggio, trasv. o long., ½ o ¾ g. av. o d., in vert.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-91",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 91,
+    "valore": "A",
+    "descrizione": "Tutte le verticali con ½ giro avanti (anche con arresto di 2\").",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-92",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 92,
+    "valore": "B",
+    "descrizione": "Tutte le verticali con 1 giro su due staggi.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-99",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 99,
+    "valore": "C",
+    "descrizione": "Dalla vert., salto av. all'app. o dalla vert. con imp. ruot. internamente, scendere all'appoggio",
+    "nome": "Carballo 2"
+  },
+  {
+    "id": "PP-II-101",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 101,
+    "valore": "E",
+    "descrizione": "5/4 salto av. A gambe aperte alla sospensione",
+    "nome": "Lee Chul Hon / Sasaki"
+  },
+  {
+    "id": "PP-II-104",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 104,
+    "valore": "B",
+    "descrizione": "1 ¼ salto, av. racc. o carp., alla sosp. brachiale.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-105",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 105,
+    "valore": "C",
+    "descrizione": "Salto av. all'appoggio",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-106",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 106,
+    "valore": "D",
+    "descrizione": "1 ¼ salto, av. con g. div. alla sosp. brachiale.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-107",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 107,
+    "valore": "E",
+    "descrizione": "1 ½ salto, av. con g. div. all'app., anche con braccia piegate.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-111",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 111,
+    "valore": "C",
+    "descrizione": "Salto, avanti carpiato alla sospensione.",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-113",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 113,
+    "valore": "E",
+    "descrizione": "Doppio salto, av. racc. alla sosp. brachiale",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-114",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 114,
+    "valore": "F",
+    "descrizione": "Doppio salto, av. carp. alla sosp. brachiale..",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-117",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 117,
+    "valore": "C",
+    "descrizione": "1 ½ salto, av. teso alla sosp. brachiale",
+    "nome": ""
+  },
+  {
+    "id": "PP-II-119",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 2,
+      "nome": "Elementi in appoggio o per l'appoggio su due staggi"
+    },
+    "numero": 119,
+    "valore": "E",
+    "descrizione": "Salto av. con 1 avv., alla sosp. brachiale.",
+    "nome": "Urzica"
+  },
+  {
+    "id": "PP-III-3",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 3,
+    "valore": "C",
+    "descrizione": "Bhavsar alla sospensione brachiale. Con ripresa degli staggi a corpo teso all'aorizzontale.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-4",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 4,
+    "valore": "D",
+    "descrizione": "Moy carp. e staccata dors. alla vert.",
+    "nome": "Tippelt"
+  },
+  {
+    "id": "PP-III-5",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 5,
+    "valore": "E",
+    "descrizione": "Dalla vert. scendere alla sosp. E abbandonando e riprendendo le impugnature staccata dorsale con arrivo a corpo teso all'orizzontale in sospensione.",
+    "nome": "Bhavsar"
+  },
+  {
+    "id": "PP-III-8",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 8,
+    "valore": "B",
+    "descrizione": "Moy carpiato, controstaccata d. con ½ giro all'appoggio brachiale. Anche a gambe unite.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-9",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 9,
+    "valore": "C",
+    "descrizione": "Moy carp. con 1 g. alla sosp. brachiale.",
+    "nome": "Nolet"
+  },
+  {
+    "id": "PP-III-10",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 10,
+    "valore": "D",
+    "descrizione": "Tippelt e salto av. racc., carp. o a gambe aperte, alla sosp. brachiale.",
+    "nome": "Giraldo"
+  },
+  {
+    "id": "PP-III-14",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 14,
+    "valore": "B",
+    "descrizione": "Moy all'appoggio con gambe flesse (anche senza lasciare le impugnature).",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-15",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 15,
+    "valore": "C",
+    "descrizione": "Moy all'appoggio (anche senza lasciare le impugnature).",
+    "nome": "Moy"
+  },
+  {
+    "id": "PP-III-21",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 21,
+    "valore": "C",
+    "descrizione": "Granvolta d. alla verticale o con traslocazione delle spalle. (Anche con ¼ o ½ giro o su un solo staggio).",
+    "nome": "Kenmotsu"
+  },
+  {
+    "id": "PP-III-22",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 22,
+    "valore": "D",
+    "descrizione": "Granvolta d. alla verticale su uno staggio (collegato con elemento tipo Healy)",
+    "nome": "Piasecky"
+  },
+  {
+    "id": "PP-III-29",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 29,
+    "valore": "E",
+    "descrizione": "Granvolta d. con Diamidov alla verticale. (Anche su uno staggio)",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-30",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 30,
+    "valore": "F",
+    "descrizione": "Granvolta con 1¼ o 1 ½ Diamidov alla vert.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-38",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 38,
+    "valore": "B",
+    "descrizione": "Dalla vert. slancio in sosp. e salto d. teso alla sospensione",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-39",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 39,
+    "valore": "C",
+    "descrizione": "Granvolta d. con ½ g., alla sosp. brachiale.",
+    "nome": "Gushiken"
+  },
+  {
+    "id": "PP-III-40",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 40,
+    "valore": "D",
+    "descrizione": "Granvolta d. con ½ g., all'app.",
+    "nome": "Marinitch"
+  },
+  {
+    "id": "PP-III-42",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 42,
+    "valore": "F",
+    "descrizione": "Granvolta d. con Diamidov alla verticale su un solo staggio (collegato con elemento tipo Healy)",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-46",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 46,
+    "valore": "D",
+    "descrizione": "Granvolta d. con Makuts alla sosp. brachiale.",
+    "nome": "Dauser"
+  },
+  {
+    "id": "PP-III-48",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 48,
+    "valore": "F",
+    "descrizione": "Granvolta d. e Makuts all'appoggio.",
+    "nome": "Baumann"
+  },
+  {
+    "id": "PP-III-50",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 50,
+    "valore": "B",
+    "descrizione": "Granvolta d. e staccata front., alla sosp. brachiale.",
+    "nome": "Korolev"
+  },
+  {
+    "id": "PP-III-52",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 52,
+    "valore": "D",
+    "descrizione": "Granvolta d. e staccata front., all'app. a braccia tese o flesse",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-53",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 53,
+    "valore": "E",
+    "descrizione": "Granvolta d. con ½ giro e controstaccata alla sosp. brachiale.",
+    "nome": "Sosa"
+  },
+  {
+    "id": "PP-III-56",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 56,
+    "valore": "B",
+    "descrizione": "Granvolta d., salto d. carp. con ½ g., alla sosp. all'estremità degli staggi.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-59",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 59,
+    "valore": "E",
+    "descrizione": "Granvolta d., doppio salto d. racc., alla sosp. brachiale.",
+    "nome": "Belle"
+  },
+  {
+    "id": "PP-III-60",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 60,
+    "valore": "F",
+    "descrizione": "Belle carpiato.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-66",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 66,
+    "valore": "H",
+    "descrizione": "Belle con 1 avv.",
+    "nome": "Quintero"
+  },
+  {
+    "id": "PP-III-69",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 69,
+    "valore": "C",
+    "descrizione": "Granvolta d., salto d. carp. con ½ g., alla sosp. all'estremità degli staggi.",
+    "nome": "Chartrand"
+  },
+  {
+    "id": "PP-III-70",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 70,
+    "valore": "D",
+    "descrizione": "Granvolta d., 1 ¼ salto d. racc. o carp. con ½ avv., alla sosp. brachiale.",
+    "nome": "Matsunaga"
+  },
+  {
+    "id": "PP-III-71",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 71,
+    "valore": "E",
+    "descrizione": "Granvolta d. e salto d. ragg. o carp. con ½ avv. alla sospensione.",
+    "nome": "Solis"
+  },
+  {
+    "id": "PP-III-72",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 72,
+    "valore": "G",
+    "descrizione": "Granvolta d., con ½ avv. e 1 ½ salto av. alla sosp. brachiale.",
+    "nome": "Tanaka"
+  },
+  {
+    "id": "PP-III-73",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 73,
+    "valore": "A",
+    "descrizione": "Kip lunga.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-74",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 74,
+    "valore": "B",
+    "descrizione": "Kip lunga con ½ g. all'app.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-75",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 75,
+    "valore": "C",
+    "descrizione": "Kip lunga, per salire dors. alla vert.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-78",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 78,
+    "valore": "F",
+    "descrizione": "Granvolta d. e salto d. con ½ avv. carpio alla sosp. brachiale.",
+    "nome": "Torres"
+  },
+  {
+    "id": "PP-III-79",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 79,
+    "valore": "H",
+    "descrizione": "Granvolta d., con ½ giro e 1 ½ salto av. carpio alla sosp. brachiale.",
+    "nome": "Esparza"
+  },
+  {
+    "id": "PP-III-80",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 80,
+    "valore": "B",
+    "descrizione": "Kip lunga e staccata dors. alla vert. su uno o due staggi.",
+    "nome": "Okuba"
+  },
+  {
+    "id": "PP-III-81",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 81,
+    "valore": "C",
+    "descrizione": "Kip lunga e staccata dorsale alla sosp.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-83",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 83,
+    "valore": "E",
+    "descrizione": "Granvolta d., con ½ giro e salto d. teso con ½ avv., alla sosp. brachiale.",
+    "nome": "Fokin"
+  },
+  {
+    "id": "PP-III-86",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 86,
+    "valore": "B",
+    "descrizione": "In sospensione su uno staggio, kip lunga alla squadra div. per salire con braccia ritte e corpo flesso alla vert.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-87",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 87,
+    "valore": "C",
+    "descrizione": "In sospensione su uno staggio, kip lunga alla squadra per salire con braccia ritte e corpo flesso alla vert.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-88",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 88,
+    "valore": "D",
+    "descrizione": "In sospensione su uno staggio, kip lunga alla squadra per salire a corpo flesso con ¾ di g. saltato, o più, alla vert.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-92",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 92,
+    "valore": "B",
+    "descrizione": "In sospensione su uno staggio, kip lunga con gambe vert. e salto con ½ g., alla sosp. sul secondo staggio.",
+    "nome": "Li Donghua"
+  },
+  {
+    "id": "PP-III-97",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 97,
+    "valore": "A",
+    "descrizione": "Impennata alla sosp. brachiale.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-98",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 98,
+    "valore": "B",
+    "descrizione": "Impennata all'app. ritto.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-99",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 99,
+    "valore": "C",
+    "descrizione": "Controkip con ½ giro alla sospensione brachiale.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-100",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 100,
+    "valore": "D",
+    "descrizione": "Controkip con ½ giro all'app.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-104",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 104,
+    "valore": "B",
+    "descrizione": "Impennata con ½ g. alla sosp. brachiale. anche su un solo staggio o con ¼ di giro.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-105",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 105,
+    "valore": "C",
+    "descrizione": "Impennata con ½ g. all'app.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-106",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 106,
+    "valore": "D",
+    "descrizione": "Controkip alla vert. e salto delle imp., anche su un solo staggio o con ¼ di giro.",
+    "nome": "Chiarlo"
+  },
+  {
+    "id": "PP-III-107",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 107,
+    "valore": "E",
+    "descrizione": "Controkip con ¼, ½ o ¾ di giro alla vert.",
+    "nome": "Cucherat - Celen"
+  },
+  {
+    "id": "PP-III-108",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 108,
+    "valore": "F",
+    "descrizione": "Contrikip con 1 giro alla vert.",
+    "nome": "Teng Hai Bin"
+  },
+  {
+    "id": "PP-III-111",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 111,
+    "valore": "C",
+    "descrizione": "Impennata e staccata dorsale alla verticale.",
+    "nome": "Arican"
+  },
+  {
+    "id": "PP-III-114",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 114,
+    "valore": "G",
+    "descrizione": "Controkip con 5/4 di giro alla vert.",
+    "nome": "Zhou Shixioug"
+  },
+  {
+    "id": "PP-III-115",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 115,
+    "valore": "A",
+    "descrizione": "Controkip alla sospensione.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-116",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 116,
+    "valore": "B",
+    "descrizione": "Controkip all'ppoggio.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-117",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 117,
+    "valore": "C",
+    "descrizione": "Controkip e staccata front., all'app., senza app. intermedio delle mani.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-119",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 119,
+    "valore": "E",
+    "descrizione": "Controkip alla vert. su un solo staggio (collegato con elemento tipo Healy)",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-120",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 120,
+    "valore": "G",
+    "descrizione": "Controkip alla vert. Makuts.",
+    "nome": "Yamamuro"
+  },
+  {
+    "id": "PP-III-122",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 122,
+    "valore": "B",
+    "descrizione": "Controkip e salto d., con ½ avv. alla sosp. brachiale.",
+    "nome": "Gagnon"
+  },
+  {
+    "id": "PP-III-123",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 123,
+    "valore": "C",
+    "descrizione": "Controkip e salto d.,teso con ½ avv. alla sosp. brachiale.",
+    "nome": "Gagnon 2"
+  },
+  {
+    "id": "PP-III-125",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 125,
+    "valore": "E",
+    "descrizione": "Controkip e salto d., raggruppatp alla sosp. brachiale.",
+    "nome": "Tajeda"
+  },
+  {
+    "id": "PP-III-126",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 126,
+    "valore": "F",
+    "descrizione": "Controkip e salto d., carpio alla sosp. brachiale.",
+    "nome": "Juarez 1"
+  },
+  {
+    "id": "PP-III-127",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 127,
+    "valore": "A",
+    "descrizione": "Dall'app., controkip av. all'app.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-128",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 128,
+    "valore": "B",
+    "descrizione": "Dall'app., controkip av., con ½ g., all'app.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-130",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 130,
+    "valore": "D",
+    "descrizione": "Capovolta dietro alla vet. Sul secondo staggio con ¼ g. alla vert. su due staggi.",
+    "nome": ""
+  },
+  {
+    "id": "PP-III-131",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 131,
+    "valore": "E",
+    "descrizione": "Capovolta dietro alla vet. Sul secondo staggio con ¾ g. alla vert. su due staggi.",
+    "nome": "Nguyen"
+  },
+  {
+    "id": "PP-III-137",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 3,
+      "nome": "Elementi di slancio in sospensione su 1 o 2 staggi o in sospensione semirovesciata"
+    },
+    "numero": 137,
+    "valore": "E",
+    "descrizione": "Capovolta dietro alla verticale sul secondo staggio con ¾ di giro Healy all'appoggio su 2 staggi",
+    "nome": "Malone"
+  },
+  {
+    "id": "PP-IV-1",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 1,
+    "valore": "A",
+    "descrizione": "Salto av. carp. o teso, anche con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-5",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 5,
+    "valore": "E",
+    "descrizione": "Doppio salto av. racc.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-6",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 6,
+    "valore": "F",
+    "descrizione": "Doppio salto av. Carpiato",
+    "nome": "Belyavskiy"
+  },
+  {
+    "id": "PP-IV-8",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 8,
+    "valore": "B",
+    "descrizione": "Salto av. carp. o teso con 1 avv.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-9",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 9,
+    "valore": "C",
+    "descrizione": "Salto av. carp. o teso con 1 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-10",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 10,
+    "valore": "D",
+    "descrizione": "Salto av. carp. o teso con 2 o 2 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-11",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 11,
+    "valore": "E",
+    "descrizione": "Doppio salto av. racc. con ½ avv. e doppio salto dietro racc.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-12",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 12,
+    "valore": "G",
+    "descrizione": "Doppio salto av. racc. con 1 avv.",
+    "nome": "Laurdet"
+  },
+  {
+    "id": "PP-IV-15",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 15,
+    "valore": "C",
+    "descrizione": "Doppio salto av. racc. dalla estremità degli staggi.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-18",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 18,
+    "valore": "F",
+    "descrizione": "Doppio salto av. carp. con ½ avv.",
+    "nome": "Dalaloyan"
+  },
+  {
+    "id": "PP-IV-19",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 19,
+    "valore": "A",
+    "descrizione": "Salto d. carp. o teso, anche con ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-21",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 21,
+    "valore": "C",
+    "descrizione": "Salto d. carp. o teso con 1 o 1 ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-22",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 22,
+    "valore": "D",
+    "descrizione": "Salto d. teso con 2 avv.",
+    "nome": "Kan"
+  },
+  {
+    "id": "PP-IV-28",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 28,
+    "valore": "D",
+    "descrizione": "Dalla oscillaz. dietro, perno e salto d. racc. o carp.",
+    "nome": "Roethlisberger"
+  },
+  {
+    "id": "PP-IV-32",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 32,
+    "valore": "B",
+    "descrizione": "Doppio salto d. racc. dalla estremità degli staggi.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-33",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 33,
+    "valore": "C",
+    "descrizione": "Doppio salto d. racc.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-34",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 34,
+    "valore": "D",
+    "descrizione": "Doppio salto d. carp.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-36",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 36,
+    "valore": "G",
+    "descrizione": "Doppio salto d. racc. con 1 avv.",
+    "nome": "Hiroyuki Kato"
+  },
+  {
+    "id": "PP-IV-40",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 40,
+    "valore": "D",
+    "descrizione": "Doppio salto giro dietro racc. con ½ avv. o salto giro av. racc. ½ avv. e salto dietro racc",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-41",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 41,
+    "valore": "E",
+    "descrizione": "Salto giro av. racc. ½ avv. e salto dietro racc",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-43",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 43,
+    "valore": "A",
+    "descrizione": "Dalla sosp. ad una estremità, salto d. teso.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-45",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 45,
+    "valore": "C",
+    "descrizione": "Dalla sosp. ad una estremità, doppio salto d. racc.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-46",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 46,
+    "valore": "D",
+    "descrizione": "Dalla sosp. ad una estremità, doppio salto d. carp.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-47",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 47,
+    "valore": "E",
+    "descrizione": "Dalla sosp. ad una estremità, doppio salto d. teso.",
+    "nome": "Alvarez"
+  },
+  {
+    "id": "PP-IV-48",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 48,
+    "valore": "G",
+    "descrizione": "Dalla sosp. ad una estremità, triplo salto d. racc.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-53",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 53,
+    "valore": "E",
+    "descrizione": "Dalla sosp. ad una estremità, doppio salto d. racc. con 1 o ½ avv.",
+    "nome": ""
+  },
+  {
+    "id": "PP-IV-54",
+    "attrezzo": "PP",
+    "gruppo": {
+      "numero": 4,
+      "nome": "Uscite"
+    },
+    "numero": 54,
+    "valore": "F",
+    "descrizione": "Dalla sosp. ad una estremità, doppio salto d. racc. con 2 avv.",
+    "nome": ""
+  }
+]

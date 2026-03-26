@@ -6,19 +6,17 @@ import { Popover } from "@base-ui/react/popover";
 import { Plus, X } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
-import type { ValoreDifficolta } from "@/lib/types/cdp";
-
-import { GRUPPI, NUMERI_ROMANI } from "./cdp-constants";
+import { NUMERI_ROMANI, etichettaDifficolta } from "./cdp-constants";
 
 type TipoFiltro = "gruppo" | "difficolta";
 
 interface CdpFiltersProps {
   gruppoAttivo: number | null;
   setGruppoAttivo: (g: number | null) => void;
-  difficoltaAttiva: ValoreDifficolta | null;
-  setDifficoltaAttiva: (d: ValoreDifficolta | null) => void;
+  difficoltaAttiva: string | null;
+  setDifficoltaAttiva: (d: string | null) => void;
   nomiGruppi: Record<number, string>;
-  difficoltaPresenti: ValoreDifficolta[];
+  difficoltaPresenti: string[];
 }
 
 export function CdpFilters({
@@ -64,11 +62,14 @@ export function CdpFilters({
             className="cursor-pointer appearance-none bg-transparent font-medium outline-none"
           >
             <option value="">Tutti</option>
-            {GRUPPI.map((g) => (
-              <option key={g} value={g}>
-                {NUMERI_ROMANI[g]} — {nomiGruppi[g]}
-              </option>
-            ))}
+            {Object.keys(nomiGruppi)
+              .map(Number)
+              .sort((a, b) => a - b)
+              .map((g) => (
+                <option key={g} value={g}>
+                  {NUMERI_ROMANI[g]} — {nomiGruppi[g]}
+                </option>
+              ))}
           </select>
           <button
             onClick={() => rimuoviFiltro("gruppo")}
@@ -84,15 +85,13 @@ export function CdpFilters({
           <span className="text-muted-foreground">Difficoltà:</span>
           <select
             value={difficoltaAttiva ?? ""}
-            onChange={(e) =>
-              setDifficoltaAttiva(e.target.value ? (e.target.value as ValoreDifficolta) : null)
-            }
+            onChange={(e) => setDifficoltaAttiva(e.target.value || null)}
             className="cursor-pointer appearance-none bg-transparent font-medium outline-none"
           >
             <option value="">Tutte</option>
             {difficoltaPresenti.map((v) => (
               <option key={v} value={v}>
-                {v}
+                {etichettaDifficolta(v)}
               </option>
             ))}
           </select>
