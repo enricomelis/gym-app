@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { NewExerciseShortcut } from "@/components/exercises/new-exercise-shortcut";
 import { formatItalianDate } from "@/lib/date";
 import { ExercisesStorageNotReadyError } from "@/lib/exercises/errors";
 import { listExercisesForUser } from "@/lib/exercises/service";
@@ -7,6 +8,7 @@ import { requireSession } from "@/lib/session";
 import { ATTREZZI } from "@/components/cdp/cdp-constants";
 import { buttonVariants } from "@/components/ui/button-variants";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { KeyboardShortcutHint } from "@/components/ui/keyboard-shortcut-hint";
 
 interface ExercisesPageProps {
   searchParams: Promise<{ attrezzo?: string }>;
@@ -35,6 +37,7 @@ export default async function ExercisesPage({ searchParams }: ExercisesPageProps
 
     return (
       <div className="grid gap-6">
+        <NewExerciseShortcut />
         <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
           <div>
             <h2 className="text-foreground text-2xl font-bold tracking-tight">Esercizi</h2>
@@ -43,7 +46,8 @@ export default async function ExercisesPage({ searchParams }: ExercisesPageProps
             </p>
           </div>
           <Link href="/esercizi/nuovo" className={buttonVariants()}>
-            Nuovo esercizio
+            <span>Nuovo esercizio</span>
+            <KeyboardShortcutHint keys={["N"]} className="ml-1" />
           </Link>
         </div>
 
@@ -110,7 +114,8 @@ export default async function ExercisesPage({ searchParams }: ExercisesPageProps
             </CardHeader>
             <CardContent>
               <Link href="/esercizi/nuovo" className={buttonVariants()}>
-                Crea il primo esercizio
+                <span>Crea il primo esercizio</span>
+                <KeyboardShortcutHint keys={["N"]} className="ml-1" />
               </Link>
             </CardContent>
           </Card>

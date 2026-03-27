@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { startTransition, useMemo, useState } from "react";
+import { startTransition, useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { AlertCircle, ArrowDown, ArrowUp, Trash2 } from "lucide-react";
 
@@ -21,6 +21,7 @@ import { Button } from "@/components/ui/button";
 import { buttonVariants } from "@/components/ui/button-variants";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
+import { KeyboardShortcutHint } from "@/components/ui/keyboard-shortcut-hint";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { getCatalogByAttrezzo } from "@/lib/cdp/catalog";
@@ -39,6 +40,9 @@ import { cn } from "@/lib/utils";
 
 interface ExerciseFormProps {
   initialData?: ExerciseDetail;
+  closeHref?: string;
+  onDirtyChange?: (isDirty: boolean) => void;
+  onRequestClose?: () => void;
 }
 
 type FieldErrors = Record<string, string[]>;
@@ -70,9 +74,41 @@ function getInitialInput(initialData?: ExerciseDetail) {
   };
 }
 
-export function ExerciseForm({ initialData }: ExerciseFormProps) {
+function getInputSnapshot(input: {
+  name: string;
+  attrezzo: Attrezzo;
+  notes: string;
+  elements: {
+    elementId: string;
+    order: number;
+    role: "STANDARD" | "USCITA" | "VOLTEGGIO";
+    notes: string;
+  }[];
+  manualExitElementId: string | null;
+}) {
+  return JSON.stringify({
+    name: input.name,
+    attrezzo: input.attrezzo,
+    notes: input.notes,
+    elements: input.elements.map((element) => ({
+      elementId: element.elementId,
+      order: element.order,
+      role: element.role,
+      notes: element.notes,
+    })),
+    manualExitElementId: input.manualExitElementId,
+  });
+}
+
+export function ExerciseForm({
+  initialData,
+  closeHref,
+  onDirtyChange,
+  onRequestClose,
+}: ExerciseFormProps) {
   const router = useRouter();
   const initialInput = useMemo(() => getInitialInput(initialData), [initialData]);
+  const resolvedCloseHref = closeHref ?? (initialData ? `/esercizi/${initialData.id}` : "/esercizi");
 
   const [form, setForm] = useState({
     name: initialInput.name,
@@ -87,6 +123,7 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
   const [fieldErrors, setFieldErrors] = useState<FieldErrors>({});
   const [isPending, setIsPending] = useState(false);
   const [selectedElementId, setSelectedElementId] = useState<string | null>(null);
+  const initialSnapshot = useMemo(() => getInputSnapshot(initialInput), [initialInput]);
 
   const composition = useMemo(
     () => normalizeComposition(form.attrezzo, form.elements, manualExitElementId),
@@ -126,6 +163,22 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
 
     return resolvedElements.find((item) => item.elementId === selectedElementId)?.element ?? null;
   }, [resolvedElements, selectedElementId]);
+
+  const isDirty = useMemo(() => {
+    return (
+      getInputSnapshot({
+        name: form.name,
+        attrezzo: form.attrezzo,
+        notes: form.notes,
+        elements: form.elements,
+        manualExitElementId,
+      }) !== initialSnapshot
+    );
+  }, [form.attrezzo, form.elements, form.name, form.notes, initialSnapshot, manualExitElementId]);
+
+  useEffect(() => {
+    onDirtyChange?.(isDirty);
+  }, [isDirty, onDirtyChange]);
 
   function setFieldErrorState(errorMap?: FieldErrors) {
     setFieldErrors(errorMap ?? {});
@@ -338,16 +391,12 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
         </CardContent>
       </Card>
 
-      <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
-        <Card>
+      <div className="grid gap-6 xl:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] xl:items-start">
+        <Card className="xl:max-h-[calc(100vh-14rem)]">
           <CardHeader>
             <CardTitle>Catalogo elementi</CardTitle>
-            <CardDescription>
-              Usa una vista ridotta del CdP: click sull&apos;elemento per il dettaglio, click su
-              “Aggiungi” per inserirlo nella composizione.
-            </CardDescription>
           </CardHeader>
-          <CardContent>
+          <CardContent className="xl:max-h-[calc(100vh-22rem)] xl:overflow-y-auto xl:pr-2">
             <ExerciseCatalog
               elements={availableCatalogElements}
               onAddElement={addElement}
@@ -363,10 +412,6 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
         <Card>
           <CardHeader>
             <CardTitle>Composizione</CardTitle>
-            <CardDescription>
-              L&apos;uscita è sempre l&apos;ultimo elemento. Se ne scegli una diversa, viene
-              spostata in fondo automaticamente.
-            </CardDescription>
           </CardHeader>
           <CardContent className="grid gap-3">
             {resolvedElements.map((item, index) => (
@@ -374,100 +419,107 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
                 key={`${item.elementId}-${item.order}`}
                 className="grid gap-3 rounded-xl border p-3"
               >
-                <div className="grid grid-cols-[auto_1fr_auto] items-start gap-3">
+                <div className="grid grid-cols-[1fr_auto] items-start gap-3">
                   <button
                     type="button"
-                    className="contents text-left"
+                    className="grid gap-2 text-left"
                     onClick={() => setSelectedElementId(item.elementId)}
                   >
-                    <CdpElementPreview element={item.element} />
-                    <div className="grid gap-2">
-                      <div className="flex flex-wrap items-center gap-2">
-                        <span className="text-muted-foreground font-mono text-xs">
-                          {item.order}.
-                        </span>
-                        <span
-                          className="rounded-full px-2 py-1 text-[11px] font-semibold"
-                          style={{
-                            backgroundColor: COLORI_GRUPPO[item.element.gruppo.numero],
-                            color: "#000",
-                          }}
-                        >
-                          Gruppo {NUMERI_ROMANI[item.element.gruppo.numero]}
-                        </span>
-                        <span
-                          className={cn(
-                            "inline-flex items-center rounded-md px-2 py-1 text-[11px] font-semibold",
-                            coloreDifficolta(item.element.valore),
-                          )}
-                        >
-                          {etichettaDifficolta(item.element.valore)}
-                        </span>
-                        {item.role === "USCITA" && (
-                          <span className="bg-primary/10 text-primary rounded-full px-2 py-1 text-[11px] font-semibold">
-                            Uscita
-                          </span>
+                    <div className="flex flex-wrap items-center gap-2">
+                      <span className="text-muted-foreground font-mono text-xs">{item.order}.</span>
+                      <span
+                        className="rounded-full px-2 py-1 text-[11px] font-semibold"
+                        style={{
+                          backgroundColor: COLORI_GRUPPO[item.element.gruppo.numero],
+                          color: "#000",
+                        }}
+                      >
+                        Gruppo {NUMERI_ROMANI[item.element.gruppo.numero]}
+                      </span>
+                      <span
+                        className={cn(
+                          "inline-flex items-center rounded-md px-2 py-1 text-[11px] font-semibold",
+                          coloreDifficolta(item.element.valore),
                         )}
-                      </div>
-                      <div className="grid gap-1">
-                        <p className="text-sm font-semibold">{titoloElemento(item.element)}</p>
-                        <p className="text-muted-foreground text-xs leading-relaxed">
-                          {item.element.descrizione}
-                        </p>
-                      </div>
+                      >
+                        {etichettaDifficolta(item.element.valore)}
+                      </span>
+                      {item.role === "USCITA" && (
+                        <span className="bg-primary/10 text-primary rounded-full px-2 py-1 text-[11px] font-semibold">
+                          Uscita
+                        </span>
+                      )}
+                    </div>
+                    <div className="grid gap-1">
+                      <p className="text-sm font-semibold">{titoloElemento(item.element)}</p>
+                      <p className="text-muted-foreground text-xs leading-relaxed">
+                        {item.element.descrizione}
+                      </p>
                     </div>
                   </button>
-                  <div className="flex items-center gap-1">
-                    <Button
+                  <div className="grid min-w-24 justify-items-end gap-2 self-stretch">
+                    <div className="flex items-center gap-1">
+                      <Button
+                        type="button"
+                        variant="outline"
+                        size="icon-sm"
+                        onClick={() => moveElementAt(index, -1)}
+                        disabled={index === 0}
+                        aria-label={`Sposta su ${getElementLabel(index)}`}
+                      >
+                        <ArrowUp className="size-4" />
+                      </Button>
+                      <Button
+                        type="button"
+                        variant="outline"
+                        size="icon-sm"
+                        onClick={() => moveElementAt(index, 1)}
+                        disabled={index === resolvedElements.length - 1}
+                        aria-label={`Sposta giù ${getElementLabel(index)}`}
+                      >
+                        <ArrowDown className="size-4" />
+                      </Button>
+                      <Button
+                        type="button"
+                        variant="destructive"
+                        size="icon-sm"
+                        onClick={() => removeElementAt(index)}
+                        aria-label={`Rimuovi ${getElementLabel(index)}`}
+                      >
+                        <Trash2 className="size-4" />
+                      </Button>
+                    </div>
+                    <button
                       type="button"
-                      variant="outline"
-                      size="icon-sm"
-                      onClick={() => moveElementAt(index, -1)}
-                      disabled={index === 0}
-                      aria-label={`Sposta su ${getElementLabel(index)}`}
+                      className="mt-auto rounded-lg"
+                      onClick={() => setSelectedElementId(item.elementId)}
+                      aria-label={`Apri dettaglio ${getElementLabel(index)}`}
                     >
-                      <ArrowUp className="size-4" />
-                    </Button>
-                    <Button
-                      type="button"
-                      variant="outline"
-                      size="icon-sm"
-                      onClick={() => moveElementAt(index, 1)}
-                      disabled={index === resolvedElements.length - 1}
-                      aria-label={`Sposta giù ${getElementLabel(index)}`}
-                    >
-                      <ArrowDown className="size-4" />
-                    </Button>
-                    <Button
-                      type="button"
-                      variant="destructive"
-                      size="icon-sm"
-                      onClick={() => removeElementAt(index)}
-                      aria-label={`Rimuovi ${getElementLabel(index)}`}
-                    >
-                      <Trash2 className="size-4" />
-                    </Button>
+                      <CdpElementPreview element={item.element} size="xs" />
+                    </button>
                   </div>
                 </div>
 
                 {form.attrezzo !== "VT" && (
                   <div className="flex flex-wrap items-center gap-3">
-                    <button
-                      type="button"
-                      onClick={() => markExitAt(index)}
-                      aria-label={`Imposta come uscita ${getElementLabel(index)}`}
-                      className={buttonVariants({
-                        size: "sm",
-                        variant: item.role === "USCITA" ? "secondary" : "outline",
-                      })}
-                    >
-                      Imposta come uscita
-                    </button>
                     {item.role === "USCITA" && (
                       <p className="text-muted-foreground text-xs">
                         Premendo su un altro elemento, quello verrà spostato in fondo e diventerà la
                         nuova uscita.
                       </p>
+                    )}
+                    {item.role !== "USCITA" && (
+                      <button
+                        type="button"
+                        onClick={() => markExitAt(index)}
+                        aria-label={`Imposta come uscita ${getElementLabel(index)}`}
+                        className={buttonVariants({
+                          size: "sm",
+                          variant: "outline",
+                        })}
+                      >
+                        Imposta come uscita
+                      </button>
                     )}
                   </div>
                 )}
@@ -491,12 +543,21 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
       </div>
 
       <div className="flex flex-wrap items-center justify-end gap-3">
-        <Link
-          href={initialData ? `/esercizi/${initialData.id}` : "/esercizi"}
-          className={buttonVariants({ variant: "outline" })}
-        >
-          Annulla
-        </Link>
+        {onRequestClose ? (
+          <button
+            type="button"
+            className={buttonVariants({ variant: "outline" })}
+            onClick={onRequestClose}
+          >
+            <span>Annulla</span>
+            <KeyboardShortcutHint keys={["Esc"]} className="ml-1" />
+          </button>
+        ) : (
+          <Link href={resolvedCloseHref} className={buttonVariants({ variant: "outline" })}>
+            <span>Annulla</span>
+            <KeyboardShortcutHint keys={["Esc"]} className="ml-1" />
+          </Link>
+        )}
         <Button type="submit" disabled={isPending}>
           {isPending
             ? initialData

@@ -1,10 +1,12 @@
 import { BackToExercisesButton } from "@/components/exercises/back-to-exercises-button";
+import { EditExerciseShortcut } from "@/components/exercises/edit-exercise-shortcut";
 import { ExerciseElementsList } from "@/components/exercises/exercise-elements-list";
 import Link from "next/link";
 
 import { DeleteExerciseButton } from "@/components/exercises/delete-exercise-button";
 import { buttonVariants } from "@/components/ui/button-variants";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { KeyboardShortcutHint } from "@/components/ui/keyboard-shortcut-hint";
 import { formatItalianDate } from "@/lib/date";
 import { ExercisesStorageNotReadyError } from "@/lib/exercises/errors";
 import { getExerciseForUser } from "@/lib/exercises/service";
@@ -54,6 +56,7 @@ export default async function ExerciseDetailPage({ params }: ExerciseDetailPageP
 
   return (
     <div className="grid gap-6">
+      <EditExerciseShortcut exerciseId={exercise.id} />
       <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
         <div className="grid gap-2">
           <BackToExercisesButton />
@@ -69,9 +72,14 @@ export default async function ExerciseDetailPage({ params }: ExerciseDetailPageP
             href={`/esercizi/${exercise.id}/modifica`}
             className={buttonVariants({ variant: "outline" })}
           >
-            Modifica
+            <span>Modifica</span>
+            <KeyboardShortcutHint keys={["M"]} className="ml-1" />
           </Link>
-          <DeleteExerciseButton exerciseId={exercise.id} />
+          <DeleteExerciseButton
+            exerciseId={exercise.id}
+            exerciseName={exercise.name}
+            enableShortcut
+          />
         </div>
       </div>
 

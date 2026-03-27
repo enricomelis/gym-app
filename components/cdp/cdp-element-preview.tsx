@@ -6,12 +6,18 @@ import { svgPathElemento, titoloElemento } from "./cdp-constants";
 
 interface CdpElementPreviewProps {
   element: ElementoCdp;
-  size?: "sm" | "lg";
+  size?: "xs" | "sm" | "lg";
 }
 
 export function CdpElementPreview({ element, size = "sm" }: CdpElementPreviewProps) {
   const svgPath = svgPathElemento(element.id);
-  const dimension = size === "lg" ? 112 : 48;
+  const dimension = size === "lg" ? 112 : size === "sm" ? 48 : 32;
+  const imageClass =
+    size === "lg"
+      ? "h-28 w-28 object-contain"
+      : size === "sm"
+        ? "h-12 w-12 object-contain"
+        : "h-8 w-8 object-contain";
 
   if (svgPath) {
     return (
@@ -22,7 +28,7 @@ export function CdpElementPreview({ element, size = "sm" }: CdpElementPreviewPro
           width={dimension}
           height={dimension}
           unoptimized
-          className={size === "lg" ? "h-28 w-28 object-contain" : "h-12 w-12 object-contain"}
+          className={imageClass}
         />
       </div>
     );
@@ -34,12 +40,18 @@ export function CdpElementPreview({ element, size = "sm" }: CdpElementPreviewPro
         className={
           size === "lg"
             ? "flex h-28 w-28 flex-col items-center justify-center gap-2"
-            : "flex h-12 w-12 items-center justify-center"
+            : size === "sm"
+              ? "flex h-12 w-12 items-center justify-center"
+              : "flex h-8 w-8 items-center justify-center"
         }
       >
         <svg
           className={
-            size === "lg" ? "text-muted-foreground/50 size-8" : "text-muted-foreground/50 size-5"
+            size === "lg"
+              ? "text-muted-foreground/50 size-8"
+              : size === "sm"
+                ? "text-muted-foreground/50 size-5"
+                : "text-muted-foreground/50 size-4"
           }
           fill="none"
           viewBox="0 0 24 24"

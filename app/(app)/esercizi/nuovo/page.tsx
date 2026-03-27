@@ -1,5 +1,5 @@
+import { ExerciseFormShell } from "@/components/exercises/exercise-form-shell";
 import { requireSession } from "@/lib/session";
-import { ExerciseForm } from "@/components/exercises/exercise-form";
 
 export default async function NewExercisePage() {
   const session = await requireSession();
@@ -16,14 +16,9 @@ export default async function NewExercisePage() {
   }
 
   return (
-    <div className="grid gap-6">
-      <div>
-        <h2 className="text-foreground text-2xl font-bold tracking-tight">Nuovo esercizio</h2>
-        <p className="text-muted-foreground text-sm">
-          Seleziona l'attrezzo, componi gli elementi e salva la tua bozza tecnica.
-        </p>
-      </div>
-      <ExerciseForm />
-    </div>
+    <ExerciseFormShell
+      title="Nuovo esercizio"
+      description="Seleziona l'attrezzo, componi gli elementi e salva la tua bozza tecnica."
+    />
   );
 }

@@ -37,6 +37,15 @@ describe("ExerciseForm", () => {
     expect(screen.getAllByText("Ribaltata o flic flac av.").length).toBeGreaterThan(0);
   });
 
+  it("uses a select to switch the catalog view", async () => {
+    const user = userEvent.setup();
+    render(<ExerciseForm />);
+
+    await user.selectOptions(screen.getByLabelText("Vista catalogo"), "difficolta");
+
+    expect(screen.getByLabelText("Vista catalogo")).toHaveValue("difficolta");
+  });
+
   it("adds an element when clicking the add action without opening the dialog", async () => {
     const user = userEvent.setup();
     render(<ExerciseForm />);
@@ -149,5 +158,66 @@ describe("ExerciseForm", () => {
     expect(exitCard).toHaveTextContent(
       resolvedElements.at(-1)?.element.nome || resolvedElements.at(-1)?.element.descrizione || "",
     );
+  });
+
+  it("does not show the exit action for the current exit element", () => {
+    const elementIds = ["CL-I-1", "CL-II-1", "CL-IV-2"];
+    const resolvedElements = elementIds.map((elementId, index) => {
+      const element = getCatalogElementById(elementId);
+      if (!element) {
+        throw new Error(`Missing fixture element ${elementId}`);
+      }
+
+      return {
+        elementId,
+        order: index + 1,
+        role: index === elementIds.length - 1 ? ("USCITA" as const) : ("STANDARD" as const),
+        notes: null,
+        element,
+      };
+    });
+
+    const initialData: ExerciseDetail = {
+      id: "exercise-3",
+      name: "Corpo libero con uscita",
+      attrezzo: "CL",
+      notes: null,
+      createdAt: new Date("2026-01-01T00:00:00.000Z"),
+      updatedAt: new Date("2026-01-01T00:00:00.000Z"),
+      elements: resolvedElements,
+      elementCount: resolvedElements.length,
+      dScore: 0,
+    };
+
+    render(<ExerciseForm initialData={initialData} />);
+
+    expect(
+      screen.queryByRole("button", {
+        name: /Imposta come uscita Salto av\. racc\. con 1 avv\./i,
+      }),
+    ).not.toBeInTheDocument();
+  });
+
+  it("reports dirty state changes when the form is edited", async () => {
+    const user = userEvent.setup();
+    const onDirtyChange = vi.fn();
+
+    render(<ExerciseForm onDirtyChange={onDirtyChange} />);
+
+    await user.type(screen.getByLabelText("Nome esercizio"), "Serie libera");
+
+    expect(onDirtyChange).toHaveBeenLastCalledWith(true);
+  });
+
+  it("delegates cancel navigation to the caller when requested", async () => {
+    const user = userEvent.setup();
+    const onRequestClose = vi.fn();
+
+    render(<ExerciseForm onRequestClose={onRequestClose} />);
+
+    await user.click(screen.getByRole("button", { name: /Annulla/i }));
+
+    expect(onRequestClose).toHaveBeenCalledTimes(1);
+    expect(screen.getByText("Esc")).toBeInTheDocument();
   });
 });

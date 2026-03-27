@@ -1,5 +1,4 @@
-import { BackToExercisesButton } from "@/components/exercises/back-to-exercises-button";
-import { ExerciseForm } from "@/components/exercises/exercise-form";
+import { ExerciseFormShell } from "@/components/exercises/exercise-form-shell";
 import { ExercisesStorageNotReadyError } from "@/lib/exercises/errors";
 import { getExerciseForUser } from "@/lib/exercises/service";
 import { requireSession } from "@/lib/session";
@@ -54,15 +53,10 @@ export default async function EditExercisePage({ params }: EditExercisePageProps
   }
 
   return (
-    <div className="grid gap-6">
-      <div>
-        <BackToExercisesButton />
-        <h2 className="text-foreground text-2xl font-bold tracking-tight">Modifica esercizio</h2>
-        <p className="text-muted-foreground text-sm">
-          Aggiorna composizione, note e ordine degli elementi.
-        </p>
-      </div>
-      <ExerciseForm initialData={exercise} />
-    </div>
+    <ExerciseFormShell
+      initialData={exercise}
+      title="Modifica esercizio"
+      description="Aggiorna composizione, note e ordine degli elementi."
+    />
   );
 }

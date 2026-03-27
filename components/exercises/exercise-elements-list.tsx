@@ -68,7 +68,6 @@ export function ExerciseElementsList({ elements }: ExerciseElementsListProps) {
                   </p>
                 </div>
               </div>
-              <span className="text-muted-foreground text-xs">Apri dettaglio</span>
             </div>
           </button>
         ))}

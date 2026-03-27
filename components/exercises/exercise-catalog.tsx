@@ -31,11 +31,13 @@ function ExerciseCatalogItem({
   onOpen,
   onAdd,
   addDisabled,
+  compact = false,
 }: {
   element: ElementoCdp;
   onOpen: () => void;
   onAdd: () => void;
   addDisabled?: boolean;
+  compact?: boolean;
 }) {
   return (
     <div
@@ -48,11 +50,15 @@ function ExerciseCatalogItem({
           onOpen();
         }
       }}
-      className="hover:border-primary/40 hover:bg-accent/30 grid w-full grid-cols-[auto_1fr_auto] gap-3 rounded-xl border p-3 text-left transition-colors"
+      className={cn(
+        "hover:border-primary/40 hover:bg-accent/30 grid w-full gap-3 rounded-xl border p-3 text-left transition-colors",
+        compact
+          ? "grid-cols-[minmax(0,1fr)_auto] items-start"
+          : "aspect-square grid-rows-[auto_1fr_auto]",
+      )}
     >
-      <CdpElementPreview element={element} />
-      <div className="grid gap-2">
-        <div className="flex flex-wrap items-center gap-2">
+      <div className="grid min-w-0 gap-3">
+        <div className="flex flex-wrap items-center gap-2 self-start">
           <span
             className="rounded-full px-2 py-1 text-[11px] font-semibold"
             style={{ backgroundColor: COLORI_GRUPPO[element.gruppo.numero], color: "#000" }}
@@ -67,28 +73,40 @@ function ExerciseCatalogItem({
           >
             {etichettaDifficolta(element.valore)}
           </span>
-          <span className="text-muted-foreground font-mono text-xs">{element.id}</span>
         </div>
-        <div className="grid gap-1">
-          <p className="text-sm font-semibold">{titoloElemento(element)}</p>
-          <p className="text-muted-foreground line-clamp-2 text-xs leading-relaxed">
+        <div className="grid min-w-0 content-start gap-1 self-start">
+          <p className="line-clamp-3 text-sm font-semibold leading-snug break-words">
+            {titoloElemento(element)}
+          </p>
+          <p className="text-muted-foreground font-mono text-xs">{element.id}</p>
+          <p className="text-muted-foreground line-clamp-2 text-[11px] leading-relaxed break-words">
             {element.descrizione}
           </p>
         </div>
       </div>
-      <div className="flex items-start">
-        <button
-          type="button"
-          disabled={addDisabled}
-          onClick={(event) => {
-            event.stopPropagation();
-            onAdd();
-          }}
-          className={buttonVariants({ size: "sm" })}
-        >
-          <Plus className="size-4" />
-          Aggiungi
-        </button>
+      <div
+        className={cn(
+          "grid gap-3",
+          compact ? "justify-items-end self-stretch" : "grid-cols-[1fr_auto] items-end self-end",
+        )}
+      >
+        <div className={cn(compact ? "" : "justify-self-end")}>
+          <CdpElementPreview element={element} size="xs" />
+        </div>
+        <div className="flex flex-wrap items-center gap-2">
+          <button
+            type="button"
+            disabled={addDisabled}
+            onClick={(event) => {
+              event.stopPropagation();
+              onAdd();
+            }}
+            className={buttonVariants({ size: "sm" })}
+          >
+            <Plus className="size-4" />
+            Aggiungi
+          </button>
+        </div>
       </div>
     </div>
   );
@@ -160,24 +178,15 @@ export function ExerciseCatalog({ elements, onAddElement, addDisabled }: Exercis
             placeholder="Cerca per codice, nome o descrizione"
             className="max-w-xl"
           />
-          <div className="flex flex-wrap gap-2">
-            <button
-              type="button"
-              onClick={() => setView("tabella")}
-              className={buttonVariants({ variant: view === "tabella" ? "default" : "outline" })}
-            >
-              Vista tabella
-            </button>
-            <button
-              type="button"
-              onClick={() => setView("difficolta")}
-              className={buttonVariants({
-                variant: view === "difficolta" ? "default" : "outline",
-              })}
-            >
-              Vista difficoltà
-            </button>
-          </div>
+          <select
+            aria-label="Vista catalogo"
+            value={view}
+            onChange={(event) => setView(event.target.value as CatalogView)}
+            className="border-input bg-background h-8 min-w-40 rounded-lg border px-3 text-sm"
+          >
+            <option value="tabella">Tabella</option>
+            <option value="difficolta">Difficoltà</option>
+          </select>
         </div>
 
         {view === "tabella" ? (
@@ -193,7 +202,7 @@ export function ExerciseCatalog({ elements, onAddElement, addDisabled }: Exercis
                 >
                   Gruppo {NUMERI_ROMANI[group.groupNumber]} · {group.groupName}
                 </div>
-                <div className="grid gap-3 md:grid-cols-2">
+                <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
                   {group.elements.map((element) => (
                     <ExerciseCatalogItem
                       key={element.id}
@@ -234,6 +243,7 @@ export function ExerciseCatalog({ elements, onAddElement, addDisabled }: Exercis
                     <ExerciseCatalogItem
                       key={element.id}
                       element={element}
+                      compact
                       addDisabled={addDisabled}
                       onOpen={() => setSelectedElement(element)}
                       onAdd={() => onAddElement(element.id)}
