@@ -321,15 +321,89 @@ export function ExerciseForm({
 
   return (
     <form onSubmit={handleSubmit} className="grid gap-6">
+      <div className="grid gap-6 xl:grid-cols-[minmax(0,0.95fr)_minmax(18rem,0.45fr)] xl:items-start">
+        <Card>
+          <CardHeader className="pb-3">
+            <CardTitle className="text-lg">Metadati</CardTitle>
+            <CardDescription>
+              Nome, attrezzo e note rapide dell&apos;esercizio.
+            </CardDescription>
+          </CardHeader>
+          <CardContent className="grid gap-4">
+            <div className="grid gap-2">
+              <Label htmlFor="exercise-name">Nome esercizio</Label>
+              <Input
+                id="exercise-name"
+                value={form.name}
+                onChange={(event) => setForm((current) => ({ ...current, name: event.target.value }))}
+                aria-invalid={fieldErrors.name ? true : undefined}
+              />
+              {fieldErrors.name && (
+                <p className="text-destructive text-sm">{fieldErrors.name[0]}</p>
+              )}
+            </div>
+
+            <div className="grid gap-2 sm:max-w-xs">
+              <Label htmlFor="exercise-attrezzo">Attrezzo</Label>
+              <select
+                id="exercise-attrezzo"
+                className="border-input bg-background h-10 rounded-lg border px-3 text-sm"
+                value={form.attrezzo}
+                onChange={(event) => handleAttrezzoChange(event.target.value as Attrezzo)}
+              >
+                {ATTREZZI.map((attrezzo) => (
+                  <option key={attrezzo.codice} value={attrezzo.codice}>
+                    {attrezzo.nome}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div className="grid gap-2">
+              <Label htmlFor="exercise-notes">Note</Label>
+              <Textarea
+                id="exercise-notes"
+                value={form.notes ?? ""}
+                onChange={(event) =>
+                  setForm((current) => ({ ...current, notes: event.target.value }))
+                }
+                aria-invalid={fieldErrors.notes ? true : undefined}
+                className="min-h-24"
+              />
+              {fieldErrors.notes && (
+                <p className="text-destructive text-sm">{fieldErrors.notes[0]}</p>
+              )}
+            </div>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader className="pb-3">
+            <CardTitle className="text-lg">Nota D</CardTitle>
+            <CardDescription>Aggiornata in tempo reale durante la composizione.</CardDescription>
+          </CardHeader>
+          <CardContent>
+            <div className="grid gap-2 rounded-xl border bg-muted/30 p-4">
+              <p className="text-sm font-medium">Valore attuale</p>
+              <p className="text-3xl font-bold tracking-tight">{dScore.toFixed(3)}</p>
+              <p className="text-muted-foreground text-sm">
+                {form.attrezzo === "VT"
+                  ? "Il volteggio accetta uno o due salti."
+                  : "La nota D somma il valore degli elementi e 0,5 punti per ogni gruppo strutturale presente (1-4)."}
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
       <Card>
         <CardHeader>
-          <CardTitle>{initialData ? "Modifica esercizio" : "Nuovo esercizio"}</CardTitle>
+          <CardTitle>Composizione</CardTitle>
           <CardDescription>
-            Componi l&apos;esercizio selezionando gli elementi dal CdP e controlla la nota D in
-            tempo reale.
+            Costruisci l&apos;esercizio in ordine sequenziale e controlla subito la struttura finale.
           </CardDescription>
         </CardHeader>
-        <CardContent className="grid gap-5">
+        <CardContent className="grid gap-3">
           {serverError && (
             <div className="bg-destructive/10 border-l-destructive flex items-start gap-3 rounded-lg border border-destructive/20 border-l-4 p-4">
               <AlertCircle className="text-destructive mt-0.5 size-4 shrink-0" />
@@ -337,210 +411,149 @@ export function ExerciseForm({
             </div>
           )}
 
-          <div className="grid gap-2">
-            <Label htmlFor="exercise-name">Nome esercizio</Label>
-            <Input
-              id="exercise-name"
-              value={form.name}
-              onChange={(event) => setForm((current) => ({ ...current, name: event.target.value }))}
-              aria-invalid={fieldErrors.name ? true : undefined}
-            />
-            {fieldErrors.name && <p className="text-destructive text-sm">{fieldErrors.name[0]}</p>}
-          </div>
+          {resolvedElements.map((item, index) => (
+            <div key={`${item.elementId}-${item.order}`} className="grid gap-3 rounded-xl border p-3">
+              <div className="grid grid-cols-[1fr_auto] items-start gap-3">
+                <button
+                  type="button"
+                  className="grid gap-2 text-left"
+                  onClick={() => setSelectedElementId(item.elementId)}
+                >
+                  <div className="flex flex-wrap items-center gap-2">
+                    <span className="text-muted-foreground font-mono text-xs">{item.order}.</span>
+                    <span
+                      className="rounded-full px-2 py-1 text-[11px] font-semibold"
+                      style={{
+                        backgroundColor: COLORI_GRUPPO[item.element.gruppo.numero],
+                        color: "#000",
+                      }}
+                    >
+                      Gruppo {NUMERI_ROMANI[item.element.gruppo.numero]}
+                    </span>
+                    <span
+                      className={cn(
+                        "inline-flex items-center rounded-md px-2 py-1 text-[11px] font-semibold",
+                        coloreDifficolta(item.element.valore),
+                      )}
+                    >
+                      {etichettaDifficolta(item.element.valore)}
+                    </span>
+                    {item.role === "USCITA" && (
+                      <span className="bg-primary/10 text-primary rounded-full px-2 py-1 text-[11px] font-semibold">
+                        Uscita
+                      </span>
+                    )}
+                  </div>
+                  <div className="grid gap-1">
+                    <p className="text-sm font-semibold">{titoloElemento(item.element)}</p>
+                    <p className="text-muted-foreground text-xs leading-relaxed">
+                      {item.element.descrizione}
+                    </p>
+                  </div>
+                </button>
+                <div className="grid min-w-24 justify-items-end gap-2 self-stretch">
+                  <div className="flex items-center gap-1">
+                    <Button
+                      type="button"
+                      variant="outline"
+                      size="icon-sm"
+                      onClick={() => moveElementAt(index, -1)}
+                      disabled={index === 0}
+                      aria-label={`Sposta su ${getElementLabel(index)}`}
+                    >
+                      <ArrowUp className="size-4" />
+                    </Button>
+                    <Button
+                      type="button"
+                      variant="outline"
+                      size="icon-sm"
+                      onClick={() => moveElementAt(index, 1)}
+                      disabled={index === resolvedElements.length - 1}
+                      aria-label={`Sposta giù ${getElementLabel(index)}`}
+                    >
+                      <ArrowDown className="size-4" />
+                    </Button>
+                    <Button
+                      type="button"
+                      variant="destructive"
+                      size="icon-sm"
+                      onClick={() => removeElementAt(index)}
+                      aria-label={`Rimuovi ${getElementLabel(index)}`}
+                    >
+                      <Trash2 className="size-4" />
+                    </Button>
+                  </div>
+                  <button
+                    type="button"
+                    className="mt-auto rounded-lg"
+                    onClick={() => setSelectedElementId(item.elementId)}
+                    aria-label={`Apri dettaglio ${getElementLabel(index)}`}
+                  >
+                    <CdpElementPreview element={item.element} size="xs" />
+                  </button>
+                </div>
+              </div>
 
-          <div className="grid gap-2">
-            <Label htmlFor="exercise-attrezzo">Attrezzo</Label>
-            <select
-              id="exercise-attrezzo"
-              className="border-input bg-background h-10 rounded-lg border px-3 text-sm"
-              value={form.attrezzo}
-              onChange={(event) => handleAttrezzoChange(event.target.value as Attrezzo)}
-            >
-              {ATTREZZI.map((attrezzo) => (
-                <option key={attrezzo.codice} value={attrezzo.codice}>
-                  {attrezzo.nome}
-                </option>
-              ))}
-            </select>
-          </div>
+              {form.attrezzo !== "VT" && (
+                <div className="flex flex-wrap items-center gap-3">
+                  {item.role === "USCITA" && (
+                    <p className="text-muted-foreground text-xs">
+                      Premendo su un altro elemento, quello verrà spostato in fondo e diventerà la
+                      nuova uscita.
+                    </p>
+                  )}
+                  {item.role !== "USCITA" && (
+                    <button
+                      type="button"
+                      onClick={() => markExitAt(index)}
+                      aria-label={`Imposta come uscita ${getElementLabel(index)}`}
+                      className={buttonVariants({
+                        size: "sm",
+                        variant: "outline",
+                      })}
+                    >
+                      Imposta come uscita
+                    </button>
+                  )}
+                </div>
+              )}
+            </div>
+          ))}
 
-          <div className="grid gap-2">
-            <Label htmlFor="exercise-notes">Note</Label>
-            <Textarea
-              id="exercise-notes"
-              value={form.notes ?? ""}
-              onChange={(event) =>
-                setForm((current) => ({ ...current, notes: event.target.value }))
-              }
-              aria-invalid={fieldErrors.notes ? true : undefined}
-            />
-            {fieldErrors.notes && (
-              <p className="text-destructive text-sm">{fieldErrors.notes[0]}</p>
-            )}
-          </div>
+          {fieldErrors.elements && (
+            <p className="text-destructive text-sm">{fieldErrors.elements[0]}</p>
+          )}
 
-          <div className="grid gap-2 rounded-xl border bg-muted/30 p-4">
-            <p className="text-sm font-medium">Nota D attuale</p>
-            <p className="text-3xl font-bold tracking-tight">{dScore.toFixed(3)}</p>
-            <p className="text-muted-foreground text-sm">
-              {form.attrezzo === "VT"
-                ? "Il volteggio accetta uno o due salti."
-                : "La nota D somma il valore degli elementi e 0,5 punti per ogni gruppo strutturale presente (1-4)."}
-            </p>
-          </div>
+          {resolvedElements.length === 0 && (
+            <div className="rounded-xl border border-dashed p-6 text-center">
+              <p className="text-sm font-medium">Nessun elemento selezionato</p>
+              <p className="text-muted-foreground text-sm">
+                Aggiungi gli elementi dal catalogo per costruire l&apos;esercizio.
+              </p>
+            </div>
+          )}
         </CardContent>
       </Card>
 
-      <div className="grid gap-6 xl:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] xl:items-start">
-        <Card className="xl:max-h-[calc(100vh-14rem)]">
-          <CardHeader>
-            <CardTitle>Catalogo elementi</CardTitle>
-          </CardHeader>
-          <CardContent className="xl:max-h-[calc(100vh-22rem)] xl:overflow-y-auto xl:pr-2">
-            <ExerciseCatalog
-              elements={availableCatalogElements}
-              onAddElement={addElement}
-              addDisabled={
-                form.attrezzo === "VT"
-                  ? composition.elements.length >= 2
-                  : composition.elements.length >= 8
-              }
-            />
-          </CardContent>
-        </Card>
-
-        <Card>
-          <CardHeader>
-            <CardTitle>Composizione</CardTitle>
-          </CardHeader>
-          <CardContent className="grid gap-3">
-            {resolvedElements.map((item, index) => (
-              <div
-                key={`${item.elementId}-${item.order}`}
-                className="grid gap-3 rounded-xl border p-3"
-              >
-                <div className="grid grid-cols-[1fr_auto] items-start gap-3">
-                  <button
-                    type="button"
-                    className="grid gap-2 text-left"
-                    onClick={() => setSelectedElementId(item.elementId)}
-                  >
-                    <div className="flex flex-wrap items-center gap-2">
-                      <span className="text-muted-foreground font-mono text-xs">{item.order}.</span>
-                      <span
-                        className="rounded-full px-2 py-1 text-[11px] font-semibold"
-                        style={{
-                          backgroundColor: COLORI_GRUPPO[item.element.gruppo.numero],
-                          color: "#000",
-                        }}
-                      >
-                        Gruppo {NUMERI_ROMANI[item.element.gruppo.numero]}
-                      </span>
-                      <span
-                        className={cn(
-                          "inline-flex items-center rounded-md px-2 py-1 text-[11px] font-semibold",
-                          coloreDifficolta(item.element.valore),
-                        )}
-                      >
-                        {etichettaDifficolta(item.element.valore)}
-                      </span>
-                      {item.role === "USCITA" && (
-                        <span className="bg-primary/10 text-primary rounded-full px-2 py-1 text-[11px] font-semibold">
-                          Uscita
-                        </span>
-                      )}
-                    </div>
-                    <div className="grid gap-1">
-                      <p className="text-sm font-semibold">{titoloElemento(item.element)}</p>
-                      <p className="text-muted-foreground text-xs leading-relaxed">
-                        {item.element.descrizione}
-                      </p>
-                    </div>
-                  </button>
-                  <div className="grid min-w-24 justify-items-end gap-2 self-stretch">
-                    <div className="flex items-center gap-1">
-                      <Button
-                        type="button"
-                        variant="outline"
-                        size="icon-sm"
-                        onClick={() => moveElementAt(index, -1)}
-                        disabled={index === 0}
-                        aria-label={`Sposta su ${getElementLabel(index)}`}
-                      >
-                        <ArrowUp className="size-4" />
-                      </Button>
-                      <Button
-                        type="button"
-                        variant="outline"
-                        size="icon-sm"
-                        onClick={() => moveElementAt(index, 1)}
-                        disabled={index === resolvedElements.length - 1}
-                        aria-label={`Sposta giù ${getElementLabel(index)}`}
-                      >
-                        <ArrowDown className="size-4" />
-                      </Button>
-                      <Button
-                        type="button"
-                        variant="destructive"
-                        size="icon-sm"
-                        onClick={() => removeElementAt(index)}
-                        aria-label={`Rimuovi ${getElementLabel(index)}`}
-                      >
-                        <Trash2 className="size-4" />
-                      </Button>
-                    </div>
-                    <button
-                      type="button"
-                      className="mt-auto rounded-lg"
-                      onClick={() => setSelectedElementId(item.elementId)}
-                      aria-label={`Apri dettaglio ${getElementLabel(index)}`}
-                    >
-                      <CdpElementPreview element={item.element} size="xs" />
-                    </button>
-                  </div>
-                </div>
-
-                {form.attrezzo !== "VT" && (
-                  <div className="flex flex-wrap items-center gap-3">
-                    {item.role === "USCITA" && (
-                      <p className="text-muted-foreground text-xs">
-                        Premendo su un altro elemento, quello verrà spostato in fondo e diventerà la
-                        nuova uscita.
-                      </p>
-                    )}
-                    {item.role !== "USCITA" && (
-                      <button
-                        type="button"
-                        onClick={() => markExitAt(index)}
-                        aria-label={`Imposta come uscita ${getElementLabel(index)}`}
-                        className={buttonVariants({
-                          size: "sm",
-                          variant: "outline",
-                        })}
-                      >
-                        Imposta come uscita
-                      </button>
-                    )}
-                  </div>
-                )}
-              </div>
-            ))}
-
-            {fieldErrors.elements && (
-              <p className="text-destructive text-sm">{fieldErrors.elements[0]}</p>
-            )}
-
-            {resolvedElements.length === 0 && (
-              <div className="rounded-xl border border-dashed p-6 text-center">
-                <p className="text-sm font-medium">Nessun elemento selezionato</p>
-                <p className="text-muted-foreground text-sm">
-                  Aggiungi gli elementi dal catalogo per costruire l&apos;esercizio.
-                </p>
-              </div>
-            )}
-          </CardContent>
-        </Card>
-      </div>
+      <Card className="xl:max-h-[calc(100vh-14rem)]">
+        <CardHeader>
+          <CardTitle>Catalogo elementi</CardTitle>
+          <CardDescription>
+            Cerca nel CdP e aggiungi elementi alla composizione incrementale.
+          </CardDescription>
+        </CardHeader>
+        <CardContent className="xl:max-h-[calc(100vh-22rem)] xl:overflow-y-auto xl:pr-2">
+          <ExerciseCatalog
+            elements={availableCatalogElements}
+            onAddElement={addElement}
+            addDisabled={
+              form.attrezzo === "VT"
+                ? composition.elements.length >= 2
+                : composition.elements.length >= 8
+            }
+          />
+        </CardContent>
+      </Card>
 
       <div className="flex flex-wrap items-center justify-end gap-3">
         {onRequestClose ? (

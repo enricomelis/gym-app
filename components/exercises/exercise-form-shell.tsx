@@ -57,14 +57,17 @@ export function ExerciseFormShell({
   return (
     <>
       <div className="grid gap-6">
-        <div>
+        <div className="flex flex-col gap-3 md:flex-row md:items-start md:justify-between">
+          <div className="grid gap-1">
+            <h2 className="text-foreground text-2xl font-bold tracking-tight">{title}</h2>
+            <p className="text-muted-foreground text-sm">{description}</p>
+          </div>
           <BackToExercisesButton
             href={closeHref}
             label={backLabel}
             onNavigate={handleRequestClose}
+            className="self-start"
           />
-          <h2 className="text-foreground text-2xl font-bold tracking-tight">{title}</h2>
-          <p className="text-muted-foreground text-sm">{description}</p>
         </div>
 
         <ExerciseForm
