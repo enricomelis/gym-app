@@ -35,7 +35,7 @@ import {
 import { calculateDScore } from "@/lib/exercises/d-score";
 import { resolveExerciseElements } from "@/lib/exercises/rules";
 import type { Attrezzo } from "@/lib/types/cdp";
-import type { ExerciseDetail, ExerciseInput } from "@/lib/types/exercise";
+import type { ExerciseDetail, ExerciseElementInput, ExerciseInput } from "@/lib/types/exercise";
 import { cn } from "@/lib/utils";
 
 interface ExerciseFormProps {
@@ -78,12 +78,7 @@ function getInputSnapshot(input: {
   name: string;
   attrezzo: Attrezzo;
   notes: string;
-  elements: {
-    elementId: string;
-    order: number;
-    role: "STANDARD" | "USCITA" | "VOLTEGGIO";
-    notes: string;
-  }[];
+  elements: ExerciseElementInput[];
   manualExitElementId: string | null;
 }) {
   return JSON.stringify({
@@ -108,9 +103,15 @@ export function ExerciseForm({
 }: ExerciseFormProps) {
   const router = useRouter();
   const initialInput = useMemo(() => getInitialInput(initialData), [initialData]);
-  const resolvedCloseHref = closeHref ?? (initialData ? `/esercizi/${initialData.id}` : "/esercizi");
+  const resolvedCloseHref =
+    closeHref ?? (initialData ? `/esercizi/${initialData.id}` : "/esercizi");
 
-  const [form, setForm] = useState({
+  const [form, setForm] = useState<{
+    name: string;
+    attrezzo: Attrezzo;
+    notes: string;
+    elements: ExerciseElementInput[];
+  }>({
     name: initialInput.name,
     attrezzo: initialInput.attrezzo,
     notes: initialInput.notes,
@@ -325,9 +326,7 @@ export function ExerciseForm({
         <Card>
           <CardHeader className="pb-3">
             <CardTitle className="text-lg">Metadati</CardTitle>
-            <CardDescription>
-              Nome, attrezzo e note rapide dell&apos;esercizio.
-            </CardDescription>
+            <CardDescription>Nome, attrezzo e note rapide dell&apos;esercizio.</CardDescription>
           </CardHeader>
           <CardContent className="grid gap-4">
             <div className="grid gap-4 lg:grid-cols-[minmax(0,1.1fr)_minmax(12rem,0.45fr)_minmax(0,1fr)] lg:items-start">
@@ -404,7 +403,8 @@ export function ExerciseForm({
         <CardHeader>
           <CardTitle>Composizione</CardTitle>
           <CardDescription>
-            Costruisci l&apos;esercizio in ordine sequenziale e controlla subito la struttura finale.
+            Costruisci l&apos;esercizio in ordine sequenziale e controlla subito la struttura
+            finale.
           </CardDescription>
         </CardHeader>
         <CardContent className="grid gap-3">
