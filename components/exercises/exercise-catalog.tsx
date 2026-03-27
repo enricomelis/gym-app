@@ -32,12 +32,14 @@ function ExerciseCatalogItem({
   onAdd,
   addDisabled,
   compact = false,
+  dense = false,
 }: {
   element: ElementoCdp;
   onOpen: () => void;
   onAdd: () => void;
   addDisabled?: boolean;
   compact?: boolean;
+  dense?: boolean;
 }) {
   return (
     <div
@@ -54,10 +56,12 @@ function ExerciseCatalogItem({
         "hover:border-primary/40 hover:bg-accent/30 grid w-full gap-3 rounded-xl border p-3 text-left transition-colors",
         compact
           ? "grid-cols-[minmax(0,1fr)_auto] items-start"
-          : "aspect-square grid-rows-[auto_1fr_auto]",
+          : dense
+            ? "aspect-square grid-rows-[auto_1fr_auto] p-2.5"
+            : "aspect-square grid-rows-[auto_1fr_auto]",
       )}
     >
-      <div className="grid min-w-0 gap-3">
+      <div className={cn("grid min-w-0 gap-3", dense && "gap-2")}>
         <div className="flex flex-wrap items-center gap-2 self-start">
           <span
             className="rounded-full px-2 py-1 text-[11px] font-semibold"
@@ -75,11 +79,23 @@ function ExerciseCatalogItem({
           </span>
         </div>
         <div className="grid min-w-0 content-start gap-1 self-start">
-          <p className="line-clamp-3 text-sm font-semibold leading-snug break-words">
+          <p
+            className={cn(
+              "line-clamp-3 font-semibold leading-snug break-words",
+              dense ? "text-[13px]" : "text-sm",
+            )}
+          >
             {titoloElemento(element)}
           </p>
-          <p className="text-muted-foreground font-mono text-xs">{element.id}</p>
-          <p className="text-muted-foreground line-clamp-2 text-[11px] leading-relaxed break-words">
+          <p className={cn("text-muted-foreground font-mono", dense ? "text-[10px]" : "text-xs")}>
+            {element.id}
+          </p>
+          <p
+            className={cn(
+              "text-muted-foreground line-clamp-2 leading-relaxed break-words",
+              dense ? "text-[10px]" : "text-[11px]",
+            )}
+          >
             {element.descrizione}
           </p>
         </div>
@@ -87,7 +103,9 @@ function ExerciseCatalogItem({
       <div
         className={cn(
           "grid gap-3",
-          compact ? "justify-items-end self-stretch" : "grid-cols-[1fr_auto] items-end self-end",
+          compact
+            ? "justify-items-end self-stretch"
+            : "grid-cols-[1fr_auto] items-end self-end gap-2",
         )}
       >
         <div className={cn(compact ? "" : "justify-self-end")}>
@@ -101,7 +119,7 @@ function ExerciseCatalogItem({
               event.stopPropagation();
               onAdd();
             }}
-            className={buttonVariants({ size: "sm" })}
+            className={buttonVariants({ size: dense ? "xs" : "sm" })}
           >
             <Plus className="size-4" />
             Aggiungi
@@ -202,11 +220,12 @@ export function ExerciseCatalog({ elements, onAddElement, addDisabled }: Exercis
                 >
                   Gruppo {NUMERI_ROMANI[group.groupNumber]} · {group.groupName}
                 </div>
-                <div className="grid gap-3 md:grid-cols-2 xl:grid-cols-3">
+                <div className="grid gap-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6">
                   {group.elements.map((element) => (
                     <ExerciseCatalogItem
                       key={element.id}
                       element={element}
+                      dense
                       addDisabled={addDisabled}
                       onOpen={() => setSelectedElement(element)}
                       onAdd={() => onAddElement(element.id)}
