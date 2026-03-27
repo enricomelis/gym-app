@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BookOpen, LayoutDashboard, X } from "lucide-react";
+import { BookOpen, ClipboardList, LayoutDashboard, X } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
@@ -17,6 +17,7 @@ interface AppSidebarProps {
 const NAV_ITEMS = [
   { href: "/dashboard", label: "Dashboard", icon: LayoutDashboard },
   { href: "/cdp", label: "CdP", icon: BookOpen },
+  { href: "/esercizi", label: "Esercizi", icon: ClipboardList },
 ];
 
 export function AppSidebar({ user }: AppSidebarProps) {

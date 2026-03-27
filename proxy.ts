@@ -15,6 +15,10 @@ export async function proxy(request: NextRequest) {
     return NextResponse.redirect(new URL("/login", request.url));
   }
 
+  if (pathname.startsWith("/esercizi") && !hasSession) {
+    return NextResponse.redirect(new URL("/login", request.url));
+  }
+
   if ((pathname === "/login" || pathname === "/register") && hasSession) {
     return NextResponse.redirect(new URL("/dashboard", request.url));
   }
@@ -23,5 +27,13 @@ export async function proxy(request: NextRequest) {
 }
 
 export const config = {
-  matcher: ["/dashboard/:path*", "/cdp/:path*", "/cdp", "/login", "/register"],
+  matcher: [
+    "/dashboard/:path*",
+    "/cdp/:path*",
+    "/cdp",
+    "/esercizi/:path*",
+    "/esercizi",
+    "/login",
+    "/register",
+  ],
 };

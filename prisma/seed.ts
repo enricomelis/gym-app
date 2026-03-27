@@ -7,6 +7,8 @@ const prisma = new PrismaClient({
 });
 
 async function main() {
+  await prisma.exerciseElement.deleteMany();
+  await prisma.exercise.deleteMany();
   await prisma.account.deleteMany();
   await prisma.session.deleteMany();
   await prisma.verification.deleteMany();
