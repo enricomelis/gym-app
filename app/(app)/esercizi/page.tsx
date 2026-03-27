@@ -6,6 +6,7 @@ import { ExercisesStorageNotReadyError } from "@/lib/exercises/errors";
 import { listExercisesForUser } from "@/lib/exercises/service";
 import { requireSession } from "@/lib/session";
 import { ATTREZZI } from "@/components/cdp/cdp-constants";
+import type { Attrezzo } from "@/lib/types/cdp";
 import { buttonVariants } from "@/components/ui/button-variants";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { KeyboardShortcutHint } from "@/components/ui/keyboard-shortcut-hint";
@@ -32,7 +33,9 @@ export default async function ExercisesPage({ searchParams }: ExercisesPageProps
   try {
     const exercises = await listExercisesForUser(
       session.user.id,
-      attrezzo && ATTREZZI.some((item) => item.codice === attrezzo) ? attrezzo : undefined,
+      attrezzo && ATTREZZI.some((item) => item.codice === attrezzo)
+        ? (attrezzo as Attrezzo)
+        : undefined,
     );
 
     return (
