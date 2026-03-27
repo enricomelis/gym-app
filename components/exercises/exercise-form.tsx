@@ -3,21 +3,39 @@
 import Link from "next/link";
 import { startTransition, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import { AlertCircle, ArrowDown, ArrowUp, Plus, Trash2 } from "lucide-react";
+import { AlertCircle, ArrowDown, ArrowUp, Trash2 } from "lucide-react";
 
 import { createExercise, updateExercise } from "@/app/actions/exercises";
-import { getCatalogByAttrezzo } from "@/lib/cdp/catalog";
-import { calculateDScore } from "@/lib/exercises/d-score";
-import { resolveExerciseElements } from "@/lib/exercises/rules";
-import type { Attrezzo } from "@/lib/types/cdp";
-import type { ExerciseDetail, ExerciseElementInput, ExerciseInput } from "@/lib/types/exercise";
-import { ATTREZZI, titoloElemento } from "@/components/cdp/cdp-constants";
+import { CdpElementoDialog } from "@/components/cdp/cdp-elemento-dialog";
+import { CdpElementPreview } from "@/components/cdp/cdp-element-preview";
+import {
+  COLORI_GRUPPO,
+  NUMERI_ROMANI,
+  coloreDifficolta,
+  etichettaDifficolta,
+  ATTREZZI,
+  titoloElemento,
+} from "@/components/cdp/cdp-constants";
+import { ExerciseCatalog } from "@/components/exercises/exercise-catalog";
 import { Button } from "@/components/ui/button";
 import { buttonVariants } from "@/components/ui/button-variants";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { getCatalogByAttrezzo } from "@/lib/cdp/catalog";
+import {
+  insertElement,
+  markElementAsExit,
+  moveElement,
+  normalizeComposition,
+  removeElement,
+} from "@/lib/exercises/composition";
+import { calculateDScore } from "@/lib/exercises/d-score";
+import { resolveExerciseElements } from "@/lib/exercises/rules";
+import type { Attrezzo } from "@/lib/types/cdp";
+import type { ExerciseDetail, ExerciseInput } from "@/lib/types/exercise";
+import { cn } from "@/lib/utils";
 
 interface ExerciseFormProps {
   initialData?: ExerciseDetail;
@@ -25,54 +43,18 @@ interface ExerciseFormProps {
 
 type FieldErrors = Record<string, string[]>;
 
-function nextRole(attrezzo: Attrezzo): ExerciseElementInput["role"] {
-  if (attrezzo === "VT") {
-    return "VOLTEGGIO";
-  }
-
-  return "STANDARD";
-}
-
-function normalizeElementRoles(
-  attrezzo: Attrezzo,
-  elements: ExerciseElementInput[],
-): ExerciseElementInput[] {
-  if (attrezzo === "VT") {
-    return elements.map((element, index) => ({
-      ...element,
-      order: index + 1,
-      role: "VOLTEGGIO",
-    }));
-  }
-
-  return elements.map((element, index) => ({
-    ...element,
-    order: index + 1,
-    role: elements.length === 8 && index === elements.length - 1 ? "USCITA" : "STANDARD",
-  }));
-}
-
-function moveElementToExitPosition(elements: ExerciseElementInput[], index: number) {
-  const nextItems = [...elements];
-  const [selected] = nextItems.splice(index, 1);
-
-  if (!selected) {
-    return elements;
-  }
-
-  nextItems.push(selected);
-  return nextItems;
-}
-
-function getInitialInput(initialData?: ExerciseDetail): ExerciseInput {
+function getInitialInput(initialData?: ExerciseDetail) {
   if (!initialData) {
     return {
       name: "",
-      attrezzo: "CL",
+      attrezzo: "CL" as Attrezzo,
       notes: "",
       elements: [],
+      manualExitElementId: null as string | null,
     };
   }
+
+  const manualExitElement = initialData.elements.find((element) => element.role === "USCITA");
 
   return {
     name: initialData.name,
@@ -84,55 +66,80 @@ function getInitialInput(initialData?: ExerciseDetail): ExerciseInput {
       role: element.role,
       notes: element.notes ?? "",
     })),
+    manualExitElementId: manualExitElement?.elementId ?? null,
   };
 }
 
 export function ExerciseForm({ initialData }: ExerciseFormProps) {
   const router = useRouter();
-  const [form, setForm] = useState<ExerciseInput>(() => getInitialInput(initialData));
-  const [query, setQuery] = useState("");
+  const initialInput = useMemo(() => getInitialInput(initialData), [initialData]);
+
+  const [form, setForm] = useState({
+    name: initialInput.name,
+    attrezzo: initialInput.attrezzo,
+    notes: initialInput.notes,
+    elements: initialInput.elements,
+  });
+  const [manualExitElementId, setManualExitElementId] = useState<string | null>(
+    initialInput.manualExitElementId,
+  );
   const [serverError, setServerError] = useState<string | null>(null);
   const [fieldErrors, setFieldErrors] = useState<FieldErrors>({});
   const [isPending, setIsPending] = useState(false);
+  const [selectedElementId, setSelectedElementId] = useState<string | null>(null);
 
-  const catalog = useMemo(() => getCatalogByAttrezzo(form.attrezzo), [form.attrezzo]);
+  const composition = useMemo(
+    () => normalizeComposition(form.attrezzo, form.elements, manualExitElementId),
+    [form.attrezzo, form.elements, manualExitElementId],
+  );
 
-  const availableElements = useMemo(() => {
-    const normalizedQuery = query.trim().toLowerCase();
-
-    return catalog.filter((element) => {
-      const alreadyAdded = form.elements.some((item) => item.elementId === element.id);
-      if (alreadyAdded) {
-        return false;
-      }
-
-      if (!normalizedQuery) {
-        return true;
-      }
-
-      const haystack = [element.id, element.nome, element.descrizione, element.valore].join(" ");
-      return haystack.toLowerCase().includes(normalizedQuery);
-    });
-  }, [catalog, form.elements, query]);
+  const availableCatalogElements = useMemo(() => {
+    const selectedIds = new Set(composition.elements.map((element) => element.elementId));
+    return getCatalogByAttrezzo(form.attrezzo).filter((element) => !selectedIds.has(element.id));
+  }, [composition.elements, form.attrezzo]);
 
   const resolvedElements = useMemo(() => {
     try {
-      return resolveExerciseElements(form);
+      return resolveExerciseElements({
+        name: form.name,
+        attrezzo: form.attrezzo,
+        notes: form.notes,
+        elements: composition.elements,
+      });
     } catch {
       return [];
     }
-  }, [form]);
+  }, [composition.elements, form.attrezzo, form.name, form.notes]);
 
   const dScore = useMemo(() => {
     if (resolvedElements.length === 0) {
       return 0;
     }
 
-    return calculateDScore(resolvedElements);
-  }, [resolvedElements]);
+    return calculateDScore(form.attrezzo, resolvedElements);
+  }, [form.attrezzo, resolvedElements]);
+
+  const selectedElement = useMemo(() => {
+    if (!selectedElementId) {
+      return null;
+    }
+
+    return resolvedElements.find((item) => item.elementId === selectedElementId)?.element ?? null;
+  }, [resolvedElements, selectedElementId]);
 
   function setFieldErrorState(errorMap?: FieldErrors) {
     setFieldErrors(errorMap ?? {});
+  }
+
+  function updateComposition(next: {
+    elements: typeof composition.elements;
+    manualExitElementId: string | null;
+  }) {
+    setForm((current) => ({
+      ...current,
+      elements: next.elements,
+    }));
+    setManualExitElementId(next.manualExitElementId);
   }
 
   function handleAttrezzoChange(attrezzo: Attrezzo) {
@@ -142,65 +149,87 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
       notes: form.notes,
       elements: [],
     });
-    setQuery("");
+    setManualExitElementId(null);
     setServerError(null);
     setFieldErrorState();
   }
 
   function addElement(elementId: string) {
-    if (form.attrezzo === "VT" && form.elements.length >= 2) {
+    if (form.attrezzo === "VT" && composition.elements.length >= 2) {
       setServerError("Il volteggio accetta uno o due salti.");
       return;
     }
 
-    if (form.attrezzo !== "VT" && form.elements.length >= 8) {
+    if (form.attrezzo !== "VT" && composition.elements.length >= 8) {
       setServerError("Gli esercizi possono contenere al massimo otto elementi.");
       return;
     }
 
     setServerError(null);
-    setForm((current) => ({
-      ...current,
-      elements: normalizeElementRoles(current.attrezzo, [
-        ...current.elements,
+    updateComposition(
+      insertElement(
+        form.attrezzo,
+        {
+          elements: composition.elements,
+          manualExitElementId,
+        },
         {
           elementId,
-          order: current.elements.length + 1,
-          role: nextRole(current.attrezzo),
+          order: composition.elements.length + 1,
+          role: form.attrezzo === "VT" ? "VOLTEGGIO" : "STANDARD",
           notes: "",
         },
-      ]),
-    }));
-  }
-
-  function removeElement(index: number) {
-    setForm((current) => ({
-      ...current,
-      elements: normalizeElementRoles(
-        current.attrezzo,
-        current.elements.filter((_, currentIndex) => currentIndex !== index),
       ),
-    }));
+    );
   }
 
-  function moveElement(index: number, direction: -1 | 1) {
-    const nextIndex = index + direction;
-    if (nextIndex < 0 || nextIndex >= form.elements.length) {
-      return;
+  function removeElementAt(index: number) {
+    updateComposition(
+      removeElement(
+        form.attrezzo,
+        {
+          elements: composition.elements,
+          manualExitElementId,
+        },
+        index,
+      ),
+    );
+  }
+
+  function moveElementAt(index: number, direction: -1 | 1) {
+    updateComposition(
+      moveElement(
+        form.attrezzo,
+        {
+          elements: composition.elements,
+          manualExitElementId,
+        },
+        index,
+        direction,
+      ),
+    );
+  }
+
+  function markExitAt(index: number) {
+    updateComposition(
+      markElementAsExit(
+        form.attrezzo,
+        {
+          elements: composition.elements,
+          manualExitElementId,
+        },
+        index,
+      ),
+    );
+  }
+
+  function getElementLabel(index: number) {
+    const item = resolvedElements[index];
+    if (!item) {
+      return `elemento ${index + 1}`;
     }
 
-    setForm((current) => {
-      const nextItems = [...current.elements];
-      [nextItems[index], nextItems[nextIndex]] = [nextItems[nextIndex], nextItems[index]];
-      return {
-        ...current,
-        elements: normalizeElementRoles(current.attrezzo, nextItems),
-      };
-    });
-  }
-
-  function updateNotes(notes: string) {
-    setForm((current) => ({ ...current, notes }));
+    return titoloElemento(item.element);
   }
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -210,10 +239,10 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
     setIsPending(true);
 
     const payload: ExerciseInput = {
-      ...form,
       name: form.name.trim(),
+      attrezzo: form.attrezzo,
       notes: form.notes?.trim() || null,
-      elements: form.elements.map((element, index) => ({
+      elements: composition.elements.map((element, index) => ({
         ...element,
         order: index + 1,
         notes: element.notes?.trim() || null,
@@ -243,8 +272,8 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
         <CardHeader>
           <CardTitle>{initialData ? "Modifica esercizio" : "Nuovo esercizio"}</CardTitle>
           <CardDescription>
-            Componi l'esercizio selezionando gli elementi dal CdP e controlla la nota D in tempo
-            reale.
+            Componi l&apos;esercizio selezionando gli elementi dal CdP e controlla la nota D in
+            tempo reale.
           </CardDescription>
         </CardHeader>
         <CardContent className="grid gap-5">
@@ -287,7 +316,9 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
             <Textarea
               id="exercise-notes"
               value={form.notes ?? ""}
-              onChange={(event) => updateNotes(event.target.value)}
+              onChange={(event) =>
+                setForm((current) => ({ ...current, notes: event.target.value }))
+              }
               aria-invalid={fieldErrors.notes ? true : undefined}
             />
             {fieldErrors.notes && (
@@ -301,58 +332,31 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
             <p className="text-muted-foreground text-sm">
               {form.attrezzo === "VT"
                 ? "Il volteggio accetta uno o due salti."
-                : "L'uscita diventa selezionabile solo quando la composizione arriva a otto elementi."}
+                : "La nota D somma il valore degli elementi e 0,5 punti per ogni gruppo strutturale presente (1-4)."}
             </p>
           </div>
         </CardContent>
       </Card>
 
-      <div className="grid gap-6 xl:grid-cols-[1.2fr_0.8fr]">
+      <div className="grid gap-6 xl:grid-cols-[1.15fr_0.85fr]">
         <Card>
           <CardHeader>
             <CardTitle>Catalogo elementi</CardTitle>
             <CardDescription>
-              Cerca nel codice dell'attrezzo selezionato e aggiungi gli elementi alla composizione.
+              Usa una vista ridotta del CdP: click sull&apos;elemento per il dettaglio, click su
+              “Aggiungi” per inserirlo nella composizione.
             </CardDescription>
           </CardHeader>
-          <CardContent className="grid gap-4">
-            <Input
-              value={query}
-              onChange={(event) => setQuery(event.target.value)}
-              placeholder="Cerca per codice, nome o descrizione"
+          <CardContent>
+            <ExerciseCatalog
+              elements={availableCatalogElements}
+              onAddElement={addElement}
+              addDisabled={
+                form.attrezzo === "VT"
+                  ? composition.elements.length >= 2
+                  : composition.elements.length >= 8
+              }
             />
-
-            <div className="grid max-h-[28rem] gap-3 overflow-y-auto pr-1">
-              {availableElements.slice(0, 60).map((element) => (
-                <button
-                  key={element.id}
-                  type="button"
-                  onClick={() => addElement(element.id)}
-                  className="hover:border-primary/50 hover:bg-accent/40 flex items-start justify-between rounded-xl border p-3 text-left transition-colors"
-                >
-                  <div className="grid gap-1">
-                    <p className="text-sm font-semibold">{titoloElemento(element)}</p>
-                    <p className="text-muted-foreground text-xs">{element.id}</p>
-                    <p className="text-muted-foreground text-xs leading-relaxed">
-                      {element.descrizione}
-                    </p>
-                  </div>
-                  <span className="bg-primary/10 text-primary inline-flex items-center gap-1 rounded-full px-2 py-1 text-xs font-semibold">
-                    {element.valore}
-                    <Plus className="size-3" />
-                  </span>
-                </button>
-              ))}
-
-              {availableElements.length === 0 && (
-                <div className="rounded-xl border border-dashed p-6 text-center">
-                  <p className="text-sm font-medium">Nessun elemento disponibile</p>
-                  <p className="text-muted-foreground text-sm">
-                    Modifica la ricerca o rimuovi qualche elemento già selezionato.
-                  </p>
-                </div>
-              )}
-            </div>
           </CardContent>
         </Card>
 
@@ -360,7 +364,8 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
           <CardHeader>
             <CardTitle>Composizione</CardTitle>
             <CardDescription>
-              Ordina gli elementi e, fuori dal volteggio, marca l'uscita quando serve.
+              L&apos;uscita è sempre l&apos;ultimo elemento. Se ne scegli una diversa, viene
+              spostata in fondo automaticamente.
             </CardDescription>
           </CardHeader>
           <CardContent className="grid gap-3">
@@ -369,22 +374,57 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
                 key={`${item.elementId}-${item.order}`}
                 className="grid gap-3 rounded-xl border p-3"
               >
-                <div className="flex items-start justify-between gap-3">
-                  <div>
-                    <p className="text-sm font-semibold">
-                      {item.order}. {titoloElemento(item.element)}
-                    </p>
-                    <p className="text-muted-foreground text-xs">
-                      {item.element.id} · {item.element.valore}
-                    </p>
-                  </div>
+                <div className="grid grid-cols-[auto_1fr_auto] items-start gap-3">
+                  <button
+                    type="button"
+                    className="contents text-left"
+                    onClick={() => setSelectedElementId(item.elementId)}
+                  >
+                    <CdpElementPreview element={item.element} />
+                    <div className="grid gap-2">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="text-muted-foreground font-mono text-xs">
+                          {item.order}.
+                        </span>
+                        <span
+                          className="rounded-full px-2 py-1 text-[11px] font-semibold"
+                          style={{
+                            backgroundColor: COLORI_GRUPPO[item.element.gruppo.numero],
+                            color: "#000",
+                          }}
+                        >
+                          Gruppo {NUMERI_ROMANI[item.element.gruppo.numero]}
+                        </span>
+                        <span
+                          className={cn(
+                            "inline-flex items-center rounded-md px-2 py-1 text-[11px] font-semibold",
+                            coloreDifficolta(item.element.valore),
+                          )}
+                        >
+                          {etichettaDifficolta(item.element.valore)}
+                        </span>
+                        {item.role === "USCITA" && (
+                          <span className="bg-primary/10 text-primary rounded-full px-2 py-1 text-[11px] font-semibold">
+                            Uscita
+                          </span>
+                        )}
+                      </div>
+                      <div className="grid gap-1">
+                        <p className="text-sm font-semibold">{titoloElemento(item.element)}</p>
+                        <p className="text-muted-foreground text-xs leading-relaxed">
+                          {item.element.descrizione}
+                        </p>
+                      </div>
+                    </div>
+                  </button>
                   <div className="flex items-center gap-1">
                     <Button
                       type="button"
                       variant="outline"
                       size="icon-sm"
-                      onClick={() => moveElement(index, -1)}
+                      onClick={() => moveElementAt(index, -1)}
                       disabled={index === 0}
+                      aria-label={`Sposta su ${getElementLabel(index)}`}
                     >
                       <ArrowUp className="size-4" />
                     </Button>
@@ -392,8 +432,9 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
                       type="button"
                       variant="outline"
                       size="icon-sm"
-                      onClick={() => moveElement(index, 1)}
+                      onClick={() => moveElementAt(index, 1)}
                       disabled={index === resolvedElements.length - 1}
+                      aria-label={`Sposta giù ${getElementLabel(index)}`}
                     >
                       <ArrowDown className="size-4" />
                     </Button>
@@ -401,41 +442,34 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
                       type="button"
                       variant="destructive"
                       size="icon-sm"
-                      onClick={() => removeElement(index)}
+                      onClick={() => removeElementAt(index)}
+                      aria-label={`Rimuovi ${getElementLabel(index)}`}
                     >
                       <Trash2 className="size-4" />
                     </Button>
                   </div>
                 </div>
 
-                {form.attrezzo !== "VT" && form.elements.length === 8 && index === 7 && (
-                  <p className="bg-primary/10 text-primary inline-flex w-fit rounded-full px-2 py-1 text-xs font-semibold">
-                    Uscita automatica
-                  </p>
-                )}
-
-                {form.attrezzo !== "VT" && form.elements.length === 8 && (
-                  <label className="flex items-center gap-2 text-sm">
-                    <input
-                      type="checkbox"
-                      checked={item.role === "USCITA"}
-                      disabled={item.role === "USCITA"}
-                      onChange={(event) => {
-                        if (!event.target.checked) {
-                          return;
-                        }
-
-                        setForm((current) => ({
-                          ...current,
-                          elements: normalizeElementRoles(
-                            current.attrezzo,
-                            moveElementToExitPosition(current.elements, index),
-                          ),
-                        }));
-                      }}
-                    />
-                    Imposta come uscita
-                  </label>
+                {form.attrezzo !== "VT" && (
+                  <div className="flex flex-wrap items-center gap-3">
+                    <button
+                      type="button"
+                      onClick={() => markExitAt(index)}
+                      aria-label={`Imposta come uscita ${getElementLabel(index)}`}
+                      className={buttonVariants({
+                        size: "sm",
+                        variant: item.role === "USCITA" ? "secondary" : "outline",
+                      })}
+                    >
+                      Imposta come uscita
+                    </button>
+                    {item.role === "USCITA" && (
+                      <p className="text-muted-foreground text-xs">
+                        Premendo su un altro elemento, quello verrà spostato in fondo e diventerà la
+                        nuova uscita.
+                      </p>
+                    )}
+                  </div>
                 )}
               </div>
             ))}
@@ -448,7 +482,7 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
               <div className="rounded-xl border border-dashed p-6 text-center">
                 <p className="text-sm font-medium">Nessun elemento selezionato</p>
                 <p className="text-muted-foreground text-sm">
-                  Aggiungi gli elementi dal catalogo per costruire l'esercizio.
+                  Aggiungi gli elementi dal catalogo per costruire l&apos;esercizio.
                 </p>
               </div>
             )}
@@ -473,6 +507,8 @@ export function ExerciseForm({ initialData }: ExerciseFormProps) {
               : "Crea esercizio"}
         </Button>
       </div>
+
+      <CdpElementoDialog elemento={selectedElement} onClose={() => setSelectedElementId(null)} />
     </form>
   );
 }

@@ -1,3 +1,4 @@
+import type { Attrezzo } from "@/lib/types/cdp";
 import type { ResolvedExerciseElement } from "@/lib/types/exercise";
 
 const LETTER_SCORES: Record<string, number> = {
@@ -28,10 +29,22 @@ export function parseDifficultyValue(value: string): number {
   return numeric;
 }
 
-export function calculateDScore(elements: ResolvedExerciseElement[]): number {
-  const total = elements.reduce((sum, item) => {
+export function calculateDScore(attrezzo: Attrezzo, elements: ResolvedExerciseElement[]): number {
+  const elementsTotal = elements.reduce((sum, item) => {
     return sum + parseDifficultyValue(item.element.valore);
   }, 0);
 
-  return Number(total.toFixed(3));
+  if (attrezzo === "VT") {
+    return Number(elementsTotal.toFixed(3));
+  }
+
+  const groupsPresent = new Set<number>();
+  for (const item of elements) {
+    if (item.element.gruppo.numero >= 1 && item.element.gruppo.numero <= 4) {
+      groupsPresent.add(item.element.gruppo.numero);
+    }
+  }
+
+  const groupsBonus = groupsPresent.size * 0.5;
+  return Number((elementsTotal + groupsBonus).toFixed(3));
 }

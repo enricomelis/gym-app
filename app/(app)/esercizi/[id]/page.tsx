@@ -1,3 +1,5 @@
+import { BackToExercisesButton } from "@/components/exercises/back-to-exercises-button";
+import { ExerciseElementsList } from "@/components/exercises/exercise-elements-list";
 import Link from "next/link";
 
 import { DeleteExerciseButton } from "@/components/exercises/delete-exercise-button";
@@ -54,6 +56,7 @@ export default async function ExerciseDetailPage({ params }: ExerciseDetailPageP
     <div className="grid gap-6">
       <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
         <div className="grid gap-2">
+          <BackToExercisesButton />
           <h2 className="text-foreground text-2xl font-bold tracking-tight">{exercise.name}</h2>
           <p className="text-muted-foreground text-sm">
             {exercise.attrezzo} · {exercise.elementCount} element
@@ -103,30 +106,13 @@ export default async function ExerciseDetailPage({ params }: ExerciseDetailPageP
         <Card>
           <CardHeader>
             <CardTitle>Elementi dell'esercizio</CardTitle>
-            <CardDescription>Sequenza ordinata degli elementi selezionati.</CardDescription>
+            <CardDescription>
+              Sequenza ordinata degli elementi selezionati. Clicca un elemento per aprire il
+              dettaglio completo del CdP.
+            </CardDescription>
           </CardHeader>
-          <CardContent className="grid gap-3">
-            {exercise.elements.map((item) => (
-              <div key={`${item.elementId}-${item.order}`} className="rounded-xl border p-4">
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                  <div className="grid gap-1">
-                    <p className="text-sm font-semibold">
-                      {item.order}. {item.element.nome || item.element.descrizione}
-                    </p>
-                    <p className="text-muted-foreground text-xs">
-                      {item.element.id} · {item.element.valore} · gruppo{" "}
-                      {item.element.gruppo.numero}
-                    </p>
-                  </div>
-                  <span className="bg-primary/10 text-primary rounded-full px-2 py-1 text-xs font-semibold">
-                    {item.role}
-                  </span>
-                </div>
-                <p className="text-muted-foreground mt-3 text-sm leading-relaxed">
-                  {item.element.descrizione}
-                </p>
-              </div>
-            ))}
+          <CardContent>
+            <ExerciseElementsList elements={exercise.elements} />
           </CardContent>
         </Card>
       </div>

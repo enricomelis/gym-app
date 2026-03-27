@@ -17,19 +17,50 @@ describe("parseDifficultyValue", () => {
 });
 
 describe("calculateDScore", () => {
-  it("sums the resolved element values", () => {
+  it("adds the structural group bonus for non-vault exercises", () => {
     const input: ExerciseInput = {
       name: "Corpo libero demo",
       attrezzo: "CL",
       notes: null,
       elements: [
         { elementId: "CL-I-1", order: 1, role: "STANDARD" },
-        { elementId: "CL-I-2", order: 2, role: "USCITA" },
+        { elementId: "CL-II-1", order: 2, role: "STANDARD" },
+        { elementId: "CL-IV-2", order: 3, role: "USCITA" },
       ],
     };
 
     const resolved = resolveExerciseElements(input);
 
-    expect(calculateDScore(resolved)).toBe(0.3);
+    expect(calculateDScore("CL", resolved)).toBe(1.9);
+  });
+
+  it("does not award the missing structural group", () => {
+    const input: ExerciseInput = {
+      name: "Corpo libero parziale",
+      attrezzo: "CL",
+      notes: null,
+      elements: [
+        { elementId: "CL-I-1", order: 1, role: "STANDARD" },
+        { elementId: "CL-I-2", order: 2, role: "STANDARD" },
+        { elementId: "CL-IV-2", order: 3, role: "USCITA" },
+      ],
+    };
+
+    const resolved = resolveExerciseElements(input);
+
+    expect(calculateDScore("CL", resolved)).toBe(1.5);
+  });
+
+  it("does not add structural-group bonus on vault", () => {
+    const input: ExerciseInput = {
+      name: "Volteggio",
+      attrezzo: "VT",
+      notes: null,
+      elements: [{ elementId: "VT-I-1", order: 1, role: "VOLTEGGIO" }],
+    };
+
+    const resolved = resolveExerciseElements(input);
+
+    expect(calculateDScore("VT", resolved)).toBe(2.4);
   });
 });

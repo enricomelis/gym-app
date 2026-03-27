@@ -46,7 +46,7 @@ function mapExercise(record: {
     })),
   });
 
-  const dScore = calculateDScore(resolvedElements);
+  const dScore = calculateDScore(record.attrezzo, resolvedElements);
 
   return {
     id: record.id,

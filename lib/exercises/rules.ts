@@ -84,24 +84,17 @@ export function validateExerciseInput(input: ExerciseInput): ExerciseValidationI
       });
     }
 
-    if (uscitaCount > 1) {
+    if (uscitaCount !== 1) {
       issues.push({
         field: "elements",
-        message: "Puoi indicare una sola uscita per esercizio.",
+        message: "Gli esercizi diversi dal volteggio devono avere sempre un'uscita.",
       });
     }
 
-    if (input.elements.length === 8 && (uscitaCount !== 1 || uscitaOrder !== 8)) {
+    if (uscitaCount === 1 && uscitaOrder !== input.elements.length) {
       issues.push({
         field: "elements",
-        message: "Con otto elementi l'ottavo deve essere sempre l'uscita.",
-      });
-    }
-
-    if (uscitaCount === 1 && (input.elements.length !== 8 || uscitaOrder !== 8)) {
-      issues.push({
-        field: "elements",
-        message: "L'uscita puo essere segnata solo come ottavo elemento.",
+        message: "L'uscita deve essere sempre l'ultimo elemento della composizione.",
       });
     }
   }
