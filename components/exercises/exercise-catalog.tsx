@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useCallback, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import { Plus } from "lucide-react";
 
@@ -322,16 +322,19 @@ function HighlightMatch({ text, query }: { text: string; query: string }) {
 function CatalogSearchDropdown({
   elements,
   query,
+  activeIndex,
   onAddElement,
   onSelectElement,
   addDisabled,
 }: {
   elements: ElementoCdp[];
   query: string;
+  activeIndex: number;
   onAddElement: (elementId: string) => void;
   onSelectElement: (el: ElementoCdp) => void;
   addDisabled?: boolean;
 }) {
+  const listRef = useRef<HTMLDivElement>(null);
   const results = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
     if (!normalizedQuery) return [];
@@ -349,7 +352,7 @@ function CatalogSearchDropdown({
   if (!query.trim() || results.length === 0) {
     if (query.trim()) {
       return (
-        <div className="rounded-lg border bg-background p-3 shadow-lg">
+        <div className="rounded-lg border border-border bg-background p-3">
           <p className="text-muted-foreground text-sm">Nessun risultato.</p>
         </div>
       );
@@ -360,11 +363,18 @@ function CatalogSearchDropdown({
   const trimmedQuery = query.trim();
 
   return (
-    <div className="max-h-80 overflow-y-auto rounded-lg border bg-background shadow-lg">
-      {results.map((el) => (
+    <div
+      ref={listRef}
+      className="max-h-80 overflow-y-auto rounded-lg border border-border bg-background"
+    >
+      {results.map((el, idx) => (
         <div
           key={el.id}
-          className="hover:bg-accent/40 flex items-center gap-3 border-b px-3 py-2 last:border-b-0"
+          data-index={idx}
+          className={cn(
+            "flex items-center gap-3 border-b px-3 py-2 last:border-b-0",
+            idx === activeIndex ? "bg-accent" : "hover:bg-accent/40",
+          )}
         >
           <button
             type="button"
@@ -408,6 +418,20 @@ export function ExerciseCatalog({ elements, onAddElement, addDisabled }: Exercis
   const [view, setView] = useState<CatalogView>("tabella");
   const [query, setQuery] = useState("");
   const [selectedElement, setSelectedElement] = useState<ElementoCdp | null>(null);
+  const [searchActiveIndex, setSearchActiveIndex] = useState(-1);
+
+  const searchResults = useMemo(() => {
+    const normalizedQuery = query.trim().toLowerCase();
+    if (!normalizedQuery) return [];
+    return elements
+      .filter((element) =>
+        [element.id, element.nome, element.descrizione, element.valore]
+          .join(" ")
+          .toLowerCase()
+          .includes(normalizedQuery),
+      )
+      .slice(0, 20);
+  }, [elements, query]);
 
   const filteredElements = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -443,6 +467,31 @@ export function ExerciseCatalog({ elements, onAddElement, addDisabled }: Exercis
     }));
   }, [filteredElements]);
 
+  const handleSearchKeyDown = useCallback(
+    (event: React.KeyboardEvent<HTMLInputElement>) => {
+      if (view !== "tabella" || !query.trim() || searchResults.length === 0) return;
+
+      if (event.key === "ArrowDown") {
+        event.preventDefault();
+        setSearchActiveIndex((prev) => (prev < searchResults.length - 1 ? prev + 1 : 0));
+      } else if (event.key === "ArrowUp") {
+        event.preventDefault();
+        setSearchActiveIndex((prev) => (prev > 0 ? prev - 1 : searchResults.length - 1));
+      } else if (event.key === "Enter") {
+        event.preventDefault();
+        if (searchActiveIndex >= 0 && searchActiveIndex < searchResults.length) {
+          onAddElement(searchResults[searchActiveIndex].id);
+          setQuery("");
+          setSearchActiveIndex(-1);
+        }
+      } else if (event.key === "Escape") {
+        setQuery("");
+        setSearchActiveIndex(-1);
+      }
+    },
+    [view, query, searchResults, searchActiveIndex, onAddElement],
+  );
+
   return (
     <>
       <div className="grid gap-4">
@@ -450,7 +499,11 @@ export function ExerciseCatalog({ elements, onAddElement, addDisabled }: Exercis
           <div className="relative min-w-0 max-w-xl flex-1">
             <Input
               value={query}
-              onChange={(event) => setQuery(event.target.value)}
+              onChange={(event) => {
+                setQuery(event.target.value);
+                setSearchActiveIndex(-1);
+              }}
+              onKeyDown={handleSearchKeyDown}
               placeholder="Cerca per codice, nome o descrizione"
               className="w-full"
             />
@@ -459,13 +512,16 @@ export function ExerciseCatalog({ elements, onAddElement, addDisabled }: Exercis
                 <CatalogSearchDropdown
                   elements={elements}
                   query={query}
+                  activeIndex={searchActiveIndex}
                   onAddElement={(id) => {
                     onAddElement(id);
                     setQuery("");
+                    setSearchActiveIndex(-1);
                   }}
                   onSelectElement={(el) => {
                     setSelectedElement(el);
                     setQuery("");
+                    setSearchActiveIndex(-1);
                   }}
                   addDisabled={addDisabled}
                 />

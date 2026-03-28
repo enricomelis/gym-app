@@ -5,7 +5,7 @@ import Link from "next/link";
 
 import { DeleteExerciseButton } from "@/components/exercises/delete-exercise-button";
 import { buttonVariants } from "@/components/ui/button-variants";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { KeyboardShortcutHint } from "@/components/ui/keyboard-shortcut-hint";
 import { formatItalianDate } from "@/lib/date";
 import { ExercisesStorageNotReadyError } from "@/lib/exercises/errors";
@@ -83,46 +83,31 @@ export default async function ExerciseDetailPage({ params }: ExerciseDetailPageP
         </div>
       </div>
 
-      <div className="grid gap-6 xl:grid-cols-[0.7fr_1.3fr]">
-        <Card>
-          <CardHeader>
-            <CardTitle>Riepilogo</CardTitle>
-            <CardDescription>Metadati principali e nota D calcolata live.</CardDescription>
-          </CardHeader>
-          <CardContent className="grid gap-4">
-            <div className="grid gap-1 rounded-xl border bg-muted/30 p-4">
-              <p className="text-muted-foreground text-xs uppercase tracking-[0.16em]">Nota D</p>
-              <p className="text-3xl font-bold tracking-tight">{exercise.dScore.toFixed(3)}</p>
-            </div>
-            <div className="grid gap-1 text-sm">
-              <p>
-                <span className="font-medium">Attrezzo:</span> {exercise.attrezzo}
-              </p>
-              <p>
-                <span className="font-medium">Elementi:</span> {exercise.elementCount}
-              </p>
-            </div>
-            {exercise.notes && (
-              <div className="grid gap-2">
-                <p className="text-sm font-medium">Note</p>
-                <p className="text-muted-foreground text-sm leading-relaxed">{exercise.notes}</p>
-              </div>
-            )}
-          </CardContent>
-        </Card>
+      <div className="grid items-start gap-6 xl:grid-cols-[1fr_20rem]">
+        <div className="min-w-0">
+          <ExerciseElementsList elements={exercise.elements} />
+        </div>
 
-        <Card>
-          <CardHeader>
-            <CardTitle>Elementi dell'esercizio</CardTitle>
-            <CardDescription>
-              Sequenza ordinata degli elementi selezionati. Clicca un elemento per aprire il
-              dettaglio completo del CdP.
-            </CardDescription>
-          </CardHeader>
-          <CardContent>
-            <ExerciseElementsList elements={exercise.elements} />
-          </CardContent>
-        </Card>
+        <div className="grid content-start gap-4 text-sm">
+          <div className="flex items-baseline gap-2 rounded-lg border bg-muted/30 px-4 py-3">
+            <span className="text-muted-foreground font-medium">Nota D</span>
+            <span className="text-xl font-bold tracking-tight">{exercise.dScore.toFixed(3)}</span>
+          </div>
+          <div className="grid gap-1">
+            <p>
+              <span className="font-medium">Attrezzo:</span> {exercise.attrezzo}
+            </p>
+            <p>
+              <span className="font-medium">Elementi:</span> {exercise.elementCount}
+            </p>
+          </div>
+          {exercise.notes && (
+            <div className="grid gap-1">
+              <p className="text-xs font-medium">Note</p>
+              <p className="text-muted-foreground leading-relaxed">{exercise.notes}</p>
+            </div>
+          )}
+        </div>
       </div>
     </div>
   );

@@ -35,7 +35,8 @@ export function calculateDScore(attrezzo: Attrezzo, elements: ResolvedExerciseEl
   }, 0);
 
   if (attrezzo === "VT") {
-    return Number(elementsTotal.toFixed(3));
+    const avg = elements.length > 0 ? elementsTotal / elements.length : 0;
+    return Number(avg.toFixed(3));
   }
 
   const groupsPresent = new Set<number>();

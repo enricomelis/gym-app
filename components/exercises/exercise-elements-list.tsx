@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useMemo, useState } from "react";
 
 import { CdpElementoDialog } from "@/components/cdp/cdp-elemento-dialog";
 import { CdpElementPreview } from "@/components/cdp/cdp-element-preview";
@@ -9,7 +9,7 @@ import {
   NUMERI_ROMANI,
   coloreDifficolta,
   etichettaDifficolta,
-  titoloElemento,
+  troncaTesto,
 } from "@/components/cdp/cdp-constants";
 import type { ResolvedExerciseElement } from "@/lib/types/exercise";
 import { cn } from "@/lib/utils";
@@ -18,59 +18,84 @@ interface ExerciseElementsListProps {
   elements: ResolvedExerciseElement[];
 }
 
+function displayName(el: { nome: string; descrizione: string }) {
+  if (el.nome) return el.nome;
+  return troncaTesto(el.descrizione, 50);
+}
+
 export function ExerciseElementsList({ elements }: ExerciseElementsListProps) {
   const [selectedElementId, setSelectedElementId] = useState<string | null>(null);
   const selectedElement =
     elements.find((item) => item.elementId === selectedElementId)?.element ?? null;
 
+  const difficultySummary = useMemo(() => {
+    const counts = new Map<string, number>();
+    for (const item of elements) {
+      const val = item.element.valore;
+      counts.set(val, (counts.get(val) ?? 0) + 1);
+    }
+    return [...counts.entries()].sort((a, b) => a[0].localeCompare(b[0]));
+  }, [elements]);
+
   return (
     <>
-      <div className="grid gap-3">
-        {elements.map((item) => (
-          <button
-            key={`${item.elementId}-${item.order}`}
-            type="button"
-            onClick={() => setSelectedElementId(item.elementId)}
-            className="hover:border-primary/40 hover:bg-accent/20 grid gap-3 rounded-xl border p-4 text-left transition-colors"
-          >
-            <div className="grid grid-cols-[auto_1fr_auto] items-start gap-3">
-              <CdpElementPreview element={item.element} />
-              <div className="grid gap-2">
-                <div className="flex flex-wrap items-center gap-2">
-                  <span className="text-muted-foreground font-mono text-xs">{item.order}.</span>
-                  <span
-                    className="rounded-full px-2 py-1 text-[11px] font-semibold"
-                    style={{
-                      backgroundColor: COLORI_GRUPPO[item.element.gruppo.numero],
-                      color: "#000",
-                    }}
-                  >
-                    Gruppo {NUMERI_ROMANI[item.element.gruppo.numero]}
-                  </span>
-                  <span
-                    className={cn(
-                      "inline-flex items-center rounded-md px-2 py-1 text-[11px] font-semibold",
-                      coloreDifficolta(item.element.valore),
-                    )}
-                  >
-                    {etichettaDifficolta(item.element.valore)}
-                  </span>
-                  {item.role === "USCITA" && (
-                    <span className="bg-primary/10 text-primary rounded-full px-2 py-1 text-[11px] font-semibold">
-                      Uscita
-                    </span>
+      {difficultySummary.length > 0 && (
+        <div className="mb-3 flex flex-wrap items-center gap-2">
+          {difficultySummary.map(([valore, count]) => (
+            <span
+              key={valore}
+              className={cn(
+                "inline-flex items-center gap-1 rounded-md px-2 py-0.5 text-xs font-semibold",
+                coloreDifficolta(valore),
+              )}
+            >
+              {count}&times;{etichettaDifficolta(valore)}
+            </span>
+          ))}
+        </div>
+      )}
+
+      <div className="grid gap-0.5">
+        {elements.map((item) => {
+          const label = displayName(item.element);
+
+          return (
+            <button
+              key={`${item.elementId}-${item.order}`}
+              type="button"
+              onClick={() => setSelectedElementId(item.elementId)}
+              className="hover:bg-accent/30 flex items-center gap-2 rounded-md px-2 py-1.5 text-left transition-colors"
+              style={{
+                borderLeft: `3px solid ${COLORI_GRUPPO[item.element.gruppo.numero]}`,
+              }}
+            >
+              <span className="text-muted-foreground w-5 shrink-0 font-mono text-xs">
+                {item.order}.
+              </span>
+              <CdpElementPreview element={item.element} size="xs" />
+              <span className="min-w-0 flex-1 truncate text-sm font-bold">{label}</span>
+              <div className="flex shrink-0 items-center gap-1">
+                <span
+                  className="rounded-full px-1.5 py-0.5 text-[10px] font-semibold"
+                  style={{
+                    backgroundColor: COLORI_GRUPPO[item.element.gruppo.numero],
+                    color: "#000",
+                  }}
+                >
+                  {NUMERI_ROMANI[item.element.gruppo.numero]}
+                </span>
+                <span
+                  className={cn(
+                    "inline-flex items-center rounded-md px-1.5 py-0.5 text-[10px] font-semibold",
+                    coloreDifficolta(item.element.valore),
                   )}
-                </div>
-                <div className="grid gap-1">
-                  <p className="text-sm font-semibold">{titoloElemento(item.element)}</p>
-                  <p className="text-muted-foreground text-xs leading-relaxed">
-                    {item.element.id} · {item.element.descrizione}
-                  </p>
-                </div>
+                >
+                  {etichettaDifficolta(item.element.valore)}
+                </span>
               </div>
-            </div>
-          </button>
-        ))}
+            </button>
+          );
+        })}
       </div>
 
       <CdpElementoDialog elemento={selectedElement} onClose={() => setSelectedElementId(null)} />
