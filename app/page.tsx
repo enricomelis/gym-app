@@ -6,7 +6,7 @@ export default function Home() {
       <main className="flex flex-col items-center gap-6 px-8 text-center">
         <h1 className="text-foreground text-4xl font-bold tracking-tight">Gym App</h1>
         <p className="text-muted-foreground max-w-md text-lg">
-          Gestisci i tuoi allenamenti e i tuoi clienti in un unico posto.
+          Gestisci facilmente tutti gli aspetti dell'allenamento dei tuoi atleti.
         </p>
         <Link
           href="/login"
