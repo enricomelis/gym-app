@@ -14,11 +14,7 @@ interface ExerciseFormShellProps {
   initialData?: ExerciseDetail;
 }
 
-export function ExerciseFormShell({
-  title,
-  description,
-  initialData,
-}: ExerciseFormShellProps) {
+export function ExerciseFormShell({ title, description, initialData }: ExerciseFormShellProps) {
   const router = useRouter();
   const [isDirty, setIsDirty] = useState(false);
   const [isConfirmOpen, setIsConfirmOpen] = useState(false);
