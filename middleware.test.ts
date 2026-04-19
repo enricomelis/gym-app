@@ -28,20 +28,6 @@ describe("proxy", () => {
     expect(new URL(response.headers.get("location")!).pathname).toBe("/login");
   });
 
-  it("redirects authenticated user from /login to /dashboard", async () => {
-    const response = await proxy(makeRequest("/login", "better-auth.session_token=abc"));
-
-    expect(response.status).toBe(307);
-    expect(new URL(response.headers.get("location")!).pathname).toBe("/dashboard");
-  });
-
-  it("redirects authenticated user from /register to /dashboard", async () => {
-    const response = await proxy(makeRequest("/register", "better-auth.session_token=abc"));
-
-    expect(response.status).toBe(307);
-    expect(new URL(response.headers.get("location")!).pathname).toBe("/dashboard");
-  });
-
   it("allows authenticated user to access /dashboard with the standard session cookie", async () => {
     const response = await proxy(makeRequest("/dashboard", "better-auth.session_token=abc"));
 

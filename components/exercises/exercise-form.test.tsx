@@ -51,12 +51,12 @@ describe("ExerciseForm", () => {
     render(<ExerciseForm />);
 
     const elementTitle = screen.getAllByText("Ribaltata o flic flac av.")[0];
-    const card = elementTitle.closest('[role="button"]');
+    const card = elementTitle.closest("[title]");
     if (!card) {
       throw new Error("Card container not found");
     }
 
-    await user.click(within(card).getByRole("button", { name: "Aggiungi" }));
+    await user.click(within(card as HTMLElement).getByRole("button", { name: /^Aggiungi / }));
 
     expect(screen.queryByRole("dialog")).not.toBeInTheDocument();
     expect(screen.getAllByText("Ribaltata o flic flac av.").length).toBeGreaterThan(0);
@@ -68,12 +68,12 @@ describe("ExerciseForm", () => {
 
     await user.selectOptions(screen.getByLabelText("Attrezzo"), "VT");
 
-    const addButtons = await screen.findAllByRole("button", { name: "Aggiungi" });
+    const addButtons = await screen.findAllByRole("button", { name: /^Aggiungi / });
     await user.click(addButtons[0]);
     await user.click(addButtons[1]);
-    await user.click(addButtons[2]);
+    expect(addButtons[2]).toBeDisabled();
 
-    expect(screen.getAllByText("Il volteggio accetta uno o due salti.").length).toBeGreaterThan(0);
+    expect(screen.queryByText("3.")).not.toBeInTheDocument();
   });
 
   it("moves the selected element to the last position when marked as exit", async () => {
@@ -109,11 +109,11 @@ describe("ExerciseForm", () => {
     render(<ExerciseForm initialData={initialData} />);
 
     await user.click(
-      screen.getByRole("button", { name: /Imposta come uscita Ribaltata o flic flac av\./i }),
+      screen.getByRole("button", { name: /Segna uscita Ribaltata o flic flac av\./i }),
     );
 
-    const exitBadge = screen.getByText("Uscita");
-    const exitCard = exitBadge.closest(".rounded-xl");
+    const exitBadge = screen.getByText("U");
+    const exitCard = exitBadge.closest("[style]");
     expect(exitCard).not.toBeNull();
     expect(exitCard).toHaveTextContent("Ribaltata o flic flac av.");
   });
@@ -150,14 +150,12 @@ describe("ExerciseForm", () => {
 
     render(<ExerciseForm initialData={initialData} />);
 
-    await user.click(screen.getAllByRole("button", { name: "Aggiungi" })[0]);
+    await user.click(screen.getAllByRole("button", { name: /^Aggiungi / })[0]);
 
-    const exitBadge = screen.getByText("Uscita");
-    const exitCard = exitBadge.closest(".rounded-xl");
+    const exitBadge = screen.getByText("U");
+    const exitCard = exitBadge.closest("[style]");
     expect(exitCard).not.toBeNull();
-    expect(exitCard).toHaveTextContent(
-      resolvedElements.at(-1)?.element.nome || resolvedElements.at(-1)?.element.descrizione || "",
-    );
+    expect(exitCard).toHaveTextContent("Salto av. racc.");
   });
 
   it("does not show the exit action for the current exit element", () => {

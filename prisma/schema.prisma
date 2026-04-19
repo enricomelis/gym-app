@@ -40,6 +40,7 @@ model User {
   sessions         Session[]
   accounts         Account[]
   createdExercises Exercise[]
+  athletes         Athlete[]
 }
 
 model Session {
@@ -80,6 +81,26 @@ model Verification {
   expiresAt  DateTime
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
+}
+
+model Athlete {
+  id                       String   @id @default(uuid())
+  coachId                  String
+  firstName                String
+  lastName                 String
+  normalizedFirstName      String
+  normalizedLastName       String
+  birthDate                DateTime @db.Date
+  tesseraNumber            String?
+  normalizedTesseraNumber  String?  @unique
+  createdAt                DateTime @default(now())
+  updatedAt                DateTime @updatedAt
+
+  coach User @relation(fields: [coachId], references: [id], onDelete: Cascade)
+
+  @@unique([coachId, normalizedFirstName, normalizedLastName, birthDate])
+  @@index([coachId])
+  @@index([coachId, normalizedLastName, normalizedFirstName])
 }
 
 model Exercise {

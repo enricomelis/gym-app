@@ -6,7 +6,7 @@ import { DeleteExerciseButton } from "@/components/exercises/delete-exercise-but
 
 const push = vi.fn();
 const refresh = vi.fn();
-const deleteExercise = vi.fn(async () => ({ success: true }));
+const deleteExercise = vi.fn(async (_exerciseId: string) => ({ success: true }));
 
 vi.mock("next/navigation", () => ({
   useRouter: () => ({
@@ -16,7 +16,7 @@ vi.mock("next/navigation", () => ({
 }));
 
 vi.mock("@/app/actions/exercises", () => ({
-  deleteExercise: (...args: unknown[]) => deleteExercise(...args),
+  deleteExercise: (exerciseId: string) => deleteExercise(exerciseId),
 }));
 
 describe("DeleteExerciseButton", () => {

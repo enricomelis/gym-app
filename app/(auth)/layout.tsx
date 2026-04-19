@@ -1,4 +1,24 @@
-export default function AuthLayout({ children }: { children: React.ReactNode }) {
+import { headers } from "next/headers";
+import { redirect } from "next/navigation";
+
+import { auth } from "@/lib/auth";
+
+async function getValidSession() {
+  try {
+    return await auth.api.getSession({ headers: await headers() });
+  } catch (error) {
+    console.error("[AuthLayout] session:lookup-error", { error });
+    return null;
+  }
+}
+
+export default async function AuthLayout({ children }: { children: React.ReactNode }) {
+  const session = await getValidSession();
+
+  if (session) {
+    redirect("/dashboard");
+  }
+
   return (
     <div className="flex min-h-svh font-sans">
       <div className="bg-muted hidden flex-col justify-between p-10 lg:flex lg:w-1/2">
