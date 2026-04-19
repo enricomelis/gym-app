@@ -1,0 +1,29 @@
+{
+    "mcpServers": {
+        "linear-server": {
+            "type": "http",
+            "url": "https://mcp.linear.app/mcp"
+        },
+        "next-devtools": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "-y",
+                "next-devtools-mcp@latest"
+            ],
+            "env": {}
+        },
+        "prisma": {
+            "type": "http",
+            "url": "https://mcp.prisma.io/mcp"
+        },
+        "Railway": {
+            "type": "stdio",
+            "command": "npx",
+            "args": [
+                "@railway/mcp-server"
+            ],
+            "env": {}
+        }
+    }
+}

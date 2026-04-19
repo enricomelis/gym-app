@@ -43,11 +43,9 @@ next-env.d.ts
 
 /generated/prisma
 
-.agents/
 .claude/
 .codex/
 .cursor/
-AGENTS.md
 CLAUDE.md
 .mcp.json
 skills-lock.json

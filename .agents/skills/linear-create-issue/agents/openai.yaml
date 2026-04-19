@@ -1,0 +1,7 @@
+interface:
+  display_name: "Linear Issue Creator"
+  short_description: "Create Linear issues from specs"
+  default_prompt: "Use $linear-create-issue to draft a Linear issue from a brief spec; default assignee is Enrico Melis and the current cycle is used when omitted."
+
+policy:
+  allow_implicit_invocation: true
